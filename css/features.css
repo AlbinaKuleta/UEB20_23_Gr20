@@ -1,3 +1,4 @@
+/*css*/
 body{
     background: #eee;
 }
@@ -46,7 +47,7 @@ padding: 2rem 9%;
 }
 
 .features .box-container .box:hover{
-    ouline: var(--outline-hover);
+    outline: var(--outline-hover);
     outline-offset: 0rem;
 }
 
