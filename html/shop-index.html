@@ -6,9 +6,11 @@ Author: KeenThemes
 Website: http://www.keenthemes.com/
 -->
 <html lang="en">
+
+<!-- Head -->
 <head>
   <meta charset="utf-8">
-  <title>Organic Shop</title>
+  <title>Metronic Shop UI</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -27,27 +29,28 @@ Website: http://www.keenthemes.com/
   <link rel="shortcut icon" href="https://p7.hiclipart.com/preview/907/455/804/organic-food-publix-computer-icons-organic.jpg">
 
   <!-- Fonts -->
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css"> 
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css"><!--- fonts for slider on the index page -->  
 
   <!-- Global styles -->          
   <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    
   <!-- Page level plugin styles -->
+  <link href="assets/pages/css/animate.css" rel="stylesheet">
   <link href="assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
   <link href="assets/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
-  <link href="assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
-  <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css"><!-- for slider-range -->
-  <link href="assets/plugins/rateit/src/rateit.css" rel="stylesheet" type="text/css">
 
   <!-- Theme styles -->
   <link href="assets/pages/css/components.css" rel="stylesheet">
-  <link href="assets/corporate/css/style.css" rel="stylesheet">
+  <link href="assets/pages/css/slider.css" rel="stylesheet">
   <link href="assets/pages/css/style-shop.css" rel="stylesheet" type="text/css">
+  <link href="assets/corporate/css/style.css" rel="stylesheet">
   <link href="assets/corporate/css/style-responsive.css" rel="stylesheet">
   <link href="assets/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
   <link href="assets/corporate/css/custom.css" rel="stylesheet">
 </head>
+
 <!-- Body -->
 <body class="ecommerce">
     <!-- STYLE CUSTOMIZER -->
@@ -74,7 +77,7 @@ Website: http://www.keenthemes.com/
                 <!-- TOP BAR LEFT PART -->
                 <div class="col-md-6 col-sm-6 additional-shop-info">
                     <ul class="list-unstyled list-inline">
-                        <li><i class="fa fa-phone"></i><span>+1 456 6717</span></li>
+                        <li><i class="fa fa-phone"></i><span>+383 44 222 333</span></li>
                         <!-- CURRENCIES -->
                         <li class="shop-currencies">
                             <a href="javascript:void(0);">€</a>
@@ -105,428 +108,490 @@ Website: http://www.keenthemes.com/
         </div>        
     </div>
 
-     <!-- HEADER -->
-     <div class="header">
-        <div class="container">
-          <a class="site-logo" href="shop-index.html"><img src="assets/pages/img/products/Fruits/organiclogo.ong.jpg" width="70px" height="70px" alt="Organic Shop "></a>
-  
-          <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
-  
-          <!-- CART -->
-          <div class="top-cart-block">
-            <div class="top-cart-info">
-              <a href="javascript:void(0);" class="top-cart-info-count">3 items</a>
-              <a href="javascript:void(0);" class="top-cart-info-value">$1260</a>
-            </div>
-            <i class="fa fa-shopping-cart"></i>
-                          
-            <div class="top-cart-content-wrapper">
-              <div class="top-cart-content">
-                <ul class="scroller" style="height: 250px;">
-                  <li>
-                    <a><img src="assets/pages/img/products/Fruits/about-banner.png.jpg" alt="Healthy Fruits" width="37" height="34"></a>
-                    <span class="cart-content-count">x 1</span>
-                    <strong><a>Healthy Fruits</a></strong>
-                    <em>$1230</em>
-                    <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
-                  </li>
-                  <li>
-                    <a><img src="assets/pages/img/cart-img.jpg" alt="Fresh Vegetables" width="37" height="34"></a>
-                    <span class="cart-content-count">x 1</span>
-                    <strong><a>Fresh Vegetables</a></strong>
-                    <em>$1230</em>
-                 
-                </ul>
-                <div class="text-right">
-                  <a href="shop-shopping-cart.html" class="btn btn-default">View Cart</a>
-                  <a href="shop-checkout.html" class="btn btn-primary">Checkout</a>
-                </div>
-              </div>
-            </div>            
+    <!-- HEADER -->
+    <div class="header">
+      <div class="container">
+        <a class="site-logo" href="shop-index.html"><img src="assets/pages/img/products/Fruits/organiclogo.ong.jpg" width="70px" height="70px" alt="Organic Shop "></a>
+
+        <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+        <!-- CART -->
+        <div class="top-cart-block">
+          <div class="top-cart-info">
+            <a href="javascript:void(0);" class="top-cart-info-count">3 items</a>
+            <a href="javascript:void(0);" class="top-cart-info-value">$1260</a>
           </div>
-  
-          <!-- NAVIGATION -->
-          <div class="header-navigation">
-            <ul>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                  Healthy Fruits
-                  
-                </a>
-                  
-                <!-- DROPDOWN MENU -->
+          <i class="fa fa-shopping-cart"></i>
+                        
+          <div class="top-cart-content-wrapper">
+            <div class="top-cart-content">
+              <ul class="scroller" style="height: 250px;">
+                <li>
+                  <a><img src="assets/pages/img/products/Fruits/about-banner.png.jpg" alt="Healthy Fruits" width="37" height="34"></a>
+                  <span class="cart-content-count">x 1</span>
+                  <strong><a>Healthy Fruits</a></strong>
+                  <em>$1230</em>
+                  <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
+                </li>
+                <li>
+                  <a><img src="assets/pages/img/cart-img.jpg" alt="Fresh Vegetables" width="37" height="34"></a>
+                  <span class="cart-content-count">x 1</span>
+                  <strong><a>Fresh Vegetables</a></strong>
+                  <em>$1230</em>
+               
+              </ul>
+              <div class="text-right">
+                <a href="shop-shopping-cart.html" class="btn btn-default">View Cart</a>
+                <a href="shop-checkout.html" class="btn btn-primary">Checkout</a>
+              </div>
+            </div>
+          </div>            
+        </div>
+
+        <!-- NAVIGATION -->
+        <div class="header-navigation">
+          <ul>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                Healthy Fruits
+                
+              </a>
+                
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                  <a href="shop-product-list-berries.html">Berries <i class="fa fa-angle-right"></i></a>
+                  <a href="shop-product-list-melons.html">Melons & Grapes<i class="fa fa-angle-right"></i></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="shop-product-list.html">Second Level Link</a></li>
+                    <li><a href="shop-product-list.html">Second Level Link</a></li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                        Second Level Link 
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="shop-product-list.html">Third Level Link</a></li>
+                        <li><a href="shop-product-list.html">Third Level Link</a></li>
+                        <li><a href="shop-product-list.html">Third Level Link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <!--Vegetables-->
+            <li class="dropdown dropdown-megamenu">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                Fresh Vegetables
                 <ul class="dropdown-menu">
                   <li class="dropdown-submenu">
-                    <a href="shop-product-list-berries.html">Berries <i class="fa fa-angle-right"></i></a>
-                    <a href="shop-product-list-melons.html">Melons & Grapes<i class="fa fa-angle-right"></i></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="shop-product-list.html">Second Level Link</a></li>
-                      <li><a href="shop-product-list.html">Second Level Link</a></li>
-                      <li class="dropdown-submenu">
-                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                          Second Level Link 
-                          <i class="fa fa-angle-right"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a href="shop-product-list.html">Third Level Link</a></li>
-                          <li><a href="shop-product-list.html">Third Level Link</a></li>
-                          <li><a href="shop-product-list.html">Third Level Link</a></li>
-                        </ul>
-                      </li>
-                    </ul>
+                    <a href="shop-product-list-vegetables.html">Vegetables <i class="fa fa-angle-right"></i></a>
                   </li>
-                
-                </ul>
-              </li>
-              <!--Vegetables-->
-              <li class="dropdown dropdown-megamenu">
-                <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                  Fresh Vegetables
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-submenu">
-                      <a href="shop-product-list-vegetables.html">Vegetables <i class="fa fa-angle-right"></i></a>
-                     
-                    </li>
-                </ul>
+              </ul>
+            </li>
 
-              </li>
-              <!--From our farm-->
-              <li class="dropdown dropdown-megamenu">
-                <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                  From Our Farm 
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-submenu">
-                      <a href="shop-product-list-farm.html">From Our Farm <i class="fa fa-angle-right"></i></a>
-                     
-                    </li>
-                  </ul>
-                  
-              </li>
-              <li class="dropdown dropdown100 nav-catalogue">
-                <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                  New
-                  
-                </a>
+            <!--From our farm-->
+            <li class="dropdown dropdown-megamenu">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                From Our Farm 
                 <ul class="dropdown-menu">
-                  <li>
-                    <div class="header-navigation-content">
-                      <div class="row">
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a><img src="assets/pages/img/products/Fruits/Apple.png" class="img-responsive" alt="Apples"></a>
-                            </div>
-                            <h3><a>Apples</a></h3>
-                            <div class="pi-price">$9.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                  <li class="dropdown-submenu">
+                    <a href="shop-product-list-farm.html">From Our Farm <i class="fa fa-angle-right"></i></a>
+                  </li>
+                </ul>
+            </li>
+            <li class="dropdown dropdown100 nav-catalogue">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                New
+                
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <div class="header-navigation-content">
+                    <div class="row">
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a><img src="assets/pages/img/products/Fruits/Apple.png" class="img-responsive" alt="Apples"></a>
                           </div>
+                          <h3><a>Apples</a></h3>
+                          <div class="pi-price">$9.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/Avocados.png" class="img-responsive" alt="Avocados"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Avocados</a></h3>
-                            <div class="pi-price">$8.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                      </div>
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/Avocados.png" class="img-responsive" alt="Avocados"></a>
                           </div>
+                          <h3><a href="shop-item.html">Avocados</a></h3>
+                          <div class="pi-price">$8.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/bananas.png" class="img-responsive" alt="bananas"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Bananas</a></h3>
-                            <div class="pi-price">$11.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                      </div>
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/bananas.png" class="img-responsive" alt="bananas"></a>
                           </div>
+                          <h3><a href="shop-item.html">Bananas</a></h3>
+                          <div class="pi-price">$11.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/bartlettpears.png" class="img-responsive" alt="bartlettpears"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Bartlett Pears</a></h3>
-                            <div class="pi-price">$29.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                      </div>
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/bartlettpears.png" class="img-responsive" alt="bartlettpears"></a>
                           </div>
+                          <h3><a href="shop-item.html">Bartlett Pears</a></h3>
+                          <div class="pi-price">$29.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/bloodorganes.png" class="img-responsive" alt="bloodorganes"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Blood Organes</a></h3>
-                            <div class="pi-price">$2.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                      </div>
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/bloodorganes.png" class="img-responsive" alt="bloodorganes"></a>
                           </div>
+                          <h3><a href="shop-item.html">Blood Organes</a></h3>
+                          <div class="pi-price">$2.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/caraorganes.png" class="img-responsive" alt="caraorganes"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Cara Organes</a></h3>
-                            <div class="pi-price">$21.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                      </div>
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/caraorganes.png" class="img-responsive" alt="caraorganes"></a>
                           </div>
+                          <h3><a href="shop-item.html">Cara Organes</a></h3>
+                          <div class="pi-price">$21.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/dragonfruit.png" class="img-responsive" alt="dragonfruit"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Dragon furits</a></h3>
-                            <div class="pi-price">$31.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                      </div>
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/dragonfruit.png" class="img-responsive" alt="dragonfruit"></a>
                           </div>
+                          <h3><a href="shop-item.html">Dragon furits</a></h3>
+                          <div class="pi-price">$31.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/freshkiwi.png" class="img-responsive" alt="freshkiwi"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Fresh Kiwi</a></h3>
-                            <div class="pi-price">$25.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                      </div>
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/freshkiwi.png" class="img-responsive" alt="freshkiwi"></a>
                           </div>
+                          <h3><a href="shop-item.html">Fresh Kiwi</a></h3>
+                          <div class="pi-price">$25.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/Freshness.png" class="img-responsive" alt="Freshness"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Freshness</a></h3>
-                            <div class="pi-price">$17.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                      </div>
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/Freshness.png" class="img-responsive" alt="Freshness"></a>
                           </div>
+                          <h3><a href="shop-item.html">Freshness</a></h3>
+                          <div class="pi-price">$17.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/Grannysmithapples.png" class="img-responsive" alt="Grannysmithapples"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Granny Smith Apples </a></h3>
-                            <div class="pi-price">$14.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                      </div>
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/Grannysmithapples.png" class="img-responsive" alt="Grannysmithapples"></a>
                           </div>
+                          <h3><a href="shop-item.html">Granny Smith Apples </a></h3>
+                          <div class="pi-price">$14.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
                       </div>
                     </div>
-                  </li>
-                </ul>
-              </li>
-              
-              </li>
-              <li class="dropdown active">
-                <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                  Pages 
-                  
-                </a>
-                  
-                <ul class="dropdown-menu">
-                  <li><a href="shop-index.html">Home Default</a></li>
-                  <li><a href="shop-index-header-fix.html">Home Header Fixed</a></li>
-                  <li><a href="shop-index-light-footer.html">Home Light Footer</a></li>
-                  <li class="active"><a href="shop-product-list.html">Product List</a></li>
-                  <li><a href="shop-search-result.html">Search Result</a></li>
-                  <li><a href="shop-item.html">Product Page</a></li>
-                  <li><a href="shop-shopping-cart-null.html">Shopping Cart (Null Cart)</a></li>
-                  <li><a href="shop-shopping-cart.html">Shopping Cart</a></li>
-                  <li><a href="shop-checkout.html">Checkout</a></li>
-                  <li><a href="shop-about.html">About</a></li>
-                  <li><a href="shop-contacts.html">Contacts</a></li>
-                  <li><a href="shop-account.html">My account</a></li>
-                  <li><a href="shop-wishlist.html">My Wish List</a></li>
-                  <li><a href="shop-goods-compare.html">Product Comparison</a></li>
-                  <li><a href="shop-standart-forms.html">Standart Forms</a></li>
-                  <li><a href="shop-faq.html">FAQ</a></li>
-                  <li><a href="shop-privacy-policy.html">Privacy Policy</a></li>
-                  <li><a href="shop-terms-conditions-page.html">Terms &amp; Conditions</a></li>
-                </ul>
-              </li>
-              
-              <!-- TOP SEARCH -->
-              <li class="menu-search">
-                <span class="sep"></span>
-                <i class="fa fa-search search-btn"></i>
-                <div class="search-box">
-                  <form action="#">
-                    <div class="input-group">
-                      <input type="text" placeholder="Search" class="form-control">
-                      <span class="input-group-btn">
-                        <button class="btn btn-primary" type="submit">Search</button>
-                      </span>
-                    </div>
-                  </form>
-                </div> 
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- Header -->
-    
-    <div class="main">
-      <div class="container">
-        <ul class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Store</a></li>
-            <li class="active">The healthiest fruit with discount</li>
-        </ul>
-
-       <!-- SIDEBAR & CONTENT -->
-       <div class="row margin-bottom-40">
-        <!-- SIDEBAR -->
-        <div class="sidebar col-md-3 col-sm-5">
-          <ul class="list-group margin-bottom-25 sidebar-menu">
-            <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i> pemet</a></li>
-            <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i> perimet </a></li>
-            <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i> Drithera </a></li>
-            <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i> Fruta Deti </a></li>
+                  </div>
+                </li>
+              </ul>
+            </li>
             
+            </li>
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                Pages 
+                
+              </a>
+                
+              <ul class="dropdown-menu">
+                <li><a href="shop-index.html">Home Default</a></li>
+                <li><a href="shop-index-header-fix.html">Home Header Fixed</a></li>
+                <li><a href="shop-index-light-footer.html">Home Light Footer</a></li>
+                <li class="active"><a href="shop-product-list.html">Product List</a></li>
+                <li><a href="shop-search-result.html">Search Result</a></li>
+                <li><a href="shop-item.html">Product Page</a></li>
+                <li><a href="shop-shopping-cart-null.html">Shopping Cart (Null Cart)</a></li>
+                <li><a href="shop-shopping-cart.html">Shopping Cart</a></li>
+                <li><a href="shop-checkout.html">Checkout</a></li>
+                <li><a href="shop-about.html">About</a></li>
+                <li><a href="shop-contacts.html">Contacts</a></li>
+                <li><a href="shop-account.html">My account</a></li>
+                <li><a href="shop-wishlist.html">My Wish List</a></li>
+                <li><a href="shop-goods-compare.html">Product Comparison</a></li>
+                <li><a href="shop-standart-forms.html">Standart Forms</a></li>
+                <li><a href="shop-faq.html">FAQ</a></li>
+                <li><a href="shop-privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="shop-terms-conditions-page.html">Terms &amp; Conditions</a></li>
+              </ul>
+            </li>
+            
+            <!-- TOP SEARCH -->
+            <li class="menu-search">
+              <span class="sep"></span>
+              <i class="fa fa-search search-btn"></i>
+              <div class="search-box">
+                <form action="#">
+                  <div class="input-group">
+                    <input type="text" placeholder="Search" class="form-control">
+                    <span class="input-group-btn">
+                      <button class="btn btn-primary" type="submit">Search</button>
+                    </span>
+                  </div>
+                </form>
+              </div> 
+            </li>
           </ul>
         </div>
+      </div>
+    </div>
+    <!-- Header -->
 
-          <!--  CONTENT -->
-          <div class="col-md-9 col-sm-7">
-            <div class="product-page">
-              <div class="row">
-                <div class="col-md-6 col-sm-6">
-                  <div class="product-main-image">
-                    <img src="../images/dragonfruit1.png" alt="Dragon fruit" class="img-responsive" data-BigImgsrc="../images/dragonfruit1.png">
-                  </div>
-                  <div class="product-other-images">
-                    <a href="../images/foodwhithdragonfr.png" class="fancybox-button" rel="photos-lib"><img alt="food with dragon fruit" src="../images/foodwhithdragonfr.png"></a>
-                    <a href="../images/foodwhithdragonfr1.png" class="fancybox-button" rel="photos-lib"><img alt="food with dragon fruit" src="../images/foodwhithdragonfr1.png"></a>
-                    <a href="../images/foodwhithdragonfr2.png" class="fancybox-button" rel="photos-lib"><img alt="food with dragon fruit" src="../images/foodwhithdragonfr2.png"></a>
-                  </div>
+    <!-- BEGIN SLIDER -->
+    <div class="page-slider margin-bottom-35">
+        <div id="carousel-example-generic" class="carousel slide carousel-slider">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <!-- First slide -->
+                <div class="item carousel-item-four active">
+                    <div class="container">
+                        <div class="carousel-position-four text-center">
+                            <h2 class="margin-bottom-20 animate-delay carousel-title-v3 border-bottom-title text-uppercase" data-animation="animated fadeInDown">
+                                A lot of<br/><span class="color-red-v2">healthy</span><br/> foods are here
+                            </h2>
+                            <p class="carousel-subtitle-v2" data-animation="animated fadeInUp">Here you are healthier than before.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-sm-6">
-                  <h1>Healthiest fruit</h1>
-                  <div class="price-availability-block clearfix">
-                    <div class="price">
-                      <strong><span>$</span>47.00</strong>
-                      <em>$<span>50.00</span></em>
+                
+                <!-- Second slide -->
+                <div class="item carousel-item-five">
+                    <div class="container">
+                        <div class="carousel-position-four text-center">
+                            <h2 class="animate-delay carousel-title-v4" data-animation="animated fadeInDown">
+                                Unlimted
+                            </h2>
+                            <p class="carousel-subtitle-v2" data-animation="animated fadeInDown">
+                                healthy recipes
+                            </p>
+                            <p class="carousel-subtitle-v3 margin-bottom-30" data-animation="animated fadeInUp">
+                                with healthy products
+                            </p>
+                            <a class="carousel-btn" href="#" data-animation="animated fadeInUp">See More Details</a>
+                        </div>
+                        <img class="carousel-position-five animate-delay hidden-sm hidden-xs" src="assets/pages/img/shop-slider/slide2/price.png" alt="Price" data-animation="animated zoomIn">
                     </div>
-                    <div class="availability">
-                      Availability: <strong>In Stock</strong>
-                    </div>
-                  </div>
-                  <div class="description">
-                    <p>This is the magical fruit and can be combined with everything. It's perfect for summer days for making a smothie to refresh you.</p>
-                  </div>
-                  <div class="product-page-options">
-                    <div class="pull-left">
-                      <label class="control-label">Type:</label>
-                      <select class="form-control input-sm">
-                        <option>Yellow</option>
-                        <option>Pink</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="product-page-cart">
-                    <div class="product-quantity">
-                        Kg: <input id="product-quantity" type="text" value="1" readonly class="form-control input-sm">
-                    </div>
-                    <button class="btn btn-primary" type="submit">Add to cart</button>
-                  </div>
-                  <div class="review">
-                    <input type="range" value="4" step="0.25" id="backing4">
-                    <div class="rateit" data-rateit-backingfld="#backing4" data-rateit-resetable="false"  data-rateit-ispreset="true" data-rateit-min="0" data-rateit-max="5">
-                    </div>
-                    <a href="javascript:;">100 afterthought</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                  </div>
-                  <ul class="social-icons">
-                    <li><a class="facebook" data-original-title="facebook" href="javascript:;"></a></li>
-                    <li><a class="twitter" data-original-title="twitter" href="javascript:;"></a></li>
-                    <li><a class="googleplus" data-original-title="googleplus" href="javascript:;"></a></li>
-                    <li><a class="evernote" data-original-title="evernote" href="javascript:;"></a></li>
-                    <li><a class="tumblr" data-original-title="tumblr" href="javascript:;"></a></li>
-                  </ul>
                 </div>
 
-                <div class="product-page-content">
-                  <ul id="myTab" class="nav nav-tabs">
-                    <li><a href="#Description" data-toggle="tab">Description</a></li>
-                    <li class="active"><a href="#Reviews" data-toggle="tab">Reviews (2)</a></li>
-                  </ul>
-                  <div id="myTabContent" class="tab-content">
-                    <div class="tab-pane fade" id="Description">
-                      <p>We call this plant a fruit, but dragon fruit is actually considered a cactus. They have scaly skin that can be pink or yellow, while the inside flesh may be red or white with tiny, black seeds. It has a crunchy texture and sweet flavor like a kiwi or pear.</p>
+                <!-- Third slide -->
+                <div class="item carousel-item-six">
+                    <div class="container">
+                        <div class="carousel-position-four text-center">
+                            <span class="carousel-subtitle-v3 margin-bottom-15" data-animation="animated fadeInDown">
+                                Be healthy
+                            </span>
+                            <p class="carousel-subtitle-v4" data-animation="animated fadeInDown">
+                                for your better 
+                            </p>
+                            <p class="carousel-subtitle-v3" data-animation="animated fadeInDown">
+                              future!
+                            </p>
+                        </div>
                     </div>
-                    <div class="tab-pane fade in active" id="Reviews">
-                      <!--<p>There are no reviews for this product.</p>-->
-                      <div class="review-item clearfix">
-                        <div class="review-item-submitted">
-                          <strong>Bob</strong>
-                          <em>30/12/2013 - 07:37</em>
-                          <div class="rateit" data-rateit-value="5" data-rateit-ispreset="true" data-rateit-readonly="true"></div>
-                        </div>                                              
-                        <div class="review-item-content">
-                            <p>It's a wonderful fruit says the medical researchers, and i eat because i like it. Its perfect to make a fruit salad.</p>
-                        </div>
-                      </div>
-                      <div class="review-item clearfix">
-                        <div class="review-item-submitted">
-                          <strong>Mary</strong>
-                          <em>13/12/2013 - 17:49</em>
-                          <div class="rateit" data-rateit-value="4" data-rateit-ispreset="true" data-rateit-readonly="true"></div>
-                        </div>                                              
-                        <div class="review-item-content">
-                            <p>I make smothies for my kids and they love it. I also combine it with everything.</p>
-                        </div>
-                      </div>
-                      <!-- FORM-->
-                      <form action="#" class="reviews-form" role="form">
-                        <h2>Write a review</h2>
-                        <div class="form-group">
-                          <label for="name">Name <span class="require">*</span></label>
-                          <input type="text" class="form-control" id="name">
-                        </div>
-                        <div class="form-group">
-                          <label for="email">Email</label>
-                          <input type="text" class="form-control" id="email">
-                        </div>
-                        <div class="form-group">
-                          <label for="review">Review <span class="require">*</span></label>
-                          <textarea class="form-control" rows="8" id="review"></textarea>
-                        </div>
-                        <div class="form-group">
-                          <label for="email">Rating</label>
-                          <input type="range" value="4" step="0.25" id="backing5">
-                          <div class="rateit" data-rateit-backingfld="#backing5" data-rateit-resetable="false"  data-rateit-ispreset="true" data-rateit-min="0" data-rateit-max="5">
-                          </div>
-                        </div>
-                        <div class="padding-top-20">                  
-                          <button type="submit" class="btn btn-primary">Send</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
                 </div>
 
-                <div class="sticker sticker-sale"></div>
-              </div>
+                <!-- Fourth slide -->
+                <div class="item carousel-item-seven">
+                   <div class="center-block">
+                        <div class="center-block-wrap">
+                            <div class="center-block-body">
+                                <h2 class="carousel-title-v1 margin-bottom-20" data-animation="animated fadeInDown">
+                                    100% natural<br/>
+                                    products
+                                </h2>
+                                <a class="carousel-btn" href="#" data-animation="animated fadeInUp">Buy It Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
 
-        <!-- SIMILAR PRODUCTS -->
+            <!-- Controls -->
+            <a class="left carousel-control carousel-control-shop" href="#carousel-example-generic" role="button" data-slide="prev">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </a>
+            <a class="right carousel-control carousel-control-shop" href="#carousel-example-generic" role="button" data-slide="next">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="main">
+      <div class="container">
+        <!-- SALE PRODUCT & NEW ARRIVALS -->
         <div class="row margin-bottom-40">
-          <div class="col-md-12 col-sm-12">
-            <h2>Similar healthy products</h2>
-            <div class="owl-carousel owl-carousel4">
+          <!-- SALE PRODUCT -->
+          <div class="col-md-12 sale-product">
+            <h2>New Arrivals</h2>
+            <div class="owl-carousel owl-carousel5">
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="../images/asparagus.png" class="img-responsive" alt="asparagus">
+                    <img src="../images/fisheggs.png" class="img-responsive" alt="fisheggs">
                     <div>
-                      <a href="../images/asparagus.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="../images/fisheggs.png" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Asparagus</a></h3>
+                  <h3><a href="shop-item.html">Fish eggs</a></h3>
+                  <div class="pi-price">$50.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                  <div class="sticker sticker-sale"></div>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/goat chesse.png" class="img-responsive" alt="goat chesse">
+                    <div>
+                      <a href="../images/goat chesse.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.html">Goat chesse</a></h3>
+                  <div class="pi-price">$35.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/milk.png" class="img-responsive" alt="milk">
+                    <div>
+                      <a href="../images/milk.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.html">Milk</a></h3>
+                  <div class="pi-price">$5.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+              <div>
+                  <div class="product-item">
+                    <div class="pi-img-wrapper">
+                      <img src="../images/oysters.png" class="img-responsive" alt="Oysters">
+                      <div>
+                        <a href="../images/oysters.png" class="btn btn-default fancybox-button">Zoom</a>
+                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                      </div>
+                    </div>
+                    <h3><a href="javascript:;">Oysters</a></h3>
+                    <div class="pi-price">$55.00</div>
+                    <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                    <div class="sticker sticker-new"></div>
+                  </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/salmon.png" class="img-responsive" alt="salmon">
+                    <div>
+                      <a href="../images/salmon.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.html">Salmon</a></h3>
+                  <div class="pi-price">$60.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/sardines.png" class="img-responsive" alt="sardines">
+                    <div>
+                      <a href="../images/sardines.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.html">Sardines</a></h3>
+                  <div class="pi-price">$40.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/shrimps.png" class="img-responsive" alt="shrimps">
+                    <div>
+                      <a href="../images/shrimps.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.html">Shrimps</a></h3>
+                  <div class="pi-price">$45.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       <!--  SIDEBAR & CONTENT -->
+       <div class="row margin-bottom-40">
+        <!--  SIDEBAR -->
+        <div class="sidebar col-md-3 col-sm-5">
+          <ul class="list-group margin-bottom-25 sidebar-menu">
+            <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i>Fruits</a></li>
+            <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i>Vegetables</a></li>
+            <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i>Cereals</a></li>
+            <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i>Sea fruits</a></li>
+          </ul>
+        </div>
+
+          <!-- CONTENT -->
+          <div class="col-md-9 col-sm-8">
+            <h2>Three items</h2>
+            <div class="owl-carousel owl-carousel3">
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/tuna.png" class="img-responsive" alt="tuna">
+                    <div>
+                      <a href="../images/tuna.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.html">Tuna</a></h3>
                   <div class="pi-price">$35.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                   <div class="sticker sticker-new"></div>
@@ -535,42 +600,42 @@ Website: http://www.keenthemes.com/
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="../images/mango.png" class="img-responsive" alt="Mango">
+                    <img src="../images/shrimps.png" class="img-responsive" alt="shrimps">
                     <div>
-                      <a href="../images/mango.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="../images/shrimps.png" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Mango</a></h3>
-                  <div class="pi-price">$30.00</div>
+                  <h3><a href="shop-item.html">Shrimps</a></h3>
+                  <div class="pi-price">$45.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
               </div>
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="../images/garlic.png" class="img-responsive" alt="Garlic">
+                    <img src="../images/goat chesse.png" class="img-responsive" alt="goat chesse">
                     <div>
-                      <a href="../images/garlic.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="../images/goat chesse.png" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Garlic</a></h3>
-                  <div class="pi-price">$14.00</div>
+                  <h3><a href="shop-item.html">Goat chesse</a></h3>
+                  <div class="pi-price">$40.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
               </div>
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="../images/oranges.png" class="img-responsive" alt="Oranges">
+                    <img src="../images/oysters.png" class="img-responsive" alt="oysters">
                     <div>
-                      <a href="../images/oranges.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="../images/oysters.png" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Oranges</a></h3>
-                  <div class="pi-price">$15.00</div>
+                  <h3><a href="shop-item.html">Oysters</a></h3>
+                  <div class="pi-price">$60.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                   <div class="sticker sticker-sale"></div>
                 </div>
@@ -578,39 +643,157 @@ Website: http://www.keenthemes.com/
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="../images/onion.png" class="img-responsive" alt="Onions">
+                    <img src="../images/milk.png" class="img-responsive" alt="milk">
                     <div>
-                      <a href="../images/onion.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="../images/milk.png" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Onions</a></h3>
-                  <div class="pi-price">$7.00</div>
+                  <h3><a href="shop-item.html">Milk</a></h3>
+                  <div class="pi-price">$5.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
               </div>
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="../images/avocado.png" class="img-responsive" alt="Avocado">
+                    <img src="../images/fisheggs.png" class="img-responsive" alt="fisheggs">
                     <div>
-                      <a href="../images/avocado.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="../images/fisheggs.png" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Avocado</a></h3>
-                  <div class="pi-price">$20.00</div>
+                  <h3><a href="shop-item.html">Fish eggs</a></h3>
+                  <div class="pi-price">$35.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- TWO PRODUCTS & PROMO -->
+        <div class="row margin-bottom-35 ">
+          <!-- TWO PRODUCTS -->
+          <div class="col-md-6 two-items-bottom-items">
+            <h2>Two favorites items</h2>
+            <div class="owl-carousel owl-carousel2">
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/tuna.png" class="img-responsive" alt="tuna">
+                    <div>
+                      <a href="../images/tuna.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.html">Tuna</a></h3>
+                  <div class="pi-price">$30.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/salmon.png" class="img-responsive" alt="salmon">
+                    <div>
+                      <a href="../images/salmon.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.html">Salmon</a></h3>
+                  <div class="pi-price">$55.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/milk.png" class="img-responsive" alt="Bmilk">
+                    <div>
+                      <a href="../images/milk.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.html">Milk</a></h3>
+                  <div class="pi-price">$5.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/fisheggs.png" class="img-responsive" alt="fisheggs">
+                    <div>
+                      <a href="../images/fisheggs.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.html">Fish eggs</a></h3>
+                  <div class="pi-price">$35.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/oysters.png" class="img-responsive" alt="oysters">
+                    <div>
+                      <a href="../images/oysters.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.html">Oysters</a></h3>
+                  <div class="pi-price">$60.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/sardines.png" class="img-responsive" alt="sardines">
+                    <div>
+                      <a href="../images/sardines.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.html">Sardines</a></h3>
+                  <div class="pi-price">$30.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PROMO -->
+          <div class="col-md-6 shop-index-carousel">
+            <div class="content-slider">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="../images/indicators7.png" class="img-responsive" alt="indicators7">
+                  </div>
+                  <div class="item">
+                    <img src="../images/indicators8.png" class="img-responsive" alt="indicators8">
+                  </div>
+                  <div class="item">
+                    <img src="../images/indicators9.png" class="img-responsive" alt="indicators9">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
       </div>
     </div>
 
-    <!-- STEPS -->
-    <div class="steps-block steps-block-red">
+     <!-- STEPS -->
+     <div class="steps-block steps-block-red">
       <div class="container">
         <div class="row">
           <div class="col-md-4 steps-block-col">
