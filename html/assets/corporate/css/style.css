@@ -1136,6 +1136,41 @@ steps block and steps block elements
 	text-align: center;
 }
 
+/* title wrapperi */
+.title-wrapperi {
+	margin: -23px 0 23px;
+	position: relative;
+	overflow: hidden;
+	background: #72c2ff url(../../pages/img/products/background/f2.png) no-repeat 100% 100%;
+	min-height: 400px;
+	padding-top: 79px;
+	width: 100%;
+
+}
+.title-wrapperi .container-inner {
+	float: left;
+}
+.ecommerce .title-wrapperi h1, .title-wrapperi em {
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	font-weight: 400;
+}
+.ecommerce .title-wrapperi h1 {
+	font-size: 45px;
+	padding: 0 9px 13px;
+	border-bottom: solid 1px rgba(255,255,255,0.6);
+	margin: 0 -9px 17px;
+}
+.title-wrapperi h1 span {
+	color: #e6400c;
+}
+.title-wrapperi em {
+	font-size: 20px;
+	font-style: normal;
+	display: block;
+	text-align: center;
+}
+
 /* breadcrumb */
 .breadcrumb {
 	background: none;
