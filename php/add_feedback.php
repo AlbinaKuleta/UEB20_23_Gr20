@@ -1,15 +1,10 @@
-<?php
-//connectimi me databazen 
-include '../php/config.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <!-- Head BEGIN -->
 <head>
   <meta charset="utf-8">
-  <title>Organic Shop</title>
+  <title>About us | Metronic Shop UI</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -33,24 +28,23 @@ include '../php/config.php';
   <!-- Fonts END -->
 
   <!-- Global styles START -->          
-  <link href="../html/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="../html/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Global styles END --> 
    
-  <!-- Page level plugin styles -->
-  <!-- <link href="../css/style.css" > -->
-  <link href="../html/assets/pages/css/animate.css" rel="stylesheet">
-  <link href="../html/assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
-  <link href="../html/assets/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
+  <!-- Page level plugin styles START -->
+  <link href="assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+  <link href="assets/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
+  <!-- Page level plugin styles END -->
 
-  <!-- Theme styles -->
-  
-  <link href="../html/assets/pages/css/components.css" rel="stylesheet">
-  <link href="../html/assets/pages/css/slider.css" rel="stylesheet">
-  <link href="../html/assets/pages/css/style-shop.css" rel="stylesheet" type="text/css">
-  <link href="../html/assets/corporate/css/style.css" rel="stylesheet">
-  <link href="../html/assets/corporate/css/style-responsive.css" rel="stylesheet">
-  <link href="../html/assets/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
-  <link href="../html/assets/corporate/css/custom.css" rel="stylesheet">
+  <!-- Theme styles START -->
+  <link href="assets/pages/css/components.css" rel="stylesheet">
+  <link href="assets/corporate/css/style.css" rel="stylesheet">
+  <link href="assets/pages/css/style-shop.css" rel="stylesheet" type="text/css">
+  <link href="assets/corporate/css/style-responsive.css" rel="stylesheet">
+  <link href="assets/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
+  <link href="assets/corporate/css/custom.css" rel="stylesheet">
+  <!-- Theme styles END -->
 </head>
 <!-- Head END -->
 
@@ -114,11 +108,44 @@ echo '</a>';
     <!-- HEADER -->
     <div class="header">
       <div class="container">
-        <a class="site-logo" href="shop-index.php"><img src="../html/assets/pages/img/products/Fruits/logo.png" width="70px" height="70px" alt="Organic Shop "></a>
+        <a class="site-logo" href="shop-index.php"><img src="assets/pages/img/products/Fruits/organiclogo.ong.jpg" width="70px" height="70px" alt="Organic Shop "></a>
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
-            <!-- Cart -->
 
+         <!-- BEGIN CART -->
+       <div class="top-cart-block">
+        <div class="top-cart-info">
+          <a href="javascript:void(0);" class="top-cart-info-count">3 items</a>
+          <a href="javascript:void(0);" class="top-cart-info-value">$1260</a>
+        </div>
+        <i class="fa fa-shopping-cart"></i>
+                      
+        
+            <div class="top-cart-content-wrapper">
+                <div class="top-cart-content">
+                  <ul class="scroller" style="height: 250px;">
+                    <li>
+                      <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Apple.png " alt="Healthy Fruits" width="37" height="34"></a>
+                      <span class="cart-content-count">x 1</span>
+                      <strong><a href="shop-item.php">Healthy Fruits</a></strong>
+                      <em>$1230</em>
+                      <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
+                    </li>
+                    <li>
+                      <a href="shop-item.php"><img src="assets/pages/img/products/Vegetables/cauliflower.png" alt="Fresh Vegetables" width="37" height="34"></a>
+                      <span class="cart-content-count">x 1</span>
+                      <strong><a href="shop-item.php">Fresh Vegetables</a></strong>
+                      <em>$1230</em>
+                   
+                  </ul>
+            <div class="text-right">
+              <a href="shop-shopping-cart.php" class="btn btn-default">View Cart</a>
+              <a href="shop-checkout.php" class="btn btn-primary">Checkout</a>
+            </div>
+          </div>
+        </div>            
+      </div>
+      <!--END CART -->
 
         <!-- NAVIGATION -->
         <div class="header-navigation">
@@ -191,10 +218,10 @@ echo '</a>';
             </li>
             <li class="active"><a href="shop-product-list.php">Product List</a></li>
             <li><a href="shop-item.php">Discount</a></li>
-                <li><a href="../html/shop-shopping-cart-null.php">Shopping</a></li>
-                <li><a href="../html/shop-shopping-cart.php">Shopping Cart</a></li>
-                <li><a href="../html/Add_products.php">Add products</a></li>
-                <li><a href="../php/add_feedback.php">Add feedback</a></li>
+                <li><a href="shop-shopping-cart-null.php">Shopping</a></li>
+                <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
+                <li><a href="Add_products.php">Add products</a></li>
+                <li><a href="add_feedback.php">Add feedback</a></li>
 </ul>
 </ul>
             <li class="dropdown active">
@@ -212,7 +239,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a><img src="../html/assets/pages/img/products/Fruits/Apple.png" class="img-responsive" alt="Apples"></a>
+                            <a><img src="assets/pages/img/products/Fruits/Apple.png" class="img-responsive" alt="Apples"></a>
                           </div>
                           <h3><a>Apples</a></h3>
                           <div class="pi-price">$9.00</div>
@@ -222,7 +249,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.php"><img src="../html/assets/pages/img/products/Fruits/Avocados.png" class="img-responsive" alt="Avocados"></a>
+                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Avocados.png" class="img-responsive" alt="Avocados"></a>
                           </div>
                           <h3><a href="shop-item.php">Avocados</a></h3>
                           <div class="pi-price">$8.00</div>
@@ -232,7 +259,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.php"><img src="../html/assets/pages/img/products/Fruits/bananas.png" class="img-responsive" alt="bananas"></a>
+                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/bananas.png" class="img-responsive" alt="bananas"></a>
                           </div>
                           <h3><a href="shop-item.php">Bananas</a></h3>
                           <div class="pi-price">$11.00</div>
@@ -242,7 +269,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.php"><img src="../html/assets/pages/img/products/Fruits/bartlettpears.png" class="img-responsive" alt="bartlettpears"></a>
+                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/bartlettpears.png" class="img-responsive" alt="bartlettpears"></a>
                           </div>
                           <h3><a href="shop-item.php">Bartlett Pears</a></h3>
                           <div class="pi-price">$29.00</div>
@@ -252,7 +279,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.php"><img src="../html/assets/pages/img/products/Fruits/bloodorganes.png" class="img-responsive" alt="bloodorganes"></a>
+                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/bloodorganes.png" class="img-responsive" alt="bloodorganes"></a>
                           </div>
                           <h3><a href="shop-item.php">Blood Organes</a></h3>
                           <div class="pi-price">$2.00</div>
@@ -262,7 +289,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.php"><img src="../html/assets/pages/img/products/Fruits/caraorganes.png" class="img-responsive" alt="caraorganes"></a>
+                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/caraorganes.png" class="img-responsive" alt="caraorganes"></a>
                           </div>
                           <h3><a href="shop-item.php">Cara Organes</a></h3>
                           <div class="pi-price">$21.00</div>
@@ -272,7 +299,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.php"><img src="../html/assets/pages/img/products/Fruits/dragonfruit.png" class="img-responsive" alt="dragonfruit"></a>
+                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/dragonfruit.png" class="img-responsive" alt="dragonfruit"></a>
                           </div>
                           <h3><a href="shop-item.php">Dragon furits</a></h3>
                           <div class="pi-price">$31.00</div>
@@ -282,7 +309,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.php"><img src="../html/assets/pages/img/products/Fruits/freshkiwi.png" class="img-responsive" alt="freshkiwi"></a>
+                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/freshkiwi.png" class="img-responsive" alt="freshkiwi"></a>
                           </div>
                           <h3><a href="shop-item.php">Fresh Kiwi</a></h3>
                           <div class="pi-price">$25.00</div>
@@ -292,7 +319,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.php"><img src="../html/assets/pages/img/products/Fruits/Freshness.png" class="img-responsive" alt="Freshness"></a>
+                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Freshness.png" class="img-responsive" alt="Freshness"></a>
                           </div>
                           <h3><a href="shop-item.php">Freshness</a></h3>
                           <div class="pi-price">$17.00</div>
@@ -302,7 +329,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.php"><img src="../html/assets/pages/img/products/Fruits/Grannysmithapples.png" class="img-responsive" alt="Grannysmithapples"></a>
+                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Grannysmithapples.png" class="img-responsive" alt="Grannysmithapples"></a>
                           </div>
                           <h3><a href="shop-item.php">Granny Smith Apples </a></h3>
                           <div class="pi-price">$14.00</div>
@@ -317,12 +344,18 @@ echo '</a>';
             
             </li>
             <div class="header-navigation">
-          <ul>           
+          <ul>
+         
+            
+            
             <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
                About
                 
-              </a>                
+              </a>
+                
+
+
               <ul class="dropdown-menu">
             <li class="dropdown"><a href="shop-about.php">About</a></li>
            <li><a href="shop-contacts.php">Contacts</a></li>
@@ -333,6 +366,8 @@ echo '</a>';
 </li>
 <div class="header-navigation">
           <ul>
+         
+            
             
             <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
@@ -371,18 +406,33 @@ echo '</a>';
           <!-- BEGIN SIDEBAR -->
           <div class="sidebar col-md-3 col-sm-5">
             <ul class="list-group margin-bottom-25 sidebar-menu">
-                <li class="active"><a href="shop-product-list.php">Product List</a></li>
-                <li><a href="shop-item.php">Discount</a></li>
-                <li><a href="../html/shop-shopping-cart-null.php">Shopping</a></li>
-                <li><a href="../html/shop-shopping-cart.php">Shopping Cart</a></li>
-                <li><a href="../html/Add_products.php">Add products</a></li>
-                <li><a href="../php/add_feedback.php">Add feedback</a></li>
+              <li class="list-group-item clearfix"><a href="shop-product-list-vegetables.php"><i class="fa fa-angle-right"></i> Fresh Vegetables</a></li>
+              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i> Healthy Frutis</a></li>
+
+              <li class="list-group-item clearfix"><a href="shop-product-list-farm.php"><i class="fa fa-angle-right"></i> From Our Farm</a></li>
+              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i> Fish & Meat</a></li>
+              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i> Healthy Drinks</a></li>
+              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i> Dairy Products</a></li>
            
             </ul>
 
-            
+            <div class="sidebar-filter margin-bottom-25">
+              <h2>Filter</h2>
+              <h3>Availability</h3>
+              <div class="checkbox-list">
+                <label><input type="checkbox"> Not Available (3)</label>
+                <label><input type="checkbox"> In Stock (26)</label>
+              </div>
 
-          <div class="sidebar-products clearfix">
+              <h3>Price</h3>
+              <p>
+                <label for="amount">Range:</label>
+                <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+              </p>
+              <div id="slider-range"></div>
+            </div>
+
+            <div class="sidebar-products clearfix">
               <h2>Bestsellers</h2>
              <div class="row">
                 <div class="col md-4">
@@ -702,7 +752,6 @@ echo '</a>';
 
 
 <?php
-include 'config.php';
 
 if(!$conn){
     die('Could not connect: '. mysqli_error($conn));
@@ -719,8 +768,9 @@ if(!$conn){
     VALUES ('$uname', '$surname', '$email', '$feedback')";
     
     if(mysqli_query($conn, $sql)){
-        header("Location: index.php?msg = New feedback has been entered");
-         exit();
+        header('Location: message.php');
+        echo 'You entered your data successfully';
+        exit();
       }else{
         echo 'Error: ' . mysqli_error($conn);
       }
