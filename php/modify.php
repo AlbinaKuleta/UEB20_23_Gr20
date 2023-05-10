@@ -114,39 +114,69 @@ echo '</a>';
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
          <!-- BEGIN CART -->
-       <div class="top-cart-block">
-        <div class="top-cart-info">
-          <a href="javascript:void(0);" class="top-cart-info-count">3 items</a>
-          <a href="javascript:void(0);" class="top-cart-info-value">$1260</a>
-        </div>
-        <i class="fa fa-shopping-cart"></i>
-                      
-        
-            <div class="top-cart-content-wrapper">
-                <div class="top-cart-content">
-                  <ul class="scroller" style="height: 250px;">
-                    <li>
-                      <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Apple.png " alt="Healthy Fruits" width="37" height="34"></a>
-                      <span class="cart-content-count">x 1</span>
-                      <strong><a href="shop-item.php">Healthy Fruits</a></strong>
-                      <em>$1230</em>
-                      <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
-                    </li>
-                    <li>
-                      <a href="shop-item.php"><img src="assets/pages/img/products/Vegetables/cauliflower.png" alt="Fresh Vegetables" width="37" height="34"></a>
-                      <span class="cart-content-count">x 1</span>
-                      <strong><a href="shop-item.php">Fresh Vegetables</a></strong>
-                      <em>$1230</em>
-                   
-                  </ul>
-            <div class="text-right">
-              <a href="shop-shopping-cart.php" class="btn btn-default">View Cart</a>
-              <a href="shop-checkout.php" class="btn btn-primary">Checkout</a>
+                <!-- BEGIN CART -->
+<div class="container" style="margin-top: 50px;">
+    <div class="row">
+
+        <?php
+        // connect with database
+        include 'config.php';
+        include 'add-cart.php';
+        include 'cart.php';
+        include 'delete-cart.php';
+         
+        // get all products
+        $result = mysqli_query($conn, "SELECT * FROM products");
+ 
+        // get cookie cart
+        $cart = isset($_COOKIE["cart"]) ? $_COOKIE["cart"] : "[]";
+        $cart = json_decode($cart);
+ 
+        // loop through all cart items
+        while ($row = mysqli_fetch_object($result))
+        {
+            // check if product already exists in cart
+            $flag = false;
+            foreach ($cart as $c)
+            {
+                if ($c->productCode == $row->productCode)
+                {
+                    $flag = true;
+                    break;
+                }
+            }
+            ?>
+            <div class="col-md-3" style="margin-bottom: 20px;">
+                <div class="card" style="height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <?php echo $row->productName; ?>
+                        </h5>
+                        <p class="card-text">
+                            <?php echo $row->buyPrice; ?>
+                        </p>
+                        <?php if ($flag) { ?>
+                            <!-- show delete button if already exists -->
+                            <form method="POST" action="delete-cart.php">
+                                <input type="hidden" name="productCode" value="<?php echo $row->productCode; ?>">
+                                <input type="submit" class="btn btn-danger" value="Delete from cart">
+                            </form>
+                        <?php } else { ?>
+                            <!-- add to cart -->
+                            <form method="POST" action="add-cart.php">
+                                <input type="hidden" name="quantity" value="1">
+                                <input type="hidden" name="productCode" value="<?php echo $row->productCode; ?>">
+                                <input type="submit" class="btn btn-primary" value="Add to cart">
+                            </form>
+                        <?php } ?>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>            
-      </div>
-      <!--END CART -->
+            <?php
+        }
+        ?>
+    </div>
+</div>
 
         <!-- NAVIGATION -->
         <div class="header-navigation">
@@ -417,22 +447,7 @@ echo '</a>';
            
             </ul>
 
-            <div class="sidebar-filter margin-bottom-25">
-              <h2>Filter</h2>
-              <h3>Availability</h3>
-              <div class="checkbox-list">
-                <label><input type="checkbox"> Not Available (3)</label>
-                <label><input type="checkbox"> In Stock (26)</label>
-              </div>
-
-              <h3>Price</h3>
-              <p>
-                <label for="amount">Range:</label>
-                <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
-              </p>
-              <div id="slider-range"></div>
-            </div>
-
+           
             <div class="sidebar-products clearfix">
               <h2>Bestsellers</h2>
               <div class="item">
@@ -489,7 +504,7 @@ echo '</a>';
     <h2>PRODUCT LIST</h2>
     <?php
         // Lidhja me bazën e të dhënave
-        include_once '../php/config.php';
+        include_once 'config.php';
 
         // Kontrollo nese ka ndonje gabim ne lidhje
         if (!$conn) {
@@ -547,8 +562,6 @@ echo '</a>';
         }
     }       
     ?>
-
-
         <input type="submit" value="modify product">
     </form>
 </body>

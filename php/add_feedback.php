@@ -409,62 +409,62 @@ echo '</a>';
              </div>
           </div>
         </div>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        h1, h2 {
-            color: #333;
-        }
-
-        .produkti {
-            margin-bottom: 10px;
-        }
-
-        form {
-            margin-top: 20px;
-        }
-
-        label {
-            display: inline-block;
-            width: 100px;
-            margin-bottom: 5px;
-        }
-
-        input[type="text"],
-        input[type="number"],
-        input[type="submit"] {
-            padding: 5px;
-            font-size: 14px;
-        }
-    </style>
-</head>
-<body>
-    <h1>ORGANIC E-COMMERCE</h1>
-    <h3 style="color: light-brown;"> Give your feedback here!</h3>
-    <form action="add_feedback.php" method="POST">
-
-       <h5>Your name:<br></h5>
-        <input type="text" name="uname" required><br>
+        <style>
+          body {
+              font-family: Arial, sans-serif;
+          }
         
-        <h5>Your surname:<br></h5>
-        <input type="text" name="surname" required><br>
+          h1, h2 {
+              color: #333;
+          }
+        
+          .produkti {
+              margin-bottom: 10px;
+          }
+        
+          form {
+              margin-top: 20px;
+          }
+        
+          label {
+              display: inline-block;
+              width: 100px;
+              margin-bottom: 5px;
+          }
+        
+          input[type="text"],
+          input[type="number"],
+          input[type="submit"] {
+              padding: 5px;
+              font-size: 14px;
+          }
+        </style>
+  
+        <h1>ORGANIC E-COMMERCE</h1>
+        <h3 style="color: light-brown;"> Give your feedback here!</h3>
+        <form action="add_feedback.php" method="POST">
+        
+         <h5>Your name:<br></h5>
+          <input type="text" name="uname" required><br>
+          
+          <h5>Your surname:<br></h5>
+          <input type="text" name="surname" required><br>
+        
+          <h5>Your email:<br></h5>
+          <input type="text" name="email" required><br>
+        
+          <h5>Your feedback:<br></h5>
+          <textarea name="feedback" rows="15" cols="50"></textarea><br><br>
+        
+          <button type="submit" value="Submit">Submit</button>
+          <button type="button" value="Cancel" >Cancel</button>
+        
+        
+        </form>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      </br>
+      </div>  
 
-        <h5>Your email:<br></h5>
-        <input type="text" name="email" required><br>
-
-        <h5>Your feedback:<br></h5>
-        <textarea name="feedback" rows="15" cols="50"></textarea><br><br>
-
-        <button type="submit" value="Submit">Submit</button>
-        <button type="button" value="Cancel" >Cancel</button>
-
-
-    </form>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  </br>
-     
   <!-- BEGIN STEPS -->
   <div class="steps-block steps-block-red">
       <div class="container">
@@ -702,6 +702,7 @@ echo '</a>';
 
 
 <?php
+include 'config.php';
 
 if(!$conn){
     die('Could not connect: '. mysqli_error($conn));
@@ -718,9 +719,8 @@ if(!$conn){
     VALUES ('$uname', '$surname', '$email', '$feedback')";
     
     if(mysqli_query($conn, $sql)){
-        header('Location: message.php');
-        echo 'You entered your data successfully';
-        exit();
+        header("Location: index.php?msg = New feedback has been entered");
+         exit();
       }else{
         echo 'Error: ' . mysqli_error($conn);
       }

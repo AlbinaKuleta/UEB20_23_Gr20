@@ -120,6 +120,66 @@ include_once '../php/config.php';
         <a class="site-logo" href="shop-index.php"><img src="assets/pages/img/products/Fruits/organiclogo.ong.jpg" width="70px" height="70px" alt="Organic Shop "></a>
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
+                 <!-- BEGIN CART -->
+<div class="container" style="margin-top: 50px;">
+    <div class="row">
+        <?php
+        // connect with database
+        include 'config.php';
+        include '../php/add-cart.php';
+         
+        // get all products
+        $result = mysqli_query($conn, "SELECT * FROM products");
+ 
+        // get cookie cart
+        $cart = isset($_COOKIE["cart"]) ? $_COOKIE["cart"] : "[]";
+        $cart = json_decode($cart);
+ 
+        // loop through all cart items
+        while ($row = mysqli_fetch_object($result))
+        {
+            // check if product already exists in cart
+            $flag = false;
+            foreach ($cart as $c)
+            {
+                if ($c->productCode == $row->productCode)
+                {
+                    $flag = true;
+                    break;
+                }
+            }
+            ?>
+            <div class="col-md-3" style="margin-bottom: 20px;">
+                <div class="card" style="height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <?php echo $row->productName; ?>
+                        </h5>
+                        <p class="card-text">
+                            <?php echo $row->buyPrice; ?>
+                        </p>
+                        <?php if ($flag) { ?>
+                            <!-- show delete button if already exists -->
+                            <form method="POST" action="delete-cart.php">
+                                <input type="hidden" name="productCode" value="<?php echo $row->productCode; ?>">
+                                <input type="submit" class="btn btn-danger" value="Delete from cart">
+                            </form>
+                        <?php } else { ?>
+                            <!-- add to cart -->
+                            <form method="POST" action="add-cart.php">
+                                <input type="hidden" name="quantity" value="1">
+                                <input type="hidden" name="productCode" value="<?php echo $row->productCode; ?>">
+                                <input type="submit" class="btn btn-primary" value="Add to cart">
+                            </form>
+                        <?php } ?>
+                    </div>
+                </div>
+            </div>
+            <?php
+        }
+        ?>
+    </div>
+</div>
        
 
         <!-- NAVIGATION -->

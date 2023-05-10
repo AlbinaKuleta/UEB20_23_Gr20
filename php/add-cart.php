@@ -1,28 +1,33 @@
 <?php
-include_once '../php/config.php';
+include 'config.php';
+include 'cart.php';
 
-$quantity = $_POST["quantity"];
-$pid = $_POST["pid"];
- 
-$cart = isset($_COOKIE["cart"]) ? $_COOKIE["cart"] : "[]";
-$cart = json_decode($cart);
- 
-$result = mysqli_query($conn, "SELECT * FROM products WHERE pid = '" . $pid . "';");
-$product = mysqli_fetch_object($result);
- 
-array_push($cart, array(
-    "pid" => $pid,
-    "pname" => $pname,
-    "price" => $price,
-    "image" => $image,
-    "cid" => $cid,
-    "quantity" => $quantity,
-));
+if(!$conn){
+    die('Could not connect: '. mysqli_error($conn));
+  }else{
+    $upid = $uid = $pid = $quantity = $unit = "";
+
+    if(isset($_POST['submit'])){
+        $upid = $_POST['upid'];
+        $uid = $_POST['uid'];
+        $pid = $_POST['pid'];
+        $quantity = $_POST['quantity'];
+        $unit = $_POST['unit'];
+
+    $sql = "INSERT INTO userproduct (upid, uid, pname, quantity, unit)
+    VALUES ('$upid', '$uid', '$pname', '$quantity', '$unit')";
+    
+    if(mysqli_query($conn, $sql)){
+        header("Location: cart.php?msg = New product has been added to cart");
+         exit();
+      }else{
+        echo 'Error: ' . mysqli_error($conn);
+      }
+    }
+  }
+
+
 setcookie("cart", json_encode($cart));
-header("Location: index.php");
+header("Location: cart.php");
  
 ?>
-
-
-
-
