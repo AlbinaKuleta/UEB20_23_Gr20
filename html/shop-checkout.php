@@ -89,7 +89,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                 <!-- BEGIN TOP BAR LEFT PART -->
                 <div class="col-md-6 col-sm-6 additional-shop-info">
                     <ul class="list-unstyled list-inline">
-                        <li><i class="fa fa-phone"></i><span>+1 456 6717</span></li>
+                        <li><i class="fa fa-phone"></i><span>+383 44 222 333</span></li>
                         <!-- BEGIN CURRENCIES -->
                         <li class="shop-currencies">
                             <a href="javascript:void(0);">€</a>
