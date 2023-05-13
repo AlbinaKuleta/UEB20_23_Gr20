@@ -470,10 +470,10 @@
 	                                                         </form>
                                                            <?php
 
-$db_host = 'localhost';
+$db_host = 'Myconnection';
 $db_user = 'root';
 $db_pass = 'diona2003';
-$db_name = 'FAQQ';
+$db_name = 'databaza';
 
 $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
