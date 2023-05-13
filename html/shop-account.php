@@ -18,7 +18,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
 <!-- Head BEGIN -->
 <head>
   <meta charset="utf-8">
-  <title>About us | Metronic Shop UI</title>
+  <title>My Account | Metronic Shop UI</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -88,7 +88,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                 <!-- BEGIN TOP BAR LEFT PART -->
                 <div class="col-md-6 col-sm-6 additional-shop-info">
                     <ul class="list-unstyled list-inline">
-                        <li><i class="fa fa-phone"></i><span>+1 456 6717</span></li>
+                        <li><i class="fa fa-phone"></i><span>+383 44 222 333</span></li>
                         <!-- BEGIN CURRENCIES -->
                         <li class="shop-currencies">
                             <a href="javascript:void(0);">€</a>
@@ -124,8 +124,8 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
     </div>
     <!-- END TOP BAR -->
 
-     <!-- BEGIN HEADER -->
-     <div class="header">
+    <!-- BEGIN HEADER -->
+    <div class="header">
       <div class="container">
         <a class="site-logo" href="shop-index.html"><img src="assets/pages/img/products/Fruits/organiclogo.ong.jpg" width="70px" height="70px" alt="Organic Shop "></a>
 
@@ -230,60 +230,6 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                 New
                 
               </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <div class="header-navigation-content">
-                    <div class="row">
-                      <div class="col-md-3 col-sm-4 col-xs-6">
-                        <div class="product-item">
-                          <div class="pi-img-wrapper">
-                            <a href="shop-item.html"><img src="assets/pages/img/products/model4.jpg" class="img-responsive" alt="Berry Lace Dress"></a>
-                          </div>
-                          <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-                          <div class="pi-price">$29.00</div>
-                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-sm-4 col-xs-6">
-                        <div class="product-item">
-                          <div class="pi-img-wrapper">
-                            <a href="shop-item.html"><img src="assets/pages/img/products/model3.jpg" class="img-responsive" alt="Berry Lace Dress"></a>
-                          </div>
-                          <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-                          <div class="pi-price">$29.00</div>
-                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-sm-4 col-xs-6">
-                        <div class="product-item">
-                          <div class="pi-img-wrapper">
-                            <a href="shop-item.html"><img src="assets/pages/img/products/model7.jpg" class="img-responsive" alt="Berry Lace Dress"></a>
-                          </div>
-                          <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-                          <div class="pi-price">$29.00</div>
-                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                        </div>
-                      </div>
-                      <div class="col-md-3 col-sm-4 col-xs-6">
-                        <div class="product-item">
-                          <div class="pi-img-wrapper">
-                            <a href="shop-item.html"><img src="assets/pages/img/products/model4.jpg" class="img-responsive" alt="Berry Lace Dress"></a>
-                          </div>
-                          <h3><a href="shop-item.html">Berry Lace Dress</a></h3>
-                          <div class="pi-price">$29.00</div>
-                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown active">
-              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                Pages 
-                
-              </a>
                 
               <ul class="dropdown-menu">
                 <li><a href="shop-index.html">Home Default</a></li>
@@ -295,9 +241,9 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                 <li><a href="shop-shopping-cart-null.html">Shopping Cart (Null Cart)</a></li>
                 <li><a href="shop-shopping-cart.html">Shopping Cart</a></li>
                 <li><a href="shop-checkout.html">Checkout</a></li>
-                <li class="active"><a href="shop-about.html">About</a></li>
+                <li><a href="shop-about.html">About</a></li>
                 <li><a href="shop-contacts.html">Contacts</a></li>
-                <li><a href="shop-account.html">My account</a></li>
+                <li class="active"><a href="shop-account.html">My account</a></li>
                 <li><a href="shop-wishlist.html">My Wish List</a></li>
                 <li><a href="shop-goods-compare.html">Product Comparison</a></li>
                 <li><a href="shop-standart-forms.html">Standart Forms</a></li>
@@ -332,13 +278,13 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
       </div>
     </div>
     <!-- Header END -->
-
+    
     <div class="main">
       <div class="container">
         <ul class="breadcrumb">
             <li><a href="index.html">Home</a></li>
             <li><a href="">Store</a></li>
-            <li class="active">Terms &amp; Conditions</li>
+            <li class="active">My Account Page</li>
         </ul>
         <!-- BEGIN SIDEBAR & CONTENT -->
         <div class="row margin-bottom-40">
@@ -357,27 +303,26 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
           <!-- END SIDEBAR -->
 
           <!-- BEGIN CONTENT -->
-          <div class="col-md-9 col-sm-9">
-            <h1>About us</h1>
+          <div class="col-md-9 col-sm-7">
+            <h1>My Account Page</h1>
             <div class="content-page">
-              <p><img src="assets/pages/img/photos/istockphoto-1183678932-612x612.jpg" alt="About us" class="img-responsive"></p> 
+              <h3>My Account</h3>
+              <ul>
+                <li><a href="javascript:;">Edit your account information</a></li>
+                <li><a href="javascript:;">Change your password</a></li>
+                <li><a href="javascript:;">Modify your address book entries</a></li>
+                <li><a href="javascript:;">Modify your wish list</a></li>
+              </ul>
+              <hr>
 
-              <p>Welcome to our organic food store, a haven for health-conscious individuals seeking high-quality, natural products. As you step inside, you'll be greeted by the refreshing aroma of freshly harvested fruits and vegetables. The store is adorned with vibrant displays of colorful produce, arranged meticulously to showcase the bountiful offerings of nature.
-
-                Our shelves are lined with an extensive range of organic goods, carefully curated to cater to a variety of dietary preferences and lifestyles. From wholesome grains and legumes to artisanal bread and dairy alternatives, we have everything you need to nourish your body and embrace a sustainable way of living.
-                
-                Take a stroll through our aisles, and you'll discover an abundance of certified organic products, free from harmful pesticides and genetically modified organisms. We prioritize locally sourced items, supporting regional farmers and reducing our carbon footprint. Every item on our shelves has been thoughtfully selected to meet the highest standards of quality and environmental responsibility.
-                
-                In addition to our fresh produce and pantry essentials, we offer a delightful selection of organic snacks, herbal teas, and superfood supplements. Our knowledgeable staff is always on hand to provide personalized recommendations and answer any questions you may have, ensuring you make informed choices that align with your wellness goals.
-                
-                As you make your way to the checkout counter, you'll notice our commitment to sustainability extends beyond the products we offer. We use biodegradable packaging materials and encourage customers to bring their own reusable bags, reducing waste and promoting a greener future.
-                
-                Visit our organic food store and experience the essence of wholesome living. Embrace the flavors of nature, nourish your body with goodness, and join us in our mission to cultivate a healthier planet, one mindful choice at a time.
-                
-                We look forward to serving you and being a part of your journey towards a vibrant and sustainable lifestyle.
-                
-              </p>
-                
+              <h3>My Orders</h3>
+              <ul>
+                <li><a href="javascript:;">View your order history</a></li>
+                <li><a href="javascript:;">Downloads</a></li>
+                <li><a href="javascript:;">Your Reward Points</a></li>
+                <li><a href="javascript:;">View your return requests</a></li>
+                <li><a href="javascript:;">Your Transactions</a></li>
+              </ul>
             </div>
           </div>
           <!-- END CONTENT -->
@@ -385,7 +330,6 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
         <!-- END SIDEBAR & CONTENT -->
       </div>
     </div>
-
 
     <!-- BEGIN STEPS -->
     <div class="steps-block steps-block-red">
@@ -436,7 +380,6 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               
               Join us in our commitment to eating well and living better with Organica.
               
-             
               Duis autem vel eum iriure dolor vulputate velit esse molestie at dolore.</p>
           </div>
           <!-- END BOTTOM ABOUT BLOCK -->
@@ -447,7 +390,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               <li><i class="fa fa-angle-right"></i> <a href="javascript:;">Delivery Information</a></li>
               <li><i class="fa fa-angle-right"></i> <a href="javascript:;">Customer Service</a></li>
               <li><i class="fa fa-angle-right"></i> <a href="javascript:;">Order Tracking</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="javascript:;">Shipping & Returns</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="javascript:;">Shipping &amp; Returns</a></li>
               <li><i class="fa fa-angle-right"></i> <a href="contacts.html">Contact Us</a></li>
               <li><i class="fa fa-angle-right"></i> <a href="javascript:;">Careers</a></li>
               <li><i class="fa fa-angle-right"></i> <a href="javascript:;">Payment Methods</a></li>
