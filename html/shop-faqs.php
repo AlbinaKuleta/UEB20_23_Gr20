@@ -470,7 +470,7 @@
 	                                                         </form>
                                                            <?php
 
-$db_host = '127.0.0.1';
+$db_host = 'Local instance';
 $db_user = 'root';
 $db_pass = 'diona2003';
 $db_name = 'databaza';
