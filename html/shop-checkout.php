@@ -294,7 +294,10 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
             <li class="dropdown dropdown100 nav-catalogue">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
                 New
+                <?php 
+                include 'K2menyte_e_shitesit.php';
                 
+                ?>
               </a>
               <ul class="dropdown-menu">
                 <li>
