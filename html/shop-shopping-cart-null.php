@@ -404,7 +404,7 @@
                     <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                   </div>
                 </div>
-                <h3><a href="shop-item.html">Dragon Fruit</a></h3>
+                <h3><a href="shop-item.php">Dragon Fruit</a></h3>
                 <div class="pi-price">$29.00</div>
                 <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 <div class="sticker sticker-new"></div>
@@ -419,7 +419,7 @@
                     <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                   </div>
                 </div>
-                <h3><a href="shop-item.html">Bananas</a></h3>
+                <h3><a href="shop-item.php">Bananas</a></h3>
                 <div class="pi-price">$17.00</div>
                 <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
               </div>
@@ -433,7 +433,7 @@
                     <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                   </div>
                 </div>
-                <h3><a href="shop-item.html">Blood Organes</a></h3>
+                <h3><a href="shop-item.php">Blood Organes</a></h3>
                 <div class="pi-price">$15.00</div>
                 <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
               </div>
@@ -447,7 +447,7 @@
                     <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                   </div>
                 </div>
-                <h3><a href="shop-item.html">Apple</a></h3>
+                <h3><a href="shop-item.php">Apple</a></h3>
                 <div class="pi-price">$29.00</div>
                 <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 <div class="sticker sticker-sale"></div>
