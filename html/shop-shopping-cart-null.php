@@ -52,9 +52,9 @@
 </head>
 <!-- Head END -->
 
-<!-- Body BEGIN -->
+<!-- Body -->
 <body class="ecommerce">
-    <!-- BEGIN STYLE CUSTOMIZER -->
+    <!-- STYLE CUSTOMIZER -->
     <div class="color-panel hidden-sm">
       <div class="color-mode-icons icon-color"></div>
       <div class="color-mode-icons icon-color-close"></div>
@@ -70,59 +70,55 @@
         </ul>
       </div>
     </div>
-    <!-- END BEGIN STYLE CUSTOMIZER --> 
 
-    <!-- BEGIN TOP BAR -->
+    <!-- TOP BAR -->
     <div class="pre-header">
         <div class="container">
             <div class="row">
-                <!-- BEGIN TOP BAR LEFT PART -->
+                <!-- TOP BAR LEFT PART -->
                 <div class="col-md-6 col-sm-6 additional-shop-info">
                     <ul class="list-unstyled list-inline">
-                        <li><i class="fa fa-phone"></i><span>+1 456 6717</span></li>
-                        <!-- BEGIN CURRENCIES -->
+                        <li><i class="fa fa-phone"></i><span>+383 44 222 333</span></li>
+                        <!-- CURRENCIES -->
                         <li class="shop-currencies">
                             <a href="javascript:void(0);">€</a>
                             <a href="javascript:void(0);">£</a>
                             <a href="javascript:void(0);" class="current">$</a>
                         </li>
-                        <!-- END CURRENCIES -->
-                        <!-- BEGIN LANGS -->
+                        <!-- LANGS -->
                         <li class="langs-block">
                             <a href="javascript:void(0);" class="current">English </a>
                             <div class="langs-block-others-wrapper"><div class="langs-block-others">
-                              <a href="javascript:void(0);">Albanian</a>
+                              <a href="javascript:void(0);">French</a>
                               <a href="javascript:void(0);">Germany</a>
                               <a href="javascript:void(0);">Turkish</a>
                             </div></div>
                         </li>
-                        <!-- END LANGS -->
                     </ul>
                 </div>
-                <!-- END TOP BAR LEFT PART -->
-                <!-- BEGIN TOP BAR MENU -->
+                <!-- TOP BAR MENU -->
                 <div class="col-md-6 col-sm-6 additional-nav">
                     <ul class="list-unstyled list-inline pull-right">
-                        <li><a href="shop-account.html">My Account</a></li>
-                        <li><a href="shop-wishlist.html">My Wishlist</a></li>
-                        <li><a href="shop-checkout.html">Checkout</a></li>
-                        <li><a href="page-login.html">Log In</a></li>
+                        <li><a href="shop-account.php">My Account</a></li>
+                        <li><a href="shop-wishlist.php">My Wishlist</a></li>
+                        <li><a href="shop-checkout.php">Checkout</a></li>
+                        <li><a href="login_form.php" class="btn">Log In</a></li>
+                        <li><a href="register_form.php" class="btn">Register</a></li>
+                        <li><a href="logut.php" class="btn">Log Out</a></li>
                     </ul>
                 </div>
-                <!-- END TOP BAR MENU -->
             </div>
         </div>        
     </div>
-    <!-- END TOP BAR -->
 
-    <!-- BEGIN HEADER -->
+    <!-- HEADER -->
     <div class="header">
       <div class="container">
-        <a class="site-logo" href="shop-index.html"><img src="assets/pages/img/products/Fruits/organiclogo.ong.jpg" width="70px" height="70px" alt="Organic Shop "></a>
+        <a class="site-logo" href="shop-index.php"><img src="assets/pages/img/products/Fruits/organiclogo.ong.jpg" width="70px" height="70px" alt="Organic Shop "></a>
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
-       <!-- BEGIN CART -->
+         <!-- BEGIN CART -->
        <div class="top-cart-block">
         <div class="top-cart-info">
           <a href="javascript:void(0);" class="top-cart-info-count">3 items</a>
@@ -135,240 +131,227 @@
                 <div class="top-cart-content">
                   <ul class="scroller" style="height: 250px;">
                     <li>
-                      <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/Apple.png " alt="Healthy Fruits" width="37" height="34"></a>
+                      <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Apple.png " alt="Healthy Fruits" width="37" height="34"></a>
                       <span class="cart-content-count">x 1</span>
-                      <strong><a href="shop-item.html">Healthy Fruits</a></strong>
+                      <strong><a href="shop-item.php">Healthy Fruits</a></strong>
                       <em>$1230</em>
                       <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
                     </li>
                     <li>
-                      <a href="shop-item.html"><img src="assets/pages/img/products/Vegetables/cauliflower.png" alt="Fresh Vegetables" width="37" height="34"></a>
+                      <a href="shop-item.php"><img src="assets/pages/img/products/Vegetables/cauliflower.png" alt="Fresh Vegetables" width="37" height="34"></a>
                       <span class="cart-content-count">x 1</span>
-                      <strong><a href="shop-item.html">Fresh Vegetables</a></strong>
+                      <strong><a href="shop-item.php">Fresh Vegetables</a></strong>
                       <em>$1230</em>
                    
                   </ul>
             <div class="text-right">
-              <a href="shop-shopping-cart.html" class="btn btn-default">View Cart</a>
-              <a href="shop-checkout.html" class="btn btn-primary">Checkout</a>
+              <a href="shop-shopping-cart.php" class="btn btn-default">View Cart</a>
+              <a href="shop-checkout.php" class="btn btn-primary">Checkout</a>
             </div>
           </div>
         </div>            
       </div>
       <!--END CART -->
-    
-         <!-- BEGIN NAVIGATION -->
-         <div class="header-navigation">
-            <ul>
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                  Healthy Fruits
-                  
-                </a>
-                  
-                <!-- BEGIN DROPDOWN MENU -->
+
+        <!-- NAVIGATION -->
+        <div class="header-navigation">
+          <ul>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                Healthy Fruits
+                
+              </a>
+                
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                  <a href="shop-product-list-berries.php">Berries <i class="fa fa-angle-right"></i></a>
+                  <a href="shop-product-list-melons.php">Melons & Grapes<i class="fa fa-angle-right"></i></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="shop-product-list.php">Second Level Link</a></li>
+                    <li><a href="shop-product-list.php">Second Level Link</a></li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                        Second Level Link 
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="shop-product-list.php">Third Level Link</a></li>
+                        <li><a href="shop-product-list.php">Third Level Link</a></li>
+                        <li><a href="shop-product-list.php">Third Level Link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <!--Vegetables-->
+            <li class="dropdown dropdown-megamenu">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                Fresh Vegetables
                 <ul class="dropdown-menu">
                   <li class="dropdown-submenu">
-                    <a href="shop-product-list-berries.html">Berries <i class="fa fa-angle-right"></i></a>
-                    <a href="shop-product-list-melons.html">Melons & Grapes<i class="fa fa-angle-right"></i></a>
-                    <ul class="dropdown-menu" role="menu">
-                      <li><a href="shop-product-list.html">Second Level Link</a></li>
-                      <li><a href="shop-product-list.html">Second Level Link</a></li>
-                      <li class="dropdown-submenu">
-                        <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                          Second Level Link 
-                          <i class="fa fa-angle-right"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a href="shop-product-list.html">Third Level Link</a></li>
-                          <li><a href="shop-product-list.html">Third Level Link</a></li>
-                          <li><a href="shop-product-list.html">Third Level Link</a></li>
-                        </ul>
-                      </li>
-                    </ul>
+                    <a href="shop-product-list-vegetables.php">Vegetables <i class="fa fa-angle-right"></i></a>
                   </li>
-                
-                </ul>
-                <!-- END DROPDOWN MENU -->
-              </li>
-              <!--Vegetables-->
-              <li class="dropdown dropdown-megamenu">
-                <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                  Fresh Vegetables
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-submenu">
-                      <a href="shop-product-list-vegetables.html">Vegetables <i class="fa fa-angle-right"></i></a>
-                     
-                    </li>
-                  </ul>
-                  
-                
-                
-                
-              </li>
-              <!--From our farm-->
-              <li class="dropdown dropdown-megamenu">
-                <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                  From Our Farm 
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-submenu">
-                      <a href="shop-product-list-farm.html">From Our Farm <i class="fa fa-angle-right"></i></a>
-                     
-                    </li>
-                  </ul>
-                  
-              
-                
-                
-                
-              </li>
-              <li class="dropdown dropdown100 nav-catalogue">
-                <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                  New
-                  
-                </a>
+              </ul>
+            </li>
+
+            <!--From our farm-->
+            <li class="dropdown dropdown-megamenu">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                From Our Farm 
                 <ul class="dropdown-menu">
-                  <li>
-                    <div class="header-navigation-content">
-                      <div class="row">
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/Apple.png" class="img-responsive" alt="Apples"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Apples</a></h3>
-                            <div class="pi-price">$9.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                  <li class="dropdown-submenu">
+                    <a href="shop-product-list-farm.php">From Our Farm <i class="fa fa-angle-right"></i></a>
+                  </li>
+                </ul>
+            </li>
+            <li class="dropdown dropdown100 nav-catalogue">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                New
+                
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <div class="header-navigation-content">
+                    <div class="row">
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a><img src="assets/pages/img/products/Fruits/Apple.png" class="img-responsive" alt="Apples"></a>
                           </div>
+                          <h3><a>Apples</a></h3>
+                          <div class="pi-price">$9.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/Avocados.png" class="img-responsive" alt="Avocados"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Avocados</a></h3>
-                            <div class="pi-price">$8.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                      </div>
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Avocados.png" class="img-responsive" alt="Avocados"></a>
                           </div>
+                          <h3><a href="shop-item.php">Avocados</a></h3>
+                          <div class="pi-price">$8.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/bananas.png" class="img-responsive" alt="bananas"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Bananas</a></h3>
-                            <div class="pi-price">$11.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                      </div>
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/bananas.png" class="img-responsive" alt="bananas"></a>
                           </div>
+                          <h3><a href="shop-item.php">Bananas</a></h3>
+                          <div class="pi-price">$11.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/bartlettpears.png" class="img-responsive" alt="bartlettpears"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Bartlett Pears</a></h3>
-                            <div class="pi-price">$29.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                      </div>
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/bartlettpears.png" class="img-responsive" alt="bartlettpears"></a>
                           </div>
+                          <h3><a href="shop-item.php">Bartlett Pears</a></h3>
+                          <div class="pi-price">$29.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/bloodorganes.png" class="img-responsive" alt="bloodorganes"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Blood Organes</a></h3>
-                            <div class="pi-price">$2.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                      </div>
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/bloodorganes.png" class="img-responsive" alt="bloodorganes"></a>
                           </div>
+                          <h3><a href="shop-item.php">Blood Organes</a></h3>
+                          <div class="pi-price">$2.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/caraorganes.png" class="img-responsive" alt="caraorganes"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Cara Organes</a></h3>
-                            <div class="pi-price">$21.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                      </div>
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/caraorganes.png" class="img-responsive" alt="caraorganes"></a>
                           </div>
+                          <h3><a href="shop-item.php">Cara Organes</a></h3>
+                          <div class="pi-price">$21.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/dragonfruit.png" class="img-responsive" alt="dragonfruit"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Dragon furits</a></h3>
-                            <div class="pi-price">$31.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                      </div>
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/dragonfruit.png" class="img-responsive" alt="dragonfruit"></a>
                           </div>
+                          <h3><a href="shop-item.php">Dragon furits</a></h3>
+                          <div class="pi-price">$31.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/freshkiwi.png" class="img-responsive" alt="freshkiwi"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Fresh Kiwi</a></h3>
-                            <div class="pi-price">$25.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                      </div>
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/freshkiwi.png" class="img-responsive" alt="freshkiwi"></a>
                           </div>
+                          <h3><a href="shop-item.php">Fresh Kiwi</a></h3>
+                          <div class="pi-price">$25.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/Freshness.png" class="img-responsive" alt="Freshness"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Freshness</a></h3>
-                            <div class="pi-price">$17.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                      </div>
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Freshness.png" class="img-responsive" alt="Freshness"></a>
                           </div>
+                          <h3><a href="shop-item.php">Freshness</a></h3>
+                          <div class="pi-price">$17.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
-                        <div class="col-md-3 col-sm-4 col-xs-6">
-                          <div class="product-item">
-                            <div class="pi-img-wrapper">
-                              <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/Grannysmithapples.png" class="img-responsive" alt="Grannysmithapples"></a>
-                            </div>
-                            <h3><a href="shop-item.html">Granny Smith Apples </a></h3>
-                            <div class="pi-price">$14.00</div>
-                            <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                      </div>
+                      <div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="product-item">
+                          <div class="pi-img-wrapper">
+                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Grannysmithapples.png" class="img-responsive" alt="Grannysmithapples"></a>
                           </div>
+                          <h3><a href="shop-item.php">Granny Smith Apples </a></h3>
+                          <div class="pi-price">$14.00</div>
+                          <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
                       </div>
                     </div>
-                  </li>
-                </ul>
-              </li>
-              
-              </li>
-              <li class="dropdown active">
-                <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                  Pages 
-                  
-                </a>
-                  
-                <ul class="dropdown-menu">
-                  <li><a href="shop-index.html">Home Default</a></li>
-                  <li><a href="shop-index-header-fix.html">Home Header Fixed</a></li>
-                  <li><a href="shop-index-light-footer.html">Home Light Footer</a></li>
-                  <li class="active"><a href="shop-product-list.html">Product List</a></li>
-                  <li><a href="shop-search-result.html">Search Result</a></li>
-                  <li><a href="shop-item.html">Product Page</a></li>
-                  <li><a href="shop-shopping-cart-null.html">Shopping Cart (Null Cart)</a></li>
-                  <li><a href="shop-shopping-cart.html">Shopping Cart</a></li>
-                  <li><a href="shop-checkout.html">Checkout</a></li>
-                  <li><a href="shop-about.html">About</a></li>
-                  <li><a href="shop-contacts.html">Contacts</a></li>
-                  <li><a href="shop-account.html">My account</a></li>
-                  <li><a href="shop-wishlist.html">My Wish List</a></li>
-                  <li><a href="shop-goods-compare.html">Product Comparison</a></li>
-                  <li><a href="shop-standart-forms.html">Standart Forms</a></li>
-                  <li><a href="shop-faq.html">FAQ</a></li>
-                  <li><a href="shop-privacy-policy.html">Privacy Policy</a></li>
-                  <li><a href="shop-terms-conditions-page.html">Terms &amp; Conditions</a></li>
-                </ul>
-              </li>
+                  </div>
+                </li>
+              </ul>
+            </li>
             
+            </li>
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                Pages 
+                
+              </a>
+                
+              <ul class="dropdown-menu">
+                <li><a href="shop-index.php">Home Default</a></li>
+                <li><a href="shop-index-header-fix.php">Home Header Fixed</a></li>
+                <li><a href="shop-index-light-footer.php">Home Light Footer</a></li>
+                <li class="active"><a href="shop-product-list.php">Product List</a></li>
+                <li><a href="shop-search-result.php">Search Result</a></li>
+                <li><a href="shop-item.php">Product Page</a></li>
+                <li><a href="shop-shopping-cart-null.php">Shopping Cart (Null Cart)</a></li>
+                <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
+                <li><a href="shop-checkout.php">Checkout</a></li>
+                <li><a href="shop-about.php">About</a></li>
+                <li><a href="shop-contacts.php">Contacts</a></li>
+                <li><a href="shop-account.php">My account</a></li>
+                <li><a href="shop-wishlist.php">My Wish List</a></li>
+                <li><a href="shop-goods-compare.php">Product Comparison</a></li>
+                <li><a href="shop-standart-forms.php">Standart Forms</a></li>
+                <li><a href="shop-faq.php">FAQ</a></li>
+                <li><a href="shop-privacy-policy.php">Privacy Policy</a></li>
+                <li><a href="shop-terms-conditions-page.php">Terms &amp; Conditions</a></li>
+              </ul>
+            </li>
             
-
-            <!-- BEGIN TOP SEARCH -->
+            <!-- TOP SEARCH -->
             <li class="menu-search">
               <span class="sep"></span>
               <i class="fa fa-search search-btn"></i>
@@ -383,13 +366,11 @@
                 </form>
               </div> 
             </li>
-            <!-- END TOP SEARCH -->
           </ul>
         </div>
-        <!-- END NAVIGATION -->
       </div>
     </div>
-    <!-- Header END -->
+    <!-- Header -->
 
 
     <div class="main">
