@@ -489,7 +489,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Fish eggs</a></h3>
+                  <h3><a href="shop-item.php">Fish eggs</a></h3>
                   <div class="pi-price">$50.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                   <div class="sticker sticker-sale"></div>
@@ -504,7 +504,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Goat chesse</a></h3>
+                  <h3><a href="shop-item.php">Goat chesse</a></h3>
                   <div class="pi-price">$35.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -518,7 +518,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Milk</a></h3>
+                  <h3><a href="shop-item.php">Milk</a></h3>
                   <div class="pi-price">$5.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -561,7 +561,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Sardines</a></h3>
+                  <h3><a href="shop-item.php">Sardines</a></h3>
                   <div class="pi-price">$40.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -575,7 +575,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Shrimps</a></h3>
+                  <h3><a href="shop-item.php">Shrimps</a></h3>
                   <div class="pi-price">$45.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -589,10 +589,10 @@
         <!--  SIDEBAR -->
         <div class="sidebar col-md-3 col-sm-5">
           <ul class="list-group margin-bottom-25 sidebar-menu">
-            <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i>Fruits</a></li>
-            <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i>Vegetables</a></li>
-            <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i>Cereals</a></li>
-            <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i>Sea fruits</a></li>
+            <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Fruits</a></li>
+            <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Vegetables</a></li>
+            <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Cereals</a></li>
+            <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Sea fruits</a></li>
           </ul>
         </div>
 
@@ -609,7 +609,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Tuna</a></h3>
+                  <h3><a href="shop-item.php">Tuna</a></h3>
                   <div class="pi-price">$35.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                   <div class="sticker sticker-new"></div>
@@ -624,7 +624,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Shrimps</a></h3>
+                  <h3><a href="shop-item.php">Shrimps</a></h3>
                   <div class="pi-price">$45.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -638,7 +638,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Goat chesse</a></h3>
+                  <h3><a href="shop-item.php">Goat chesse</a></h3>
                   <div class="pi-price">$40.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -652,7 +652,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Oysters</a></h3>
+                  <h3><a href="shop-item.php">Oysters</a></h3>
                   <div class="pi-price">$60.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                   <div class="sticker sticker-sale"></div>
@@ -667,7 +667,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Milk</a></h3>
+                  <h3><a href="shop-item.php">Milk</a></h3>
                   <div class="pi-price">$5.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -681,7 +681,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Fish eggs</a></h3>
+                  <h3><a href="shop-item.php">Fish eggs</a></h3>
                   <div class="pi-price">$35.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -705,7 +705,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Tuna</a></h3>
+                  <h3><a href="shop-item.php">Tuna</a></h3>
                   <div class="pi-price">$30.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -719,7 +719,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Salmon</a></h3>
+                  <h3><a href="shop-item.php">Salmon</a></h3>
                   <div class="pi-price">$55.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -733,7 +733,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Milk</a></h3>
+                  <h3><a href="shop-item.php">Milk</a></h3>
                   <div class="pi-price">$5.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -747,7 +747,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Fish eggs</a></h3>
+                  <h3><a href="shop-item.php">Fish eggs</a></h3>
                   <div class="pi-price">$35.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -761,7 +761,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Oysters</a></h3>
+                  <h3><a href="shop-item.php">Oysters</a></h3>
                   <div class="pi-price">$60.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -775,7 +775,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Sardines</a></h3>
+                  <h3><a href="shop-item.php">Sardines</a></h3>
                   <div class="pi-price">$30.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>

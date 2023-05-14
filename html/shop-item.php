@@ -380,10 +380,10 @@ Website: http://www.keenthemes.com/
           <!--  SIDEBAR -->
           <div class="sidebar col-md-3 col-sm-5">
             <ul class="list-group margin-bottom-25 sidebar-menu">
-              <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i>Fruits</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i>Vegetables</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i>Cereals</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i>Sea fruits</a></li>
+              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Fruits</a></li>
+              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Vegetables</a></li>
+              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Cereals</a></li>
+              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Sea fruits</a></li>
             </ul>
           </div>
 
@@ -525,7 +525,7 @@ Website: http://www.keenthemes.com/
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Asparagus</a></h3>
+                  <h3><a href="shop-item.php">Asparagus</a></h3>
                   <div class="pi-price">$35.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                   <div class="sticker sticker-new"></div>
@@ -540,7 +540,7 @@ Website: http://www.keenthemes.com/
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Mango</a></h3>
+                  <h3><a href="shop-item.php">Mango</a></h3>
                   <div class="pi-price">$30.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -554,7 +554,7 @@ Website: http://www.keenthemes.com/
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Garlic</a></h3>
+                  <h3><a href="shop-item.php">Garlic</a></h3>
                   <div class="pi-price">$14.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -568,7 +568,7 @@ Website: http://www.keenthemes.com/
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Oranges</a></h3>
+                  <h3><a href="shop-item.php">Oranges</a></h3>
                   <div class="pi-price">$15.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                   <div class="sticker sticker-sale"></div>
@@ -583,7 +583,7 @@ Website: http://www.keenthemes.com/
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Onions</a></h3>
+                  <h3><a href="shop-item.php">Onions</a></h3>
                   <div class="pi-price">$7.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -597,7 +597,7 @@ Website: http://www.keenthemes.com/
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Avocado</a></h3>
+                  <h3><a href="shop-item.php">Avocado</a></h3>
                   <div class="pi-price">$20.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>

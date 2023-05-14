@@ -376,7 +376,7 @@
     <div class="main">
       <div class="container">
         <ul class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="">Store</a></li>
             <li class="active">Fruits category</li>
         </ul>
@@ -385,13 +385,13 @@
           <!-- BEGIN SIDEBAR -->
           <div class="sidebar col-md-3 col-sm-5">
             <ul class="list-group margin-bottom-25 sidebar-menu">
-              <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i> Fresh Vegetables</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i> Healthy Frutis</a></li>
+              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i> Fresh Vegetables</a></li>
+              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i> Healthy Frutis</a></li>
 
-              <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i> From Our Farm</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i> Fish & Meat</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i> Healthy Drinks</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.html"><i class="fa fa-angle-right"></i> Dairy Products</a></li>
+              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i> From Our Farm</a></li>
+              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i> Fish & Meat</a></li>
+              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i> Healthy Drinks</a></li>
+              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i> Dairy Products</a></li>
            
             </ul>
 
@@ -414,18 +414,18 @@
             <div class="sidebar-products clearfix">
               <h2>Bestsellers</h2>
               <div class="item">
-                <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/Strafberries.png" alt="Strawberry"></a>
-                <h3><a href="shop-item.html">Strawberry</a></h3>
+                <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Strafberries.png" alt="Strawberry"></a>
+                <h3><a href="shop-item.php">Strawberry</a></h3>
                 <div class="price">$31.00</div>
               </div>
               <div class="item">
-                <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/Apple.png" alt="Apple"></a>
-                <h3><a href="shop-item.html">Apple</a></h3>
+                <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Apple.png" alt="Apple"></a>
+                <h3><a href="shop-item.php">Apple</a></h3>
                 <div class="price">$23.00</div>
               </div>
               <div class="item">
-                <a href="shop-item.html"><img src="assets/pages/img/products/Fruits/Farm/eggs.png" alt="Eggs"></a>
-                <h3><a href="shop-item.html">Eggs</a></h3>
+                <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Farm/eggs.png" alt="Eggs"></a>
+                <h3><a href="shop-item.php">Eggs</a></h3>
                 <div class="price">$86.00</div>
               </div>
             </div>
@@ -477,7 +477,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Rasberries</a></h3>
+                  <h3><a href="shop-item.php">Rasberries</a></h3>
                   <div class="pi-price">$9.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -493,7 +493,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Black Currant</a></h3>
+                  <h3><a href="shop-item.php">Black Currant</a></h3>
                   <div class="pi-price">$7.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -509,7 +509,7 @@
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Blueberries</a></h3>
+                  <h3><a href="shop-item.php">Blueberries</a></h3>
                   <div class="pi-price">$17.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -527,7 +527,7 @@
                         <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Blackberries</a></h3>
+                  <h3><a href="shop-item.php">Blackberries</a></h3>
                   <div class="pi-price">$29.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -543,7 +543,7 @@
                         <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">CranBerry</a></h3>
+                  <h3><a href="shop-item.php">CranBerry</a></h3>
                   <div class="pi-price">$15.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                   <div class="sticker sticker-new"></div>
@@ -560,7 +560,7 @@
                         <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Gojiberries</a></h3>
+                  <h3><a href="shop-item.php">Gojiberries</a></h3>
                   <div class="pi-price">$29.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -578,7 +578,7 @@
                         <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Redcurrants</a></h3>
+                  <h3><a href="shop-item.php">Redcurrants</a></h3>
                   <div class="pi-price">$12.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -594,7 +594,7 @@
                         <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">Strawberry</a></h3>
+                  <h3><a href="shop-item.php">Strawberry</a></h3>
                   <div class="pi-price">$5.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -610,7 +610,7 @@
                         <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.html">whitecurrants</a></h3>
+                  <h3><a href="shop-item.php">whitecurrants</a></h3>
                   <div class="pi-price">$21.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                   <div class="sticker sticker-sale"></div>
