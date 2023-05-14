@@ -318,7 +318,7 @@
                 Pages 
                 
               </a>
-                
+                <!--dropdown-menu-->
               <ul class="dropdown-menu">
                 <li><a href="shop-index.html">Home Default</a></li>
                 <li><a href="shop-index-header-fix.html">Home Header Fixed</a></li>
