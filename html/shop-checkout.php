@@ -341,7 +341,6 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                 
               <ul class="dropdown-menu">
                 <li><a href="shop-index.php">Home Default</a></li>
-                <li><a href="shop-index-header-fix.php">Home Header Fixed</a></li>
                 <li><a href="shop-index-light-footer.php">Home Light Footer</a></li>
                 <li class="active"><a href="shop-product-list.php">Product List</a></li>
                 <li><a href="shop-search-result.php">Search Result</a></li>

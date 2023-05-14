@@ -321,7 +321,6 @@
                 <!--dropdown-menu-->
               <ul class="dropdown-menu">
                 <li><a href="shop-index.html">Home Default</a></li>
-                <li><a href="shop-index-header-fix.html">Home Header Fixed</a></li>
                 <li><a href="shop-index-light-footer.html">Home Light Footer</a></li>
                 <li class="active"><a href="shop-product-list.html">Product List</a></li>
                 <li><a href="shop-search-result.html">Search Result</a></li>
