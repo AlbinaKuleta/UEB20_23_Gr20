@@ -18,7 +18,7 @@
   <meta property="og:image" content="-CUSTOMER VALUE-"><!-- link to image for socio -->
   <meta property="og:url" content="-CUSTOMER VALUE-">
 
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="https://p7.hiclipart.com/preview/907/455/804/organic-food-publix-computer-icons-organic.jpg">
 
   <!-- Fonts START -->
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css"> 
@@ -468,6 +468,37 @@
                                       <input type="submit" value="SEND" style="padding: 10px 20px; font-size: 16px; background-color: #d67718; color: white; border: none; border-radius: 4px;">
 		                                          
 	                                                         </form>
+                                                           <?php
+
+$db_host = '127.0.0.1';
+$db_user = 'root';
+$db_pass = 'diona2003';
+$db_name = 'databaza';
+
+$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+
+// Check for errors
+if (mysqli_connect_errno()) {
+  die('Could not connect to the database: ' . mysqli_connect_error());
+}
+
+// Get the question and answer from the form data
+$question = mysqli_real_escape_string($conn, $_POST['question']);
+$answer = mysqli_real_escape_string($conn, $_POST['answer']);
+
+// Insert the new question and answer into the database
+$sql = "INSERT INTO FAQQ (question, answer) VALUES ('$question', '$answer')";
+
+if (mysqli_query($conn, $sql)) {
+  echo 'Question added successfully.';
+} else {
+  echo 'Error: ' . mysqli_error($conn);
+}
+
+// Close the database connection
+mysqli_close($conn);
+?>
+                                                           
             </div>
           </div>
 
