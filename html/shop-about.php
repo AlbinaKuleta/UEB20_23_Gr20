@@ -89,6 +89,12 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                 <div class="col-md-6 col-sm-6 additional-shop-info">
                     <ul class="list-unstyled list-inline">
                         <li><i class="fa fa-phone"></i><span>+383 44 222 333</span></li>
+                        <?php
+    echo '<a href="https://www.facebook.com">';
+    echo '<i class="fab fa-facebook"></i>';
+    echo '</a>';
+?>
+   
                         <!-- CURRENCIES -->
                         <li class="shop-currencies">
                             <a href="javascript:void(0);">€</a>

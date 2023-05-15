@@ -46,25 +46,6 @@
   <link href="assets/corporate/css/custom.css" rel="stylesheet">
 </head>
 
-<!-- Body -->
-<body class="ecommerce">
-    <!-- STYLE CUSTOMIZER -->
-    <div class="color-panel hidden-sm">
-      <div class="color-mode-icons icon-color"></div>
-      <div class="color-mode-icons icon-color-close"></div>
-      <div class="color-mode">
-        <p>THEME COLOR</p>
-        <ul class="inline">
-          <li class="color-red current color-default" data-style="red"></li>
-          <li class="color-blue" data-style="blue"></li>
-          <li class="color-green" data-style="green"></li>
-          <li class="color-orange" data-style="orange"></li>
-          <li class="color-gray" data-style="gray"></li>
-          <li class="color-turquoise" data-style="turquoise"></li>
-        </ul>
-      </div>
-    </div>
-
    
 
     <!-- Body -->
@@ -94,6 +75,12 @@
                 <div class="col-md-6 col-sm-6 additional-shop-info">
                     <ul class="list-unstyled list-inline">
                         <li><i class="fa fa-phone"></i><span>+383 44 222 333</span></li>
+                        <?php
+    echo '<a href="https://www.facebook.com">';
+    echo '<i class="fab fa-facebook"></i>';
+    echo '</a>';
+?>
+   
                         <!-- CURRENCIES -->
                         <li class="shop-currencies">
                             <a href="javascript:void(0);">€</a>
