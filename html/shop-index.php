@@ -81,23 +81,36 @@
     echo '</a>';
 ?>
    
-                        <!-- CURRENCIES -->
-                        <li class="shop-currencies">
-                            <a href="javascript:void(0);">€</a>
-                            <a href="javascript:void(0);">£</a>
-                            <a href="javascript:void(0);" class="current">$</a>
-                        </li>
-                        <!-- LANGS -->
-                        <li class="langs-block">
-                            <a href="javascript:void(0);" class="current">English </a>
-                            <div class="langs-block-others-wrapper"><div class="langs-block-others">
-                              <a href="javascript:void(0);">French</a>
-                              <a href="javascript:void(0);">Germany</a>
-                              <a href="javascript:void(0);">Turkish</a>
-                            </div></div>
-                        </li>
-                    </ul>
-                </div>
+<!-- CURRENCIES -->
+<li class="shop-currencies">
+    <a href="javascript:void(0);" onclick="setCurrency('EUR')">€</a>
+    <a href="javascript:void(0);" onclick="setCurrency('GBP')">£</a>
+    <a href="javascript:void(0);" onclick="setCurrency('USD')" class="current">$</a>
+</li>
+<!-- LANGS -->
+<li class="langs-block">
+    <a href="javascript:void(0);" onclick="setLanguage('en')" class="current">English</a>
+    <div class="langs-block-others-wrapper">
+        <div class="langs-block-others">
+            <a href="javascript:void(0);" onclick="setLanguage('fr')">French</a>
+            <a href="javascript:void(0);" onclick="setLanguage('de')">German</a>
+            <a href="javascript:void(0);" onclick="setLanguage('tr')">Turkish</a>
+        </div>
+    </div>
+</li>
+
+<script>
+function setCurrency(currency) {
+    // Vendosni cookie për monedhën e zgjedhur
+    document.cookie = "currency=" + currency + "; expires=Thu, 31 Dec 2023 23:59:59 UTC; path=/";
+}
+
+function setLanguage(language) {
+    // Vendosni cookie për gjuhën e zgjedhur
+    document.cookie = "language=" + language + "; expires=Thu, 31 Dec 2023 23:59:59 UTC; path=/";
+}
+</script> 
+
                 <!-- TOP BAR MENU -->
                 <div class="col-md-6 col-sm-6 additional-nav">
                     <ul class="list-unstyled list-inline pull-right">
