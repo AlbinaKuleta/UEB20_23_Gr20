@@ -1,3 +1,22 @@
+<?php
+require_once 'connection.php';
+session_start();
+
+@$email_id = ""; $cart_item = "";
+@$email_id .= $_SESSION['email_id'];
+
+if (isset($_GET['action']) && $_GET['action']=='logout') {
+  session_unset();
+  header("Refresh: 1; url='http://localhost/'");
+}
+if(!empty($_COOKIE['item'])) {
+  $cart_item.=count($_COOKIE["item"]);
+}
+if (isset($_GET['action']) && $_GET['action']=='cookie') {
+  header("location: cart.php");
+}
+
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -80,38 +99,8 @@
     echo '<i class="fab fa-facebook"></i>';
     echo '</a>';
 ?>
-   
-<!-- CURRENCIES -->
-<li class="shop-currencies">
-    <a href="javascript:void(0);" onclick="setCurrency('EUR')">€</a>
-    <a href="javascript:void(0);" onclick="setCurrency('GBP')">£</a>
-    <a href="javascript:void(0);" onclick="setCurrency('USD')" class="current">$</a>
-</li>
-<!-- LANGS -->
-<li class="langs-block">
-    <a href="javascript:void(0);" onclick="setLanguage('en')" class="current">English</a>
-    <div class="langs-block-others-wrapper">
-        <div class="langs-block-others">
-            <a href="javascript:void(0);" onclick="setLanguage('fr')">French</a>
-            <a href="javascript:void(0);" onclick="setLanguage('de')">German</a>
-            <a href="javascript:void(0);" onclick="setLanguage('tr')">Turkish</a>
-        </div>
-    </div>
-</li>
 
-<script>
-function setCurrency(currency) {
-    // Vendosni cookie për monedhën e zgjedhur
-    document.cookie = "currency=" + currency + "; expires=Thu, 31 Dec 2023 23:59:59 UTC; path=/";
-}
-
-function setLanguage(language) {
-    // Vendosni cookie për gjuhën e zgjedhur
-    document.cookie = "language=" + language + "; expires=Thu, 31 Dec 2023 23:59:59 UTC; path=/";
-}
-</script> 
-
-                <!-- TOP BAR MENU -->
+    <!-- TOP BAR MENU -->
                 <div class="col-md-6 col-sm-6 additional-nav">
                     <ul class="list-unstyled list-inline pull-right">
                         <li><a href="shop-account.php">My Account</a></li>
@@ -166,6 +155,22 @@ function setLanguage(language) {
           </div>
         </div>            
       </div>
+
+      <?php
+      if(!$email_id) ?>
+      <ul>
+        <li>
+          <a href="?action=cookie" href="">
+          <i class="fa fa-shopping-cart" aria-hidden="true">
+            <span><?php if(!empty($cart_item)){
+              echo $cart_item;}
+              else{echo "0"; };
+              ?>
+            </span>
+          </i>
+          </a>
+        </li>
+      </ul>
       <!--END CART -->
 
         <!-- NAVIGATION -->
