@@ -62,8 +62,8 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
 </head>
 <!-- Head END -->
 
- <!-- Body -->
- <body class="ecommerce">
+<!-- Body -->
+<body class="ecommerce">
     <!-- STYLE CUSTOMIZER -->
     <div class="color-panel hidden-sm">
       <div class="color-mode-icons icon-color"></div>
@@ -172,6 +172,21 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
         <!-- NAVIGATION -->
         <div class="header-navigation">
           <ul>
+         
+            <li class="dropdown"><a href="shop-index.php">Home</a></li>
+
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                Products
+                
+              </a>
+                
+
+
+              <ul class="dropdown-menu">
+ <!-- NAVIGATION -->
+ <div class="header-navigation">
+          <ul>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
                 Healthy Fruits
@@ -213,8 +228,8 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               </ul>
             </li>
 
-            <!--From our farm-->
-            <li class="dropdown dropdown-megamenu">
+ <!--From our farm-->
+ <li class="dropdown dropdown-megamenu">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
                 From Our Farm 
                 <ul class="dropdown-menu">
@@ -223,9 +238,18 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                   </li>
                 </ul>
             </li>
-            <li class="dropdown dropdown100 nav-catalogue">
+            <li class="active"><a href="shop-product-list.php">Product List</a></li>
+            <li><a href="shop-item.php">Product Page</a></li>
+                <li><a href="shop-shopping-cart-null.php">Shopping</a></li>
+                <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
+</ul>
+</ul>
+            <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                New
+               New
+                
+              </a>
+                
                 
               </a>
               <ul class="dropdown-menu">
@@ -339,53 +363,48 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
             </li>
             
             </li>
+            <div class="header-navigation">
+          <ul>
+         
+            
+            
             <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                Pages 
+               About
                 
               </a>
                 
+
+
               <ul class="dropdown-menu">
-                <li><a href="shop-index.php">Home Default</a></li>
-                <li><a href="shop-index-light-footer.php">Home Light Footer</a></li>
-                <li class="active"><a href="shop-product-list.php">Product List</a></li>
-                <li><a href="shop-search-result.php">Search Result</a></li>
-                <li><a href="shop-item.php">Product Page</a></li>
-                <li><a href="shop-shopping-cart-null.php">Shopping Cart (Null Cart)</a></li>
-                <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
-                <li><a href="shop-checkout.php">Checkout</a></li>
-                <li><a href="shop-about.php">About</a></li>
-                <li><a href="shop-contacts.php">Contacts</a></li>
-                <li><a href="shop-account.php">My account</a></li>
-                <li><a href="shop-wishlist.php">My Wish List</a></li>
-                <li><a href="shop-goods-compare.php">Product Comparison</a></li>
-                <li><a href="shop-standart-forms.php">Standart Forms</a></li>
-                <li><a href="shop-faq.php">FAQ</a></li>
-                <li><a href="shop-privacy-policy.php">Privacy Policy</a></li>
-                <li><a href="shop-terms-conditions-page.php">Terms &amp; Conditions</a></li>
-              </ul>
-            </li>
+            <li class="dropdown"><a href="shop-about.php">About</a></li>
+           <li><a href="shop-contacts.php">Contacts</a></li>
+          <li><a href="shop-checkout.php">Checkout</a></li>
+          <li><a href="shop-account.php">My account</a></li>
+              <li><a href="shop-wishlist.php">My Wish List</a></li>   
+</ul>
+</li>
+<div class="header-navigation">
+          <ul>
+         
             
-            <!-- TOP SEARCH -->
-            <li class="menu-search">
-              <span class="sep"></span>
-              <i class="fa fa-search search-btn"></i>
-              <div class="search-box">
-                <form action="#">
-                  <div class="input-group">
-                    <input type="text" placeholder="Search" class="form-control">
-                    <span class="input-group-btn">
-                      <button class="btn btn-primary" type="submit">Search</button>
-                    </span>
-                  </div>
-                </form>
-              </div> 
-            </li>
+            
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+             FAQ
+                
+              </a>
+              <ul class="dropdown-menu">
+              <li class="dropdown"><a href="shop-faqs.php">FAQ</a></li>
+<li><a href="shop-goods-compare.php">Product Comparison</a></li>
+  <li><a href="shop-standart-forms.php">Standart Forms</a></li>           
+              </ul>
+              </ul>
+            </li>    
           </ul>
         </div>
       </div>
     </div>
-    <!-- Header -->
     <div class="main">
       <div class="container">
         <ul class="breadcrumb">

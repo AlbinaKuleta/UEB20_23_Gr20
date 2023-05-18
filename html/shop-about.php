@@ -1,19 +1,6 @@
 <!DOCTYPE html>
-<!--
-Template: Metronic Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4
-Version: 1.0.0
-Author: KeenThemes
-Website: http://www.keenthemes.com/
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Like: www.facebook.com/keenthemes
-Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
--->
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
+
 <html lang="en">
-<!--<![endif]-->
 
 <!-- Head BEGIN -->
 <head>
@@ -172,6 +159,21 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
         <!-- NAVIGATION -->
         <div class="header-navigation">
           <ul>
+         
+            <li class="dropdown"><a href="shop-index.php">Home</a></li>
+
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                Products
+                
+              </a>
+                
+
+
+              <ul class="dropdown-menu">
+ <!-- NAVIGATION -->
+ <div class="header-navigation">
+          <ul>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
                 Healthy Fruits
@@ -213,8 +215,8 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
               </ul>
             </li>
 
-            <!--From our farm-->
-            <li class="dropdown dropdown-megamenu">
+ <!--From our farm-->
+ <li class="dropdown dropdown-megamenu">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
                 From Our Farm 
                 <ul class="dropdown-menu">
@@ -223,9 +225,18 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
                   </li>
                 </ul>
             </li>
-            <li class="dropdown dropdown100 nav-catalogue">
+            <li class="active"><a href="shop-product-list.php">Product List</a></li>
+            <li><a href="shop-item.php">Product Page</a></li>
+                <li><a href="shop-shopping-cart-null.php">Shopping</a></li>
+                <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
+</ul>
+</ul>
+            <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                New
+               New
+                
+              </a>
+                
                 
               </a>
               <ul class="dropdown-menu">
@@ -339,48 +350,44 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
             </li>
             
             </li>
+            <div class="header-navigation">
+          <ul>
+         
+            
+            
             <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                Pages 
+               About
                 
               </a>
                 
+
+
               <ul class="dropdown-menu">
-                <li><a href="shop-index.php">Home Default</a></li> 
-                <li><a href="shop-index-light-footer.php">Home Light Footer</a></li>
-                <li class="active"><a href="shop-product-list.php">Product List</a></li>
-                <li><a href="shop-search-result.php">Search Result</a></li>
-                <li><a href="shop-item.php">Product Page</a></li>
-                <li><a href="shop-shopping-cart-null.php">Shopping Cart (Null Cart)</a></li>
-                <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
-                <li><a href="shop-checkout.php">Checkout</a></li>
-                <li><a href="shop-about.php">About</a></li>
-                <li><a href="shop-contacts.php">Contacts</a></li>
-                <li><a href="shop-account.php">My account</a></li>
-                <li><a href="shop-wishlist.php">My Wish List</a></li>
-                <li><a href="shop-goods-compare.php">Product Comparison</a></li>
-                <li><a href="shop-standart-forms.php">Standart Forms</a></li>
-                <li><a href="shop-faq.php">FAQ</a></li>
-                <li><a href="shop-privacy-policy.php">Privacy Policy</a></li>
-                <li><a href="shop-terms-conditions-page.php">Terms &amp; Conditions</a></li>
-              </ul>
-            </li>
+            <li class="dropdown"><a href="shop-about.php">About</a></li>
+           <li><a href="shop-contacts.php">Contacts</a></li>
+          <li><a href="shop-checkout.php">Checkout</a></li>
+          <li><a href="shop-account.php">My account</a></li>
+              <li><a href="shop-wishlist.php">My Wish List</a></li>   
+</ul>
+</li>
+<div class="header-navigation">
+          <ul>
+         
             
-            <!-- TOP SEARCH -->
-            <li class="menu-search">
-              <span class="sep"></span>
-              <i class="fa fa-search search-btn"></i>
-              <div class="search-box">
-                <form action="#">
-                  <div class="input-group">
-                    <input type="text" placeholder="Search" class="form-control">
-                    <span class="input-group-btn">
-                      <button class="btn btn-primary" type="submit">Search</button>
-                    </span>
-                  </div>
-                </form>
-              </div> 
-            </li>
+            
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+             FAQ
+                
+              </a>
+              <ul class="dropdown-menu">
+              <li class="dropdown"><a href="shop-faqs.php">FAQ</a></li>
+<li><a href="shop-goods-compare.php">Product Comparison</a></li>
+  <li><a href="shop-standart-forms.php">Standart Forms</a></li>           
+              </ul>
+              </ul>
+            </li>    
           </ul>
         </div>
       </div>
@@ -390,7 +397,7 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
     <div class="main">
       <div class="container">
         <ul class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="">Store</a></li>
             <li class="active">Terms &amp; Conditions</li>
         </ul>
