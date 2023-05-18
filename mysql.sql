@@ -72,7 +72,7 @@ values
 (59, 'mango', 30.00, load_file("C:\xampp\htdocs\WEB2\UEB20_23_Gr20\images\mango.png")),
 (60, 'oranges', 15.00, load_file("C:\xampp\htdocs\WEB2\UEB20_23_Gr20\images\oranges.png")),
 (61, 'pistachio', 35.00, load_file("C:\xampp\htdocs\WEB2\UEB20_23_Gr20\images\pistachio.png")),
-(62, 'hazelnuts', 38.00, load_file("C:\xampp\htdocs\WEB2\UEB20_23_Gr20\images\hazelnuts.png"),
+(62, 'hazelnuts', 38.00, load_file("C:\xampp\htdocs\WEB2\UEB20_23_Gr20\images\hazelnuts.png")),
 (62, 'peanuts', 17.00, load_file("C:\xampp\htdocs\WEB2\UEB20_23_Gr20\images\peanuts.png")),
 (62, 'honey', 35.00, load_file("C:\xampp\htdocs\WEB2\UEB20_23_Gr20\images\honey.png"))
 
