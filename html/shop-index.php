@@ -1,5 +1,7 @@
 <?php
-require_once 'connection.php';
+// require_once '../php/connection.php';
+// include("../php/connection.php");
+include("./php/connection.php");
 session_start();
 
 @$email_id = ""; $cart_item = "";
@@ -7,7 +9,7 @@ session_start();
 
 if (isset($_GET['action']) && $_GET['action']=='logout') {
   session_unset();
-  header("Refresh: 1; url='http://localhost/'");
+  header("Refresh: 1; url='http://localhost:3000/html/shop-index.php'");
 }
 if(!empty($_COOKIE['item'])) {
   $cart_item.=count($_COOKIE["item"]);

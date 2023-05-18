@@ -52,7 +52,7 @@ if($res -> num_rows > 0){
         "__".$Tex."__".$gst."__".$price,time() + 1800);
     }
 }
-header("Refresh: 0; url='http://localhost/shop-index.php'");
+header("Refresh: 0; url='http://localhost:3000/html/shop-index.php'");
 }
 ?>
 
