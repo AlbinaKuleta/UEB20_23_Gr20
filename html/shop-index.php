@@ -49,7 +49,7 @@
    
 
     <!-- Body -->
-<body class="ecommerce">
+ <body class="ecommerce">
     <!-- STYLE CUSTOMIZER -->
     <div class="color-panel hidden-sm">
       <div class="color-mode-icons icon-color"></div>
@@ -81,36 +81,23 @@
     echo '</a>';
 ?>
    
-<!-- CURRENCIES -->
-<li class="shop-currencies">
-    <a href="javascript:void(0);" onclick="setCurrency('EUR')">€</a>
-    <a href="javascript:void(0);" onclick="setCurrency('GBP')">£</a>
-    <a href="javascript:void(0);" onclick="setCurrency('USD')" class="current">$</a>
-</li>
-<!-- LANGS -->
-<li class="langs-block">
-    <a href="javascript:void(0);" onclick="setLanguage('en')" class="current">English</a>
-    <div class="langs-block-others-wrapper">
-        <div class="langs-block-others">
-            <a href="javascript:void(0);" onclick="setLanguage('fr')">French</a>
-            <a href="javascript:void(0);" onclick="setLanguage('de')">German</a>
-            <a href="javascript:void(0);" onclick="setLanguage('tr')">Turkish</a>
-        </div>
-    </div>
-</li>
-
-<script>
-function setCurrency(currency) {
-    // Vendosni cookie për monedhën e zgjedhur
-    document.cookie = "currency=" + currency + "; expires=Thu, 31 Dec 2023 23:59:59 UTC; path=/";
-}
-
-function setLanguage(language) {
-    // Vendosni cookie për gjuhën e zgjedhur
-    document.cookie = "language=" + language + "; expires=Thu, 31 Dec 2023 23:59:59 UTC; path=/";
-}
-</script> 
-
+                        <!-- CURRENCIES -->
+                        <li class="shop-currencies">
+                            <a href="javascript:void(0);">€</a>
+                            <a href="javascript:void(0);">£</a>
+                            <a href="javascript:void(0);" class="current">$</a>
+                        </li>
+                        <!-- LANGS -->
+                        <li class="langs-block">
+                            <a href="javascript:void(0);" class="current">English </a>
+                            <div class="langs-block-others-wrapper"><div class="langs-block-others">
+                              <a href="javascript:void(0);">French</a>
+                              <a href="javascript:void(0);">Germany</a>
+                              <a href="javascript:void(0);">Turkish</a>
+                            </div></div>
+                        </li>
+                    </ul>
+                </div>
                 <!-- TOP BAR MENU -->
                 <div class="col-md-6 col-sm-6 additional-nav">
                     <ul class="list-unstyled list-inline pull-right">
@@ -171,6 +158,21 @@ function setLanguage(language) {
         <!-- NAVIGATION -->
         <div class="header-navigation">
           <ul>
+         
+            <li class="dropdown"><a href="shop-index.php">Home</a></li>
+
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                Products
+                
+              </a>
+                
+
+
+              <ul class="dropdown-menu">
+ <!-- NAVIGATION -->
+ <div class="header-navigation">
+          <ul>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
                 Healthy Fruits
@@ -212,8 +214,8 @@ function setLanguage(language) {
               </ul>
             </li>
 
-            <!--From our farm-->
-            <li class="dropdown dropdown-megamenu">
+ <!--From our farm-->
+ <li class="dropdown dropdown-megamenu">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
                 From Our Farm 
                 <ul class="dropdown-menu">
@@ -222,9 +224,18 @@ function setLanguage(language) {
                   </li>
                 </ul>
             </li>
-            <li class="dropdown dropdown100 nav-catalogue">
+            <li class="active"><a href="shop-product-list.php">Product List</a></li>
+            <li><a href="shop-item.php">Product Page</a></li>
+                <li><a href="shop-shopping-cart-null.php">Shopping</a></li>
+                <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
+</ul>
+</ul>
+            <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                New
+               New
+                
+              </a>
+                
                 
               </a>
               <ul class="dropdown-menu">
@@ -338,53 +349,48 @@ function setLanguage(language) {
             </li>
             
             </li>
+            <div class="header-navigation">
+          <ul>
+         
+            
+            
             <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                Pages 
+               About
                 
               </a>
                 
+
+
               <ul class="dropdown-menu">
-                <li><a href="shop-index.php">Home Default</a></li>
-                <li><a href="shop-index-light-footer.php">Home Light Footer</a></li>
-                <li class="active"><a href="shop-product-list.php">Product List</a></li>
-                <li><a href="shop-search-result.php">Search Result</a></li>
-                <li><a href="shop-item.php">Product Page</a></li>
-                <li><a href="shop-shopping-cart-null.php">Shopping Cart (Null Cart)</a></li>
-                <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
-                <li><a href="shop-checkout.php">Checkout</a></li>
-                <li><a href="shop-about.php">About</a></li>
-                <li><a href="shop-contacts.php">Contacts</a></li>
-                <li><a href="shop-account.php">My account</a></li>
-                <li><a href="shop-wishlist.php">My Wish List</a></li>
-                <li><a href="shop-goods-compare.php">Product Comparison</a></li>
-                <li><a href="shop-standart-forms.php">Standart Forms</a></li>
-                <li><a href="shop-faq.php">FAQ</a></li>
-                <li><a href="shop-privacy-policy.php">Privacy Policy</a></li>
-                <li><a href="shop-terms-conditions-page.php">Terms &amp; Conditions</a></li>
-              </ul>
-            </li>
+            <li class="dropdown"><a href="shop-about.php">About</a></li>
+           <li><a href="shop-contacts.php">Contacts</a></li>
+          <li><a href="shop-checkout.php">Checkout</a></li>
+          <li><a href="shop-account.php">My account</a></li>
+              <li><a href="shop-wishlist.php">My Wish List</a></li>   
+</ul>
+</li>
+<div class="header-navigation">
+          <ul>
+         
             
-            <!-- TOP SEARCH -->
-            <li class="menu-search">
-              <span class="sep"></span>
-              <i class="fa fa-search search-btn"></i>
-              <div class="search-box">
-                <form action="#">
-                  <div class="input-group">
-                    <input type="text" placeholder="Search" class="form-control">
-                    <span class="input-group-btn">
-                      <button class="btn btn-primary" type="submit">Search</button>
-                    </span>
-                  </div>
-                </form>
-              </div> 
-            </li>
+            
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+             FAQ
+                
+              </a>
+              <ul class="dropdown-menu">
+              <li class="dropdown"><a href="shop-faqs.php">FAQ</a></li>
+<li><a href="shop-goods-compare.php">Product Comparison</a></li>
+  <li><a href="shop-standart-forms.php">Standart Forms</a></li>           
+              </ul>
+              </ul>
+            </li>    
           </ul>
         </div>
       </div>
     </div>
-    <!-- Header -->
     <!-- BEGIN SLIDER -->
     <div class="page-slider margin-bottom-35">
         <div id="carousel-example-generic" class="carousel slide carousel-slider">
