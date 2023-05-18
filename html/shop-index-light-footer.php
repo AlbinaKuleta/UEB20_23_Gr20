@@ -569,7 +569,7 @@ Website: http://www.keenthemes.com/
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Pistachio</a></h3>
-                  <div class="pi-price">$46.00</div>
+                  <div class="pi-price">$35.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
               </div>
@@ -583,7 +583,7 @@ Website: http://www.keenthemes.com/
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Honey</a></h3>
-                  <div class="pi-price">$30.00</div>
+                  <div class="pi-price">$35.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
               </div>
@@ -598,7 +598,7 @@ Website: http://www.keenthemes.com/
           <ul class="list-group margin-bottom-25 sidebar-menu">
             <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Fruits</a></li>
             <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Vegetables</a></li>
-            <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Cereals</a></li>
+            <li class="list-group-item clearfix"><a href="shop-index-light-footer.php"><i class="fa fa-angle-right"></i>Cereals</a></li>
             <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Sea fruits</a></li>
           </ul>
         </div>
@@ -610,14 +610,14 @@ Website: http://www.keenthemes.com/
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="../images/asparagus.png" class="img-responsive" alt="asparagus">
+                    <img src="../images/hazelnuts.png" class="img-responsive" alt="hazelnuts">
                     <div>
-                      <a href="../images/asparagus.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="../images/hazelnuts.png" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.php">Asparagus</a></h3>
-                  <div class="pi-price">$30.00</div>
+                  <h3><a href="shop-item.php">Hazelnuts</a></h3>
+                  <div class="pi-price">$38.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                   <div class="sticker sticker-new"></div>
                 </div>
@@ -625,13 +625,13 @@ Website: http://www.keenthemes.com/
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="../images/avocado.png" class="img-responsive" alt="avocado">
+                    <img src="../images/honey.png" class="img-responsive" alt="honey">
                     <div>
-                      <a href="../images/avocado.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="../images/honey.png" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.php">Avocado</a></h3>
+                  <h3><a href="shop-item.php">Honey</a></h3>
                   <div class="pi-price">$35.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -639,14 +639,14 @@ Website: http://www.keenthemes.com/
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="../images/garlic.png" class="img-responsive" alt="garlic">
+                    <img src="../images/peanuts.png" class="img-responsive" alt="peanuts">
                     <div>
-                      <a href="../images/garlic.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="../images/peanuts.png" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.php">Garlic</a></h3>
-                  <div class="pi-price">$19.00</div>
+                  <h3><a href="shop-item.php">Peanuts</a></h3>
+                  <div class="pi-price">$17.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
               </div>
@@ -706,21 +706,21 @@ Website: http://www.keenthemes.com/
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="../images/potato.png" class="img-responsive" alt="potato">
+                    <img src="../images/pistachio.png" class="img-responsive" alt="pistachio">
                     <div>
-                      <a href="../images/potato.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="../images/pistachio.png" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.php">Potato</a></h3>
-                  <div class="pi-price">$15.00</div>
+                  <h3><a href="shop-item.php">Pistachio</a></h3>
+                  <div class="pi-price">$35.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
               </div>
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="../images/walnuts.png" class="img-responsive" alt="walnuts">
+                    <img src="../images/walnuts.png" class="img-responsive" alt="pistachio">
                     <div>
                       <a href="../images/walnuts.png" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
