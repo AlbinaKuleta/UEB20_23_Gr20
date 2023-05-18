@@ -83,25 +83,10 @@ Website: http://www.keenthemes.com/
     echo '</a>';
 ?>
    
-                        <!-- CURRENCIES -->
-                        <li class="shop-currencies">
-                            <a href="javascript:void(0);">€</a>
-                            <a href="javascript:void(0);">£</a>
-                            <a href="javascript:void(0);" class="current">$</a>
-                        </li>
-                        <!-- LANGS -->
-                        <li class="langs-block">
-                            <a href="javascript:void(0);" class="current">English </a>
-                            <div class="langs-block-others-wrapper"><div class="langs-block-others">
-                              <a href="javascript:void(0);">French</a>
-                              <a href="javascript:void(0);">Germany</a>
-                              <a href="javascript:void(0);">Turkish</a>
-                            </div></div>
-                        </li>
                     </ul>
                 </div>
                 <!-- TOP BAR MENU -->
-                <div class="col-md-6 col-sm-6 additional-nav">
+                <div class="col-md-8 col-sm-4 additional-nav">
                     <ul class="list-unstyled list-inline pull-right">
                         <li><a href="shop-account.php">My Account</a></li>
                         <li><a href="shop-wishlist.php">My Wishlist</a></li>
@@ -605,7 +590,6 @@ Website: http://www.keenthemes.com/
 
           <!-- CONTENT -->
           <div class="col-md-9 col-sm-8">
-            <h2>Three items</h2>
             <div class="owl-carousel owl-carousel3">
               <div>
                 <div class="product-item">
@@ -701,7 +685,6 @@ Website: http://www.keenthemes.com/
         <div class="row margin-bottom-35 ">
           <!-- TWO PRODUCTS -->
           <div class="col-md-6 two-items-bottom-items">
-            <h2>Two items</h2>
             <div class="owl-carousel owl-carousel2">
               <div>
                 <div class="product-item">

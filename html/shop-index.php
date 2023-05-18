@@ -1,24 +1,3 @@
-<?php
-// require_once '../php/connection.php';
-// include("../php/connection.php");
-include("./php/connection.php");
-session_start();
-
-@$email_id = ""; $cart_item = "";
-@$email_id .= $_SESSION['email_id'];
-
-if (isset($_GET['action']) && $_GET['action']=='logout') {
-  session_unset();
-  header("Refresh: 1; url='http://localhost:3000/html/shop-index.php'");
-}
-if(!empty($_COOKIE['item'])) {
-  $cart_item.=count($_COOKIE["item"]);
-}
-if (isset($_GET['action']) && $_GET['action']=='cookie') {
-  header("location: cart.php");
-}
-
-?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -103,14 +82,14 @@ if (isset($_GET['action']) && $_GET['action']=='cookie') {
 ?>
 
     <!-- TOP BAR MENU -->
-                <div class="col-md-6 col-sm-6 additional-nav">
+                <div class="col-md-8 col-sm-4 additional-nav">
                     <ul class="list-unstyled list-inline pull-right">
                         <li><a href="shop-account.php">My Account</a></li>
                         <li><a href="shop-wishlist.php">My Wishlist</a></li>
                         <li><a href="shop-checkout.php">Checkout</a></li>
                         <li><a href="login_form.php" class="btn">Log In</a></li>
                         <li><a href="register_form.php" class="btn">Register</a></li>
-                   
+                        <li><a href="logut.php" class="btn">Log Out</a></li>
                     </ul>
                 </div>
             </div>
@@ -125,31 +104,72 @@ if (isset($_GET['action']) && $_GET['action']=='cookie') {
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
          <!-- BEGIN CART -->
-       <div class="top-cart-block">
-        <div class="top-cart-info">
-          <a href="javascript:void(0);" class="top-cart-info-count">3 items</a>
-          <a href="javascript:void(0);" class="top-cart-info-value">$1260</a>
+<div class="container" style="margin-top: 50px;">
+    <!-- link to open cart page -->
+    <div class="row">
+        <div class="col-md-6">
+            <a href="../php/cart.php" class="btn btn-link">
+                Cart
+            </a>
         </div>
-        <i class="fa fa-shopping-cart"></i>
-                      
-        
-            <div class="top-cart-content-wrapper">
-                <div class="top-cart-content">
-                  <ul class="scroller" style="height: 250px;">
-                    <li>
-                      <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Apple.png " alt="Healthy Fruits" width="37" height="34"></a>
-                      <span class="cart-content-count">x 1</span>
-                      <strong><a href="shop-item.php">Healthy Fruits</a></strong>
-                      <em>$1230</em>
-                      <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
-                    </li>
-                    <li>
-                      <a href="shop-item.php"><img src="assets/pages/img/products/Vegetables/cauliflower.png" alt="Fresh Vegetables" width="37" height="34"></a>
-                      <span class="cart-content-count">x 1</span>
-                      <strong><a href="shop-item.php">Fresh Vegetables</a></strong>
-                      <em>$1230</em>
-                   
-                  </ul>
+    </div>
+    <div class="row">
+        <?php
+        // connect with database
+        $conn = mysqli_connect("localhost:8012", "root", "root", "UEBI2db");
+         
+        // get all products
+        $result = mysqli_query($conn, "SELECT * FROM products");
+ 
+        // get cookie cart
+        $cart = isset($_COOKIE["cart"]) ? $_COOKIE["cart"] : "[]";
+        $cart = json_decode($cart);
+ 
+        // loop through all cart items
+        while ($row = mysqli_fetch_object($result))
+        {
+            // check if product already exists in cart
+            $flag = false;
+            foreach ($cart as $c)
+            {
+                if ($c->productCode == $row->productCode)
+                {
+                    $flag = true;
+                    break;
+                }
+            }
+            ?>
+            <div class="col-md-3" style="margin-bottom: 20px;">
+                <div class="card" style="height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <?php echo $row->productName; ?>
+                        </h5>
+                        <p class="card-text">
+                            <?php echo $row->buyPrice; ?>
+                        </p>
+                        <?php if ($flag) { ?>
+                            <!-- show delete button if already exists -->
+                            <form method="POST" action="delete-cart.php">
+                                <input type="hidden" name="productCode" value="<?php echo $row->productCode; ?>">
+                                <input type="submit" class="btn btn-danger" value="Delete from cart">
+                            </form>
+                        <?php } else { ?>
+                            <!-- add to cart -->
+                            <form method="POST" action="add-cart.php">
+                                <input type="hidden" name="quantity" value="1">
+                                <input type="hidden" name="productCode" value="<?php echo $row->productCode; ?>">
+                                <input type="submit" class="btn btn-primary" value="Add to cart">
+                            </form>
+                        <?php } ?>
+                    </div>
+                </div>
+            </div>
+            <?php
+        }
+        ?>
+    </div>
+</div>
             <div class="text-right">
               <a href="shop-shopping-cart.php" class="btn btn-default">View Cart</a>
               <a href="shop-checkout.php" class="btn btn-primary">Checkout</a>
@@ -278,7 +298,7 @@ if (isset($_GET['action']) && $_GET['action']=='cookie') {
                             <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Avocados.png" class="img-responsive" alt="Avocados"></a>
                           </div>
                           <h3><a href="shop-item.php">Avocados</a></h3>
-                          <div class="pi-price">$8.00</div>
+                          <div class="pi-price">$7.00</div>
                           <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
                       </div>
@@ -288,7 +308,7 @@ if (isset($_GET['action']) && $_GET['action']=='cookie') {
                             <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/bananas.png" class="img-responsive" alt="bananas"></a>
                           </div>
                           <h3><a href="shop-item.php">Bananas</a></h3>
-                          <div class="pi-price">$11.00</div>
+                          <div class="pi-price">$17.00</div>
                           <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
                       </div>
@@ -308,7 +328,7 @@ if (isset($_GET['action']) && $_GET['action']=='cookie') {
                             <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/bloodorganes.png" class="img-responsive" alt="bloodorganes"></a>
                           </div>
                           <h3><a href="shop-item.php">Blood Organes</a></h3>
-                          <div class="pi-price">$2.00</div>
+                          <div class="pi-price">$15.00</div>
                           <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
                       </div>
@@ -318,7 +338,7 @@ if (isset($_GET['action']) && $_GET['action']=='cookie') {
                             <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/caraorganes.png" class="img-responsive" alt="caraorganes"></a>
                           </div>
                           <h3><a href="shop-item.php">Cara Organes</a></h3>
-                          <div class="pi-price">$21.00</div>
+                          <div class="pi-price">$29.00</div>
                           <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
                       </div>
@@ -328,7 +348,7 @@ if (isset($_GET['action']) && $_GET['action']=='cookie') {
                             <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/dragonfruit.png" class="img-responsive" alt="dragonfruit"></a>
                           </div>
                           <h3><a href="shop-item.php">Dragon furits</a></h3>
-                          <div class="pi-price">$31.00</div>
+                          <div class="pi-price">$12.00</div>
                           <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
                       </div>
@@ -338,7 +358,7 @@ if (isset($_GET['action']) && $_GET['action']=='cookie') {
                             <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/freshkiwi.png" class="img-responsive" alt="freshkiwi"></a>
                           </div>
                           <h3><a href="shop-item.php">Fresh Kiwi</a></h3>
-                          <div class="pi-price">$25.00</div>
+                          <div class="pi-price">$5.00</div>
                           <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
                       </div>
@@ -348,7 +368,7 @@ if (isset($_GET['action']) && $_GET['action']=='cookie') {
                             <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Freshness.png" class="img-responsive" alt="Freshness"></a>
                           </div>
                           <h3><a href="shop-item.php">Freshness</a></h3>
-                          <div class="pi-price">$17.00</div>
+                          <div class="pi-price">$21.00</div>
                           <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                         </div>
                       </div>
@@ -623,7 +643,6 @@ if (isset($_GET['action']) && $_GET['action']=='cookie') {
 
           <!-- CONTENT -->
           <div class="col-md-9 col-sm-8">
-            <h2>Three most used items</h2>
             <div class="owl-carousel owl-carousel3">
               <div>
                 <div class="product-item">
@@ -664,7 +683,7 @@ if (isset($_GET['action']) && $_GET['action']=='cookie') {
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Goat chesse</a></h3>
-                  <div class="pi-price">$40.00</div>
+                  <div class="pi-price">$35.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
               </div>
@@ -678,7 +697,7 @@ if (isset($_GET['action']) && $_GET['action']=='cookie') {
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Oysters</a></h3>
-                  <div class="pi-price">$60.00</div>
+                  <div class="pi-price">$55.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                   <div class="sticker sticker-sale"></div>
                 </div>
@@ -707,30 +726,28 @@ if (isset($_GET['action']) && $_GET['action']=='cookie') {
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Fish eggs</a></h3>
-                  <div class="pi-price">$35.00</div>
+                  <div class="pi-price">$50.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
               </div>
             </div>
-          </div>
         </div>
 
         <!-- TWO PRODUCTS & PROMO -->
         <div class="row margin-bottom-35 ">
           <!-- TWO PRODUCTS -->
           <div class="col-md-6 two-items-bottom-items">
-            <h2>Two favorites items</h2>
             <div class="owl-carousel owl-carousel2">
               <div>
                 <div class="product-item">
                   <div class="pi-img-wrapper">
-                    <img src="../images/tuna.png" class="img-responsive" alt="tuna">
+                    <img src="../images/sardines.png" class="img-responsive" alt="sardines">
                     <div>
-                      <a href="../images/tuna.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="../images/sardines.png" class="btn btn-default fancybox-button">Zoom</a>
                       <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <h3><a href="shop-item.php">Tuna</a></h3>
+                  <h3><a href="shop-item.php">Sardines</a></h3>
                   <div class="pi-price">$30.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
@@ -746,34 +763,6 @@ if (isset($_GET['action']) && $_GET['action']=='cookie') {
                   </div>
                   <h3><a href="shop-item.php">Salmon</a></h3>
                   <div class="pi-price">$55.00</div>
-                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                </div>
-              </div>
-              <div>
-                <div class="product-item">
-                  <div class="pi-img-wrapper">
-                    <img src="../images/milk.png" class="img-responsive" alt="Bmilk">
-                    <div>
-                      <a href="../images/milk.png" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                    </div>
-                  </div>
-                  <h3><a href="shop-item.php">Milk</a></h3>
-                  <div class="pi-price">$5.00</div>
-                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                </div>
-              </div>
-              <div>
-                <div class="product-item">
-                  <div class="pi-img-wrapper">
-                    <img src="../images/fisheggs.png" class="img-responsive" alt="fisheggs">
-                    <div>
-                      <a href="../images/fisheggs.png" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
-                    </div>
-                  </div>
-                  <h3><a href="shop-item.php">Fish eggs</a></h3>
-                  <div class="pi-price">$35.00</div>
                   <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
               </div>

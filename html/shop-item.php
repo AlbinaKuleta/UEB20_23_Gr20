@@ -82,25 +82,10 @@ Website: http://www.keenthemes.com/
     echo '</a>';
 ?>
    
-                        <!-- CURRENCIES -->
-                        <li class="shop-currencies">
-                            <a href="javascript:void(0);">€</a>
-                            <a href="javascript:void(0);">£</a>
-                            <a href="javascript:void(0);" class="current">$</a>
-                        </li>
-                        <!-- LANGS -->
-                        <li class="langs-block">
-                            <a href="javascript:void(0);" class="current">English </a>
-                            <div class="langs-block-others-wrapper"><div class="langs-block-others">
-                              <a href="javascript:void(0);">French</a>
-                              <a href="javascript:void(0);">Germany</a>
-                              <a href="javascript:void(0);">Turkish</a>
-                            </div></div>
-                        </li>
                     </ul>
                 </div>
                 <!-- TOP BAR MENU -->
-                <div class="col-md-6 col-sm-6 additional-nav">
+                <div class="col-md-8 col-sm-4 additional-nav">
                     <ul class="list-unstyled list-inline pull-right">
                         <li><a href="shop-account.php">My Account</a></li>
                         <li><a href="shop-wishlist.php">My Wishlist</a></li>
@@ -427,11 +412,11 @@ Website: http://www.keenthemes.com/
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
-                  <h1>Healthiest fruit</h1>
+                  <h1>Dragon fruit</h1>
                   <div class="price-availability-block clearfix">
                     <div class="price">
-                      <strong><span>$</span>47.00</strong>
-                      <em>$<span>50.00</span></em>
+                      <strong><span>$</span>12.00</strong>
+                      <em>$<span>20.00</span></em>
                     </div>
                     <div class="availability">
                       Availability: <strong>In Stock</strong>
