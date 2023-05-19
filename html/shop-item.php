@@ -223,6 +223,7 @@ echo '</a>';
                 <li><a href="shop-shopping-cart-null.php">Shopping</a></li>
                 <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
                 <li><a href="Add_products.php">Add products</a></li>
+                <li><a href="add_feedback.php">Add feedback</a></li>
 </ul>
 </ul>
             <li class="dropdown active">
@@ -364,6 +365,7 @@ echo '</a>';
           <li><a href="shop-account.php">My account</a></li>
               <li><a href="shop-wishlist.php">My Wish List</a></li>   
 </ul>
+
 </li>
 <div class="header-navigation">
           <ul>
