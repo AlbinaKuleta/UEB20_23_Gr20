@@ -110,7 +110,7 @@ if (isset($_GET['action']) && $_GET['action']=='cookie') {
                         <li><a href="shop-checkout.php">Checkout</a></li>
                         <li><a href="login_form.php" class="btn">Log In</a></li>
                         <li><a href="register_form.php" class="btn">Register</a></li>
-                        <li><a href="new_index_tool.php" class=btn>Look</a></li>
+                        <li><a href="index_Look.php" class=btn>Look</a></li>
                       
                    
                     </ul>
