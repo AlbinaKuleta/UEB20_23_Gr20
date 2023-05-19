@@ -73,7 +73,7 @@ values
 (60, 'oranges', 15.00, load_file("C:\xampp\htdocs\WEB2\UEB20_23_Gr20\images\oranges.png"), 'fruits'),
 (61, 'pistachio', 35.00, load_file("C:\xampp\htdocs\WEB2\UEB20_23_Gr20\images\pistachio.png"), 'cereals'),
 (62, 'hazelnuts', 38.00, load_file("C:\xampp\htdocs\WEB2\UEB20_23_Gr20\images\hazelnuts.png"), 'cereals'),
-(62, 'peanuts', 17.00, load_file("C:\xampp\htdocs\WEB2\UEB20_23_Gr20\images\peanuts.png"), 'cereals'),
-(62, 'honey', 35.00, load_file("C:\xampp\htdocs\WEB2\UEB20_23_Gr20\images\honey.png"), 'from our farm'),
-(63, 'sardines', 30.00, load_file("C:\xampp\htdocs\WEB2\UEB20_23_Gr20\images\sardines.png"), 'sea fruits')
+(63, 'peanuts', 17.00, load_file("C:\xampp\htdocs\WEB2\UEB20_23_Gr20\images\peanuts.png"), 'cereals'),
+(64, 'honey', 35.00, load_file("C:\xampp\htdocs\WEB2\UEB20_23_Gr20\images\honey.png"), 'from our farm'),
+(65, 'sardines', 30.00, load_file("C:\xampp\htdocs\WEB2\UEB20_23_Gr20\images\sardines.png"), 'sea fruits')
 

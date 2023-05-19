@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost:8012", "root", "root", "UEBI2db") or die("Connection failed:".mysqli_connect_error());
+$conn = mysqli_connect("localhost:3000", "root", "root", "UEBI2db");
  
 $quantity = $_POST["quantity"];
 $productCode = $_POST["productCode"];

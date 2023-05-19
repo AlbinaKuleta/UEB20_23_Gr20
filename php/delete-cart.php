@@ -1,5 +1,5 @@
 <?php
- 
+ $conn = mysqli_connect("localhost:3000", "root", "root", "UEBI2db");
 $productCode = $_POST["productCode"];
  
 $cart = isset($_COOKIE["cart"]) ? $_COOKIE["cart"] : "[]";

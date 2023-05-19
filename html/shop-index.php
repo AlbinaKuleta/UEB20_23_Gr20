@@ -118,7 +118,7 @@
     <div class="row">
         <?php
         // connect with database
-        $conn = mysqli_connect("localhost:8012", "root", "root", "UEBI2db");
+        $conn = mysqli_connect("localhost:3000", "root", "root", "UEBI2db");
          
         // get all products
         $result = mysqli_query($conn, "SELECT * FROM products");
@@ -521,9 +521,9 @@
 
     <div class="main">
       <div class="container">
-        <!-- SALE PRODUCT & NEW ARRIVALS -->
+        <!-- PRODUCTS & NEW ARRIVALS -->
         <div class="row margin-bottom-40">
-          <!-- SALE PRODUCT -->
+          <!-- PRODUCTS -->
           <div class="col-md-12 sale-product">
             <h2>New Arrivals</h2>
             <div class="owl-carousel owl-carousel5">
@@ -533,7 +533,7 @@
                     <img src="../images/fisheggs.png" class="img-responsive" alt="fisheggs">
                     <div>
                       <a href="../images/fisheggs.png" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                      <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Fish eggs</a></h3>

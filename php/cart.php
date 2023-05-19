@@ -5,6 +5,7 @@
 <div class="container" style="margin-top: 50px;">
  
     <?php
+    $conn = mysqli_connect("localhost:3000", "root", "root", "UEBI2db");
     $cart = isset($_COOKIE["cart"]) ? $_COOKIE["cart"] : "[]";
     $cart = json_decode($cart);
  
