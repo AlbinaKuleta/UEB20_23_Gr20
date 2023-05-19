@@ -436,6 +436,8 @@
             <h1>Contact</h1>
             <div class="content-page">
               <div id="map" class="gmaps margin-bottom-40" style="height:400px;"></div>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.158368556791!2d21.161908876061595!3d42.65799927116678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ec214a19539%3A0xcadfa1fd1a48f8a0!2sAgim%20Ramadani%2C%20Prishtina!5e0!3m2!1sen!2s!4v1684491908926!5m2!1sen!2s"
+                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
               <h2>Contact Form</h2>
               <p>Here is a contact form for you. You can contact us for more infos. The email adress is reuqired, so we know more about you.
