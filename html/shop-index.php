@@ -1,3 +1,24 @@
+<?php
+// require_once '../php/connection.php';
+// include("../php/connection.php");
+include("./php/connection.php");
+session_start();
+
+@$email_id = ""; $cart_item = "";
+@$email_id .= $_SESSION['email_id'];
+
+if (isset($_GET['action']) && $_GET['action']=='logout') {
+  session_unset();
+  header("Refresh: 1; url='http://localhost:3000/html/shop-index.php'");
+}
+if(!empty($_COOKIE['item'])) {
+  $cart_item.=count($_COOKIE["item"]);
+}
+if (isset($_GET['action']) && $_GET['action']=='cookie') {
+  header("location: cart.php");
+}
+
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -80,25 +101,8 @@
     echo '<i class="fab fa-facebook"></i>';
     echo '</a>';
 ?>
-   
-                        <!-- CURRENCIES -->
-                        <li class="shop-currencies">
-                            <a href="javascript:void(0);">€</a>
-                            <a href="javascript:void(0);">£</a>
-                            <a href="javascript:void(0);" class="current">$</a>
-                        </li>
-                        <!-- LANGS -->
-                        <li class="langs-block">
-                            <a href="javascript:void(0);" class="current">English </a>
-                            <div class="langs-block-others-wrapper"><div class="langs-block-others">
-                              <a href="javascript:void(0);">French</a>
-                              <a href="javascript:void(0);">Germany</a>
-                              <a href="javascript:void(0);">Turkish</a>
-                            </div></div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- TOP BAR MENU -->
+
+    <!-- TOP BAR MENU -->
                 <div class="col-md-6 col-sm-6 additional-nav">
                     <ul class="list-unstyled list-inline pull-right">
                         <li><a href="shop-account.php">My Account</a></li>
@@ -153,6 +157,22 @@
           </div>
         </div>            
       </div>
+
+      <?php
+      if(!$email_id) ?>
+      <ul>
+        <li>
+          <a href="?action=cookie" href="">
+          <i class="fa fa-shopping-cart" aria-hidden="true">
+            <span><?php if(!empty($cart_item)){
+              echo $cart_item;}
+              else{echo "0"; };
+              ?>
+            </span>
+          </i>
+          </a>
+        </li>
+      </ul>
       <!--END CART -->
 
         <!-- NAVIGATION -->
