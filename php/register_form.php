@@ -1,32 +1,39 @@
 <?php
-@include 'config.php';
+
+include 'config.php';
 
 if(isset($_POST['submit'])){
-
-   $name = mysqli_real_escape_string($conn, $_POST['name']);
-   $email = mysqli_real_escape_string($conn, $_POST['email']);
-   $cemail = mysqli_real_escape_string($conn, $_POST['cemail']);
-
+   $name = $_POST['name'];
+   $email = $_POST['email'];
+   $cemail = $_POST['cemail'];
    $pass = md5($_POST['password']);
    $cpass = md5($_POST['cpassword']);
    $user_type = $_POST['user_type'];
 
-   $select = "SELECT * FROM user_form WHERE email = '$email' && password = '$pass' ";
+   $select = "SELECT * FROM user_form WHERE email = :email AND password = :pass";
+   $stmt = $conn->prepare($select);
+   $stmt->bindParam(':email', $email);
+   $stmt->bindParam(':pass', $pass);
+   $stmt->execute();
 
-   $result = mysqli_query($conn, $select);
-
-   if(mysqli_num_rows($result) > 0){
+   if($stmt->rowCount() > 0){
       $error[] = 'User already exists!';
-   } else {
+   }else{
       if($pass != $cpass){
          $error[] = 'Passwords do not match!';
-      } else {
-         $insert = "INSERT INTO user_form(name, email, password, user_type) VALUES('$name','$email', '$cemail','$pass','$user_type')";
-         mysqli_query($conn, $insert);
+      }else{
+         $insert = "INSERT INTO user_form (name, email, password, user_type) VALUES (:name, :email, :pass, :user_type)";
+         $stmt = $conn->prepare($insert);
+         $stmt->bindParam(':name', $name);
+         $stmt->bindParam(':email', $email);
+         $stmt->bindParam(':pass', $pass);
+         $stmt->bindParam(':user_type', $user_type);
+         $stmt->execute();
          header('location: login_form.php');
       }
    }
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -35,43 +42,36 @@ if(isset($_POST['submit'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Register form</title>
+   <title>register form</title>
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="/ProjektiUeb2/UEB20_23_Gr20/css/style.css">
+   <link rel="stylesheet" href="/U2/UEB20_23_Gr20/css/style.css">
 
 </head>
 <body>
-   
-<div class="form-container">
 
+<div class="form-container">
    <form action="" method="post">
-      <h3>Register now</h3>
+      <h3>register now</h3>
       <?php
       if(isset($error)){
-         foreach($error as $error){
-            echo '<span class="error-msg">'.$error.'</span>';
+         foreach($error as $errorMsg){
+            echo '<span class="error-msg">'.$errorMsg.'</span>';
          }
       }
       ?>
-      <input type="text" name="name" required placeholder="Enter your name">
-      <input type="email" name="email" required placeholder="Enter your email">
-      <input type="email" name="cemail" required placeholder="Confirm your email">
-      <input type="password" name="password" required placeholder="Enter your password">
-      <input type="password" name="cpassword" required placeholder="Confirm your password">
+      <input type="text" name="name" required placeholder="enter your name">
+      <input type="email" name="email" required placeholder="enter your email">
+      <input type="email" name="cemail" required placeholder="confirm your email">
+      <input type="password" name="password" required placeholder="enter your password">
+      <input type="password" name="cpassword" required placeholder="confirm your password">
       <select name="user_type">
-         <option value="user">User</option>
-         <option value="admin">Admin</option>
+         <option value="user">Client</option>
+         <option value="admin">Manager</option>
       </select>
-      <?php if(isset($_POST['user_type']) && $_POST['user_type'] == 'user'): ?>
-      <input type="number" name="user_no" required placeholder="Enter your user number">
-      <?php else: ?>
-      <input type="number" name="admin_id" required placeholder="Enter your admin ID">
-      <?php endif; ?>
-      <input type="submit" name="submit" value="Register now" class="form-btn">
-      <p>Already have an account? <a href="login_form.php">Login now</a></p>
+      <input type="submit" name="submit" value="register now" class="form-btn">
+      <p>already have an account? <a href="login_form.php">login now</a></p>
    </form>
-
 </div>
 
 </body>
