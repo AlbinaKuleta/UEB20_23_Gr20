@@ -81,6 +81,14 @@
     echo '<i class="fab fa-facebook"></i>';
     echo '</a>';
 ?>
+
+<?php
+echo '<a href="https://www.linkedin.com/">';
+echo '<i class="fab fa-linkedin"></i>';
+echo '</a>';
+
+    ?>
+   
    
                         <!-- CURRENCIES -->
                         <li class="shop-currencies">
