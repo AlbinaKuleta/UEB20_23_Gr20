@@ -81,6 +81,14 @@
     echo '</a>';
 ?>
 
+<?php
+echo '<a href="https://www.linkedin.com/">';
+echo '<i class="fab fa-linkedin"></i>';
+echo '</a>';
+
+    ?>
+   
+
     <!-- TOP BAR MENU -->
                 <div class="col-md-8 col-sm-4 additional-nav">
                     <ul class="list-unstyled list-inline pull-right">

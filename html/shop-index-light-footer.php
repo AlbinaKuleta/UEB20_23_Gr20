@@ -83,6 +83,13 @@ Website: http://www.keenthemes.com/
     echo '</a>';
 ?>
    
+   <?php
+echo '<a href="https://www.linkedin.com/">';
+echo '<i class="fab fa-linkedin"></i>';
+echo '</a>';
+
+    ?>
+   
                     </ul>
                 </div>
                 <!-- TOP BAR MENU -->
