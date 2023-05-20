@@ -95,6 +95,13 @@ Purchase Premium Metronic Admin Theme: http://themeforest.net/item/metronic-resp
     echo '</a>';
 ?>
    
+   <?php
+echo '<a href="https://www.linkedin.com/">';
+echo '<i class="fab fa-linkedin"></i>';
+echo '</a>';
+
+    ?>
+   
                         <!-- CURRENCIES -->
                         <li class="shop-currencies">
                             <a href="javascript:void(0);">€</a>
