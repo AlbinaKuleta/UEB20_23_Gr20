@@ -23,7 +23,7 @@
   <meta property="og:title" content="-CUSTOMER VALUE-">
   <meta property="og:description" content="-CUSTOMER VALUE-">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="-CUSTOMER VALUE-"><!-- link to image for socio -->
+  <meta property="og:image" content="-CUSTOMER VALUE-">
   <meta property="og:url" content="-CUSTOMER VALUE-">
 
   <link rel="shortcut icon" href="https://p7.hiclipart.com/preview/907/455/804/organic-food-publix-computer-icons-organic.jpg">
@@ -77,25 +77,25 @@
         <div class="container">
             <div class="row">
                 <!-- TOP BAR LEFT PART -->
-                <div class="col-md-6 col-sm-6 additional-shop-info">
+                <div class="col-md-1 col-sm-11 additional-shop-info">
                     <ul class="list-unstyled list-inline">
                         <li><i class="fa fa-phone"></i><span>+383 44 222 333</span></li>
                         <?php
-    echo '<a href="https://www.facebook.com">';
-    echo '<i class="fab fa-facebook"></i>';
-    echo '</a>';
-?>
+                            echo '<a href="https://www.facebook.com">';
+                            echo '<i class="fab fa-facebook"></i>';
+                            echo '</a>';
+                        ?>
 
-<?php
-echo '<a href="https://www.linkedin.com/">';
-echo '<i class="fab fa-linkedin"></i>';
-echo '</a>';
+                        <?php
+                        echo '<a href="https://www.linkedin.com/">';
+                        echo '<i class="fab fa-linkedin"></i>';
+                        echo '</a>';
 
-    ?>
+                            ?>
    
 
-    <!-- TOP BAR MENU -->
-                <div class="col-md-8 col-sm-4 additional-nav">
+                 <!-- TOP BAR MENU -->
+                 <div class="col-md-8 col-sm-4 additional-nav">
                     <ul class="list-unstyled list-inline pull-right">
                         <li><a href="shop-account.php">My Account</a></li>
                         <li><a href="shop-wishlist.php">My Wishlist</a></li>
@@ -107,7 +107,8 @@ echo '</a>';
                    
                     </ul>
                 </div>
-            </div>
+               </ul>
+             </div>
         </div>        
     </div>
 
@@ -118,96 +119,29 @@ echo '</a>';
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
-         <!-- BEGIN CART -->
-<div class="container" style="margin-top: 50px;">
-    <!-- link to open cart page -->
-    <div class="row">
-        <div class="col-md-6">
-            <a href="../php/cart.php" class="btn btn-link">
-                Cart
-            </a>
+        <!-- BEGIN CART -->
+        <div style="margin-top: 5%;">
+           <?php
+            $sql="SELECT email FROM user;";
+            $result1=mysqli_query($conn, $sql);
+            $resultCheck=mysqli_num_rows($result1);
+            if(!$resultCheck) ?>
+            <ul>
+              <li>
+                <a href="?action=cookie">
+                <a href="../php/cart.php">
+                <i class="fa fa-shopping-cart" aria-hidden="true">
+                  <span><?php if(!empty($cart_item)){
+                    echo $cart_item;}
+                    else{echo "0"; };
+                    ?>
+                  </span>
+                </i>
+                </a>
+                </a>
+              </li>
+            </ul>
         </div>
-    </div>
-    <div class="row">
-        <?php
-        // get all products
-        $result = mysqli_query($conn, "SELECT * FROM products;");
- 
-        // get cookie cart
-        $cart = isset($_COOKIE["cart"]) ? $_COOKIE["cart"] : "[]";
-        $cart = json_decode($cart);
- 
-        // loop through all cart items
-        while ($row = mysqli_fetch_object($result))
-        {
-            // check if product already exists in cart
-            $flag = false;
-            foreach ($cart as $c)
-            {
-                if ($c->pid == $row->pid)
-                {
-                    $flag = true;
-                    break;
-                }
-            }
-            ?>
-            <div class="col-md-3" style="margin-bottom: 20px;">
-                <div class="card" style="height: 200px;">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <?php echo $row->pname; ?>
-                        </h5>
-                        <p class="card-text">
-                            <?php echo $row->price; ?>
-                        </p>
-                        <?php if ($flag) { ?>
-                            <!-- show delete button if already exists -->
-                            <form method="POST" action="delete-cart.php">
-                                <input type="hidden" name="productid" value="<?php echo $row->pid; ?>">
-                                <input type="submit" class="btn btn-danger" value="Delete from cart">
-                            </form>
-                        <?php } else { ?>
-                            <!-- add to cart -->
-                            <form method="POST" action="add-cart.php">
-                                <input type="hidden" name="quantity" value="1">
-                                <input type="hidden" name="productid" value="<?php echo $row->pid; ?>">
-                                <input type="submit" class="btn btn-primary" value="Add to cart">
-                            </form>
-                        <?php } ?>
-                    </div>
-                </div>
-            </div>
-            <?php
-        }
-        ?>
-    </div>
-</div>
-            <div class="text-right">
-              <a href="shop-shopping-cart.php" class="btn btn-default">View Cart</a>
-              <a href="shop-checkout.php" class="btn btn-primary">Checkout</a>
-            </div>
-          </div>
-        </div>            
-      </div>
-
-      <?php
-      $sql="SELECT email_id FROM user;";
-      $result1=mysqli_query($conn, $sql);
-      $resultCheck=mysqli_num_rows($result1);
-      if(!$resultCheck) ?>
-      <ul>
-        <li>
-          <a href="?action=cookie" href="">
-          <i class="fa fa-shopping-cart" aria-hidden="true">
-            <span><?php if(!empty($cart_item)){
-              echo $cart_item;}
-              else{echo "0"; };
-              ?>
-            </span>
-          </i>
-          </a>
-        </li>
-      </ul>
          <!--END CART -->
 
         <!-- NAVIGATION -->
@@ -224,69 +158,71 @@ echo '</a>';
                 
 
 
-              <ul class="dropdown-menu">
- <!-- NAVIGATION -->
- <div class="header-navigation">
-          <ul>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                Healthy Fruits
-                
-              </a>
-                
-              <!-- DROPDOWN MENU -->
-              <ul class="dropdown-menu">
-                <li class="dropdown-submenu">
-                  <a href="shop-product-list-berries.php">Berries <i class="fa fa-angle-right"></i></a>
-                  <a href="shop-product-list-melons.php">Melons & Grapes<i class="fa fa-angle-right"></i></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="shop-product-list.php">Second Level Link</a></li>
-                    <li><a href="shop-product-list.php">Second Level Link</a></li>
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                        Second Level Link 
-                        <i class="fa fa-angle-right"></i>
-                      </a>
+            <ul class="dropdown-menu">
+              <!-- NAVIGATION -->
+              <div class="header-navigation">
+                <ul>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                      Healthy Fruits
+                      
+                    </a>
+                      
+                    <!-- DROPDOWN MENU -->
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-submenu">
+                        <a href="shop-product-list-berries.php">Berries <i class="fa fa-angle-right"></i></a>
+                        <a href="shop-product-list-melons.php">Melons & Grapes<i class="fa fa-angle-right"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="shop-product-list.php">Second Level Link</a></li>
+                          <li><a href="shop-product-list.php">Second Level Link</a></li>
+                          <li class="dropdown-submenu">
+                            <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                              Second Level Link 
+                              <i class="fa fa-angle-right"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a href="shop-product-list.php">Third Level Link</a></li>
+                              <li><a href="shop-product-list.php">Third Level Link</a></li>
+                              <li><a href="shop-product-list.php">Third Level Link</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!--Vegetables-->
+                  <li class="dropdown dropdown-megamenu">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                      Fresh Vegetables
                       <ul class="dropdown-menu">
-                        <li><a href="shop-product-list.php">Third Level Link</a></li>
-                        <li><a href="shop-product-list.php">Third Level Link</a></li>
-                        <li><a href="shop-product-list.php">Third Level Link</a></li>
+                        <li class="dropdown-submenu">
+                          <a href="shop-product-list-vegetables.php">Vegetables <i class="fa fa-angle-right"></i></a>
+                        </li>
+                    </ul>
+                  </li>
+
+                  <!--From our farm-->
+                  <li class="dropdown dropdown-megamenu">
+                    <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                      From Our Farm 
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                          <a href="shop-product-list-farm.php">From Our Farm <i class="fa fa-angle-right"></i></a>
+                        </li>
                       </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-
-            <!--Vegetables-->
-            <li class="dropdown dropdown-megamenu">
-              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                Fresh Vegetables
-                <ul class="dropdown-menu">
-                  <li class="dropdown-submenu">
-                    <a href="shop-product-list-vegetables.php">Vegetables <i class="fa fa-angle-right"></i></a>
                   </li>
-              </ul>
-            </li>
+                  <li class="active"><a href="shop-product-list.php">Product List</a></li>
+                  <li><a href="shop-item.php">Product Page</a></li>
+                      <li><a href="shop-shopping-cart-null.php">Shopping</a></li>
+                      <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
+                      <li><a href="Add_products.php">Add products</a></li>
+                      <li><a href="add_feedback.php">Add feedback</a></li>
 
- <!--From our farm-->
- <li class="dropdown dropdown-megamenu">
-              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                From Our Farm 
-                <ul class="dropdown-menu">
-                  <li class="dropdown-submenu">
-                    <a href="shop-product-list-farm.php">From Our Farm <i class="fa fa-angle-right"></i></a>
-                  </li>
                 </ul>
+              </ul>
             </li>
-            <li class="active"><a href="shop-product-list.php">Product List</a></li>
-            <li><a href="shop-item.php">Product Page</a></li>
-                <li><a href="shop-shopping-cart-null.php">Shopping</a></li>
-                <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
-                <li><a href="Add_products.php">Add products</a></li>
-                <li><a href="add_feedback.php">Add feedback</a></li>
-</ul>
-</ul>
             <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
                New
@@ -563,7 +499,7 @@ echo '</a>';
                     <img src="../images/goat chesse.png" class="img-responsive" alt="goat chesse">
                     <div>
                       <a href="../images/goat chesse.png" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                      <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Goat chesse</a></h3>
@@ -577,7 +513,7 @@ echo '</a>';
                     <img src="../images/milk.png" class="img-responsive" alt="milk">
                     <div>
                       <a href="../images/milk.png" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                      <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Milk</a></h3>
@@ -591,7 +527,7 @@ echo '</a>';
                       <img src="../images/oysters.png" class="img-responsive" alt="Oysters">
                       <div>
                         <a href="../images/oysters.png" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                        <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
                       </div>
                     </div>
                     <h3><a href="javascript:;">Oysters</a></h3>
@@ -606,7 +542,7 @@ echo '</a>';
                     <img src="../images/salmon.png" class="img-responsive" alt="salmon">
                     <div>
                       <a href="../images/salmon.png" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                      <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
                     </div>
                   </div>
                   <h3><a href="shop-item.html">Salmon</a></h3>
@@ -620,7 +556,7 @@ echo '</a>';
                     <img src="../images/sardines.png" class="img-responsive" alt="sardines">
                     <div>
                       <a href="../images/sardines.png" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                      <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Sardines</a></h3>
@@ -634,7 +570,7 @@ echo '</a>';
                     <img src="../images/shrimps.png" class="img-responsive" alt="shrimps">
                     <div>
                       <a href="../images/shrimps.png" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                      <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Shrimps</a></h3>
@@ -667,7 +603,7 @@ echo '</a>';
                     <img src="../images/tuna.png" class="img-responsive" alt="tuna">
                     <div>
                       <a href="../images/tuna.png" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                      <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Tuna</a></h3>
@@ -682,7 +618,7 @@ echo '</a>';
                     <img src="../images/shrimps.png" class="img-responsive" alt="shrimps">
                     <div>
                       <a href="../images/shrimps.png" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                      <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Shrimps</a></h3>
@@ -696,7 +632,7 @@ echo '</a>';
                     <img src="../images/goat chesse.png" class="img-responsive" alt="goat chesse">
                     <div>
                       <a href="../images/goat chesse.png" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                      <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Goat chesse</a></h3>
@@ -710,7 +646,7 @@ echo '</a>';
                     <img src="../images/oysters.png" class="img-responsive" alt="oysters">
                     <div>
                       <a href="../images/oysters.png" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                      <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Oysters</a></h3>
@@ -725,7 +661,7 @@ echo '</a>';
                     <img src="../images/milk.png" class="img-responsive" alt="milk">
                     <div>
                       <a href="../images/milk.png" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                      <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Milk</a></h3>
@@ -739,7 +675,7 @@ echo '</a>';
                     <img src="../images/fisheggs.png" class="img-responsive" alt="fisheggs">
                     <div>
                       <a href="../images/fisheggs.png" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                      <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Fish eggs</a></h3>
@@ -761,7 +697,7 @@ echo '</a>';
                     <img src="../images/sardines.png" class="img-responsive" alt="sardines">
                     <div>
                       <a href="../images/sardines.png" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                      <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Sardines</a></h3>
@@ -775,7 +711,7 @@ echo '</a>';
                     <img src="../images/salmon.png" class="img-responsive" alt="salmon">
                     <div>
                       <a href="../images/salmon.png" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                      <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Salmon</a></h3>
@@ -789,7 +725,7 @@ echo '</a>';
                     <img src="../images/oysters.png" class="img-responsive" alt="oysters">
                     <div>
                       <a href="../images/oysters.png" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                      <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Oysters</a></h3>
@@ -803,7 +739,7 @@ echo '</a>';
                     <img src="../images/sardines.png" class="img-responsive" alt="sardines">
                     <div>
                       <a href="../images/sardines.png" class="btn btn-default fancybox-button">Zoom</a>
-                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                      <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
                     </div>
                   </div>
                   <h3><a href="shop-item.php">Sardines</a></h3>
