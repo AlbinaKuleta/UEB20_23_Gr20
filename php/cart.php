@@ -1,11 +1,8 @@
 <!DOCTYPE html>
-<!--
-Template: Metronic Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4
-Version: 1.0.0
-Author: KeenThemes
-Website: http://www.keenthemes.com/
--->
+
 <html lang="en">
+
+<!-- Head -->
 <head>
   <meta charset="utf-8">
   <title>Organic Shop</title>
@@ -27,27 +24,28 @@ Website: http://www.keenthemes.com/
   <link rel="shortcut icon" href="https://p7.hiclipart.com/preview/907/455/804/organic-food-publix-computer-icons-organic.jpg">
 
   <!-- Fonts -->
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css"> 
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css"><!--- fonts for slider on the index page -->  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  
   <!-- Global styles -->          
-  <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../html/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../html/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    
   <!-- Page level plugin styles -->
-  <link href="assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
-  <link href="assets/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
-  <link href="assets/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
-  <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css"><!-- for slider-range -->
-  <link href="assets/plugins/rateit/src/rateit.css" rel="stylesheet" type="text/css">
+  <!-- <link href="../css/style.css" > -->
+  <link href="../html/assets/pages/css/animate.css" rel="stylesheet">
+  <link href="../html/assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+  <link href="../html/assets/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
 
   <!-- Theme styles -->
-  <link href="assets/pages/css/components.css" rel="stylesheet">
-  <link href="assets/corporate/css/style.css" rel="stylesheet">
-  <link href="assets/pages/css/style-shop.css" rel="stylesheet" type="text/css">
-  <link href="assets/corporate/css/style-responsive.css" rel="stylesheet">
-  <link href="assets/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
-  <link href="assets/corporate/css/custom.css" rel="stylesheet">
+  
+  <link href="../html/assets/pages/css/components.css" rel="stylesheet">
+  <link href="../html/assets/pages/css/slider.css" rel="stylesheet">
+  <link href="../html/assets/pages/css/style-shop.css" rel="stylesheet" type="text/css">
+  <link href="../html/assets/corporate/css/style.css" rel="stylesheet">
+  <link href="../html/assets/corporate/css/style-responsive.css" rel="stylesheet">
+  <link href="../html/assets/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
+  <link href="../html/assets/corporate/css/custom.css" rel="stylesheet">
 </head>
 
  <!-- Body -->
@@ -113,41 +111,6 @@ echo '</a>';
         <a class="site-logo" href="shop-index.php"><img src="assets/pages/img/products/Fruits/organiclogo.ong.jpg" width="70px" height="70px" alt="Organic Shop "></a>
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
-
-         <!-- BEGIN CART -->
-       <div class="top-cart-block">
-        <div class="top-cart-info">
-          <a href="javascript:void(0);" class="top-cart-info-count">3 items</a>
-          <a href="javascript:void(0);" class="top-cart-info-value">$1260</a>
-        </div>
-        <i class="fa fa-shopping-cart"></i>
-                      
-        
-            <div class="top-cart-content-wrapper">
-                <div class="top-cart-content">
-                  <ul class="scroller" style="height: 250px;">
-                    <li>
-                      <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Apple.png " alt="Healthy Fruits" width="37" height="34"></a>
-                      <span class="cart-content-count">x 1</span>
-                      <strong><a href="shop-item.php">Healthy Fruits</a></strong>
-                      <em>$1230</em>
-                      <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
-                    </li>
-                    <li>
-                      <a href="shop-item.php"><img src="assets/pages/img/products/Vegetables/cauliflower.png" alt="Fresh Vegetables" width="37" height="34"></a>
-                      <span class="cart-content-count">x 1</span>
-                      <strong><a href="shop-item.php">Fresh Vegetables</a></strong>
-                      <em>$1230</em>
-                   
-                  </ul>
-            <div class="text-right">
-              <a href="shop-shopping-cart.php" class="btn btn-default">View Cart</a>
-              <a href="shop-checkout.php" class="btn btn-primary">Checkout</a>
-            </div>
-          </div>
-        </div>            
-      </div>
-      <!--END CART -->
 
         <!-- NAVIGATION -->
         <div class="header-navigation">
@@ -409,56 +372,56 @@ echo '</a>';
           </div>
 
           <!--  CONTENT -->
-          <link rel="stylesheet" href="bootstrap.css">
-<script src="jquery-3.3.1.min.js"></script>
-<script src="bootstrap.js"></script>
- 
-<div class="container" style="margin-top: 50px;">
- 
-    <?php
-    $cart = isset($_COOKIE["cart"]) ? $_COOKIE["cart"] : "[]";
-    $cart = json_decode($cart);
- 
-    $total = 0;
- 
-    foreach ($cart as $c)
-    {
-        $total += $c->product->buyPrice * $c->quantity;
-        ?>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card" style="height: 200px;">
-                    <div class="card-body">
-                        <h5 class="card-title"><?php echo $c->product->productName; ?></h5>
-                        <p class="card-text"><?php echo $c->product->buyPrice * $c->quantity; ?></p>
- 
-                        <form method="POST" action="delete-cart.php" style="float: right; margin-left: 10px;">
-                            <input type="hidden" name="productCode" value="<?php echo $c->productCode; ?>">
-                            <button type="submit" class="btn btn-danger">
-                                x
-                            </button>
-                        </form>
- 
-                        <form method="POST" action="update-cart.php" style="float: right;">
-                            <input type="number" name="quantity" min="1" value="<?php echo $c->quantity; ?>">
-                            <input type="hidden" name="productCode" value="<?php echo $c->productCode; ?>">
-                            <input type="submit" class="btn btn-warning" value="Update">
-                        </form>
- 
+    <link rel="stylesheet" href="../html/assets/plugins/bootstrap/css/bootstrap.css">
+    <script src="../html/assets/ jquery-3.3.1.min.js"></script>
+    <script src="../html/assets/plugins/bootstrap/js/bootstrap.js"></script>
+    
+    <div class="container" style="margin-top: 50px;">
+    
+        <?php
+        $cart = isset($_COOKIE["cart"]) ? $_COOKIE["cart"] : "[]";
+        $cart = json_decode($cart);
+    
+        $total = 0;
+    
+        foreach ($cart as $c)
+        {
+            $total += $c->product->buyPrice * $c->quantity;
+            ?>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card" style="height: 200px;">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $c->product->productName; ?></h5>
+                            <p class="card-text"><?php echo $c->product->buyPrice * $c->quantity; ?></p>
+    
+                            <form method="POST" action="delete-cart.php" style="float: right; margin-left: 10px;">
+                                <input type="hidden" name="productCode" value="<?php echo $c->productCode; ?>">
+                                <button type="submit" class="btn btn-danger">
+                                    x
+                                </button>
+                            </form>
+    
+                            <form method="POST" action="update-cart.php" style="float: right;">
+                                <input type="number" name="quantity" min="1" value="<?php echo $c->quantity; ?>">
+                                <input type="hidden" name="productCode" value="<?php echo $c->productCode; ?>">
+                                <input type="submit" class="btn btn-warning" value="Update">
+                            </form>
+    
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
- 
-        <?php
-    }
-    ?>
- 
-    <p>
-        <?php echo $total; ?>
-    </p>
- 
-</div>
+    
+            <?php
+        }
+        ?>
+    
+        <p>
+            <?php echo $total; ?>
+        </p>
+    
+    </div>
 
 
     <!-- BEGIN STEPS -->
