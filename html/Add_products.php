@@ -483,45 +483,68 @@ echo '</a>';
     </style>
 </head>
 <body>
-    <h1>ORGANIC E-COMMERCE</h1>
-
-    <h2>PRODUCT LIST</h2>
-    <?php
-    // Lidhja me bazën e të dhënave
-    include_once '../php/config.php';
-
-    // Kontrollo nese ka ndonje gabim ne lidhje
-    if (!$conn) {
-        die("Lidhja me bazën e të dhënave dështoi: " . mysqli_connect_error());
+<style>
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
     }
-
-    // Merr të gjitha produktet nga tabela e produkteve
-    $sql = "SELECT * FROM products";
-    $rezultati = mysqli_query($conn, $sql);
-
-    // Kontrollo nese ka produkte
-    if (mysqli_num_rows($rezultati) > 0) {
-        // Shfaq produkte
-        while ($pname = mysqli_fetch_assoc($rezultati)) {
-            echo '<div class="pname">' . $pname['pname'] . ' - ' . $pname['price'] . '€</div>';
-        }
-    } else {
-        echo "<p>Nuk ka produkte në treg.</p>";
+    .product-card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
     }
+    .product-image {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <?php
+  include_once '../php/config.php';
+  // Lidhja me bazën e të dhënave
 
-    // Mbyll lidhjen me bazën e të dhënave
-    mysqli_close($conn);
-    ?>
 
-    <h2>Add new product</h2>
-    <form action="Add_products.php" method="POST">
-        <label for="emri">Product name</label>
-        <input type="text" id="emri" name="emri" required><br>
+  // Kontrolloni lidhjen
+  if (!$conn) {
+    die("Lidhja me bazën e të dhënave dështoi: " . mysqli_connect_error());
+  }
 
-        <label for="cmimi">Cost:</label>
-        <input type="number" id="cost" name="cost" required><br>
+  // Merrni produktet nga tabela "products"
+  $sql = "SELECT * FROM products";
+  $result = mysqli_query($conn, $sql);
 
-        <input type="submit" value="Add product">
-    </form>
+  // Kontrolloni nëse ka produkte në bazën e të dhënave
+  if (mysqli_num_rows($result) > 0) {
+    echo '<div class="product-list">';
+    
+    // Shfaq produktet në një listë
+    while ($row = mysqli_fetch_assoc($result)) {
+      echo '<div class="product-card">';
+      echo '<img src="' . $row['image'] . '" alt="Product Image" class="product-image">';
+      echo '<h3>' . $row['name'] . '</h3>';
+      echo '<p>Cmimi: $' . $row['price'] . '</p>';
+      echo '<button onclick="modifikoProduktin(' . $row['id'] . ')">Modifiko</button>';
+      echo '</div>';
+    }
+    
+    echo '</div>';
+  } else {
+    echo 'Nuk ka produkte në bazën e të dhënave.';
+  }
+
+  // Mbyll lidhjen me bazën e të dhënave
+  mysqli_close($conn);
+  ?>
+
+  <script>
+    function modifikoProduktin(productId) {
+      // Këtu mund të kryeni veprimet për t'i modifikuar produktin me ID e dhënë
+      // Për shembull, redirektoni në një faqe të veçantë për modifikim
+      window.location.href = 'modifiko.php?id=' + productId;
+    }
+  </script>
 </body>
 </html>
