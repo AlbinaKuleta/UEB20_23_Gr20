@@ -437,17 +437,17 @@ echo '</a>';
               <div class="item">
                 <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Strafberries.png" alt="Strawberry"></a>
                 <h3><a href="shop-item.php">Strawberry</a></h3>
-                <div class="price">$31.00</div>
+                <div class="price">$5.00</div>
               </div>
               <div class="item">
                 <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Apple.png" alt="Apple"></a>
                 <h3><a href="shop-item.php">Apple</a></h3>
-                <div class="price">$23.00</div>
+                <div class="price">$9.00</div>
               </div>
               <div class="item">
                 <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Farm/eggs.png" alt="Eggs"></a>
                 <h3><a href="shop-item.php">Eggs</a></h3>
-                <div class="price">$86.00</div>
+                <div class="price">$7.00</div>
               </div>
             </div>
           </div>

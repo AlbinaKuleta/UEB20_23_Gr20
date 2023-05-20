@@ -1,7 +1,3 @@
-<?php
-//connection with database
-include_once '../php/config.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,23 +28,24 @@ include_once '../php/config.php';
   <!-- Fonts END -->
 
   <!-- Global styles START -->          
-  <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Global styles END --> 
+  <link href="../html/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../html/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    
-  <!-- Page level plugin styles START -->
-  <link href="assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
-  <link href="assets/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
-  <!-- Page level plugin styles END -->
+  <!-- Page level plugin styles -->
+  <!-- <link href="../css/style.css" > -->
+  <link href="../html/assets/pages/css/animate.css" rel="stylesheet">
+  <link href="../html/assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
+  <link href="../html/assets/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
 
-  <!-- Theme styles START -->
-  <link href="assets/pages/css/components.css" rel="stylesheet">
-  <link href="assets/corporate/css/style.css" rel="stylesheet">
-  <link href="assets/pages/css/style-shop.css" rel="stylesheet" type="text/css">
-  <link href="assets/corporate/css/style-responsive.css" rel="stylesheet">
-  <link href="assets/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
-  <link href="assets/corporate/css/custom.css" rel="stylesheet">
-  <!-- Theme styles END -->
+  <!-- Theme styles -->
+  
+  <link href="../html/assets/pages/css/components.css" rel="stylesheet">
+  <link href="../html/assets/pages/css/slider.css" rel="stylesheet">
+  <link href="../html/assets/pages/css/style-shop.css" rel="stylesheet" type="text/css">
+  <link href="../html/assets/corporate/css/style.css" rel="stylesheet">
+  <link href="../html/assets/corporate/css/style-responsive.css" rel="stylesheet">
+  <link href="../html/assets/corporate/css/themes/red.css" rel="stylesheet" id="style-color">
+  <link href="../html/assets/corporate/css/custom.css" rel="stylesheet">
 </head>
 <!-- Head END -->
 
@@ -91,7 +88,8 @@ echo '<a href="https://www.linkedin.com/">';
 echo '<i class="fab fa-linkedin"></i>';
 echo '</a>';
 
-    ?>                        
+    ?>
+                        
                     </ul>
                 </div>
                 <!-- TOP BAR MENU -->
@@ -114,6 +112,41 @@ echo '</a>';
         <a class="site-logo" href="shop-index.php"><img src="assets/pages/img/products/Fruits/organiclogo.ong.jpg" width="70px" height="70px" alt="Organic Shop "></a>
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+         <!-- BEGIN CART -->
+       <div class="top-cart-block">
+        <div class="top-cart-info">
+          <a href="javascript:void(0);" class="top-cart-info-count">3 items</a>
+          <a href="javascript:void(0);" class="top-cart-info-value">$1260</a>
+        </div>
+        <i class="fa fa-shopping-cart"></i>
+                      
+        
+            <div class="top-cart-content-wrapper">
+                <div class="top-cart-content">
+                  <ul class="scroller" style="height: 250px;">
+                    <li>
+                      <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Apple.png " alt="Healthy Fruits" width="37" height="34"></a>
+                      <span class="cart-content-count">x 1</span>
+                      <strong><a href="shop-item.php">Healthy Fruits</a></strong>
+                      <em>$1230</em>
+                      <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
+                    </li>
+                    <li>
+                      <a href="shop-item.php"><img src="assets/pages/img/products/Vegetables/cauliflower.png" alt="Fresh Vegetables" width="37" height="34"></a>
+                      <span class="cart-content-count">x 1</span>
+                      <strong><a href="shop-item.php">Fresh Vegetables</a></strong>
+                      <em>$1230</em>
+                   
+                  </ul>
+            <div class="text-right">
+              <a href="shop-shopping-cart.php" class="btn btn-default">View Cart</a>
+              <a href="shop-checkout.php" class="btn btn-primary">Checkout</a>
+            </div>
+          </div>
+        </div>            
+      </div>
+      <!--END CART -->
 
         <!-- NAVIGATION -->
         <div class="header-navigation">
@@ -185,9 +218,11 @@ echo '</a>';
                 </ul>
             </li>
             <li class="active"><a href="shop-product-list.php">Product List</a></li>
-            <li><a href="shop-item.php">Product Page</a></li>
+            <li><a href="shop-item.php">Discount</a></li>
                 <li><a href="shop-shopping-cart-null.php">Shopping</a></li>
                 <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
+                <li><a href="Add_products.php">Add products</a></li>
+                <li><a href="add_feedback.php">Add feedback</a></li>
 </ul>
 </ul>
             <li class="dropdown active">
@@ -403,17 +438,17 @@ echo '</a>';
               <div class="item">
                 <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Strafberries.png" alt="Strawberry"></a>
                 <h3><a href="shop-item.php">Strawberry</a></h3>
-                <div class="price">$31.00</div>
+                <div class="price">$5.00</div>
               </div>
               <div class="item">
                 <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Apple.png" alt="Apple"></a>
                 <h3><a href="shop-item.php">Apple</a></h3>
-                <div class="price">$23.00</div>
+                <div class="price">$9.00</div>
               </div>
               <div class="item">
                 <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Farm/eggs.png" alt="Eggs"></a>
                 <h3><a href="shop-item.php">Eggs</a></h3>
-                <div class="price">$86.00</div>
+                <div class="price">$7.00</div>
               </div>
             </div>
           </div>
@@ -453,41 +488,68 @@ echo '</a>';
 
     <h2>PRODUCT LIST</h2>
     <?php
-    // Lidhja me bazën e të dhënave
-    $conn = mysqli_connect("localhost", "perdoruesi", "fjalekalimi", "baza_e_te_dhenave");
+        // Lidhja me bazën e të dhënave
+        include_once '../php/config.php';
 
-    // Kontrollo nese ka ndonje gabim ne lidhje
-    if (!$conn) {
-        die("Lidhja me bazën e të dhënave dështoi: " . mysqli_connect_error());
-    }
-
-    // Merr të gjitha produktet nga tabela e produkteve
-    $sql = "SELECT * FROM produkte";
-    $rezultati = mysqli_query($lidhja, $sql);
-
-    // Kontrollo nese ka produkte
-    if (mysqli_num_rows($rezultati) > 0) {
-        // Shfaq produkte
-        while ($produkti = mysqli_fetch_assoc($rezultati)) {
-            echo '<div class="produkti">' . $produkti['emri'] . ' - ' . $produkti['cmimi'] . '€</div>';
+        // Kontrollo nese ka ndonje gabim ne lidhje
+        if (!$conn) {
+            die("Lidhja me bazën e të dhënave dështoi: " . mysqli_connect_error());
         }
-    } else {
-        echo "<p>Nuk ka produkte në treg.</p>";
-    }
 
-    // Mbyll lidhjen me bazën e të dhënave
-    mysqli_close($lidhja);
+        // Merr të gjitha produktet nga tabela e produkteve
+        $pname = $_GET['pname'];
+        $sql = "SELECT * FROM products WHERE pname = $pname";
+        $rezultati = mysqli_query($conn, $sql);
+
+        // Kontrollo nese ka produkte
+        if ($rezultati = $mysqli -> query($sql)) {
+            if($rezultati->num_rows > 0){
+                while ($row = $rezultati->mysqli_fetch_object()) {
+     ?>
+     
+    <h2>Modify the product</h2>
+
+    <form action="modify.php" method="POST">
+      <div class="col-12">
+        <label for="emri">Product name</label>
+        <input type="text" id="emri" value="<?php echo $row->pname ?>" name="emri"><br>
+      </div>
+
+      <div class="col-12">
+        <label for="emri">Cost:</label>
+        <input type="number" id="cost" value="<?php echo $row->price ?>" name="cost"><br>
+        </div>
+
+        <div class="col-12">
+        <label for="emri">Image</label>
+        <img src="<?php echo $row->image ?>" height="50px" width="50px"><br>
+        </div>
+
+        <div class="col-12">
+        <label for="emri">Select image</label>
+        <input type="blob" id="image" value="<?php echo $row->image ?>" name="image"><br>
+        </div>
+
+        <div class="col-12">
+        <label for="emri">Cid</label>
+        <datalist id="cid" name="cid">
+            <option value="1">1-sea fruits</option>
+            <option value="2">2-from our farm</option>
+            <option value="3">3-fruits</option>
+            <option value="4">4-vegetables</option>
+            <option value="5">5-cereals</option>
+        </datalist>
+        <label for="cid">Cid:</label>
+        </div>
+
+    <?php
+            }
+        }
+    }       
     ?>
 
-    <h2>Modify the product</h2>
-    <form action="shto_produkte.php" method="POST">
-        <label for="emri">Product name</label>
-        <input type="text" id="emri" name="emri" required><br>
 
-        <label for="cmimi">Cost:</label>
-        <input type="number" id="cost" name="cost" required><br>
-
-        <input type="submit" value="Add product">
+        <input type="submit" value="modify product">
     </form>
 </body>
 </html>
