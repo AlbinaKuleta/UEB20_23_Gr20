@@ -50,6 +50,110 @@
             background-color: #45a049;
         }
     </style>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Save form submission
+            $('#saveForm').submit(function(e) {
+                e.preventDefault();
+                var form = $(this);
+                var url = form.attr('action');
+                var data = form.serialize();
+
+                $.ajax({
+                    type: 'POST',
+                    url: url,
+                    data: data,
+                    success: function(response) {
+                        // Handle success response
+                        console.log(response);
+                        // You can update the UI or display a success message here
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle error response
+                        console.error(xhr.responseText);
+                        // You can display an error message here
+                    }
+                });
+            });
+
+            // Delete form submission
+            $('#deleteForm').submit(function(e) {
+                e.preventDefault();
+                var form = $(this);
+                var url = form.attr('action');
+                var data = form.serialize();
+
+                $.ajax({
+                    type: 'POST',
+                    url: url,
+                    data: data,
+                    success: function(response) {
+                        // Handle success response
+                        console.log(response);
+                        // You can update the UI or display a success message here
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle error response
+                        console.error(xhr.responseText);
+                        // You can display an error message here
+                    }
+                });
+            });
+
+            // Modify form submission
+            $('#modifyForm').submit(function(e) {
+                e.preventDefault();
+                var form = $(this);
+                var url = form.attr('action');
+                var data = form.serialize();
+
+                $.ajax({
+                    type: 'POST',
+                    url: url,
+                    data: data,
+                    success: function(response) {
+                        // Handle success response
+                        console.log(response);
+                        // You can update the UI or display a success message here
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle error response
+                        console.error(xhr.responseText);
+                        // You can display an error message here
+                    }
+                });
+            });
+
+            // Filter form submission
+            $('#filterForm').submit(function(e) {
+                e.preventDefault();
+                var form = $(this);
+                var url = form.attr('action');
+                var data = form.serialize();
+
+                $.ajax({
+                    type: 'POST',
+                    url: url,
+                    data: data,
+                    success: function(response) {
+                        // Handle success response
+                        console.log(response);
+                        // You can update the UI or display the filtered results here
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle error response
+                        console.error(xhr.responseText);
+                        // You can display an error message here
+                    }
+                });
+            });
+        });
+    </script>
+
+
 </head>
 <body>
 
