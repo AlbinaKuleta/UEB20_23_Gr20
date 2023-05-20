@@ -108,15 +108,7 @@ echo '</a>';
                             <a href="javascript:void(0);">£</a>
                             <a href="javascript:void(0);" class="current">$</a>
                         </li>
-                        <!-- LANGS -->
-                        <li class="langs-block">
-                            <a href="javascript:void(0);" class="current">English </a>
-                            <div class="langs-block-others-wrapper"><div class="langs-block-others">
-                              <a href="javascript:void(0);">French</a>
-                              <a href="javascript:void(0);">Germany</a>
-                              <a href="javascript:void(0);">Turkish</a>
-                            </div></div>
-                        </li>
+                       
                     </ul>
                 </div>
                 <!-- TOP BAR MENU -->
