@@ -217,9 +217,11 @@ echo '</a>';
                 </ul>
             </li>
             <li class="active"><a href="shop-product-list.php">Product List</a></li>
-            <li><a href="shop-item.php">Product Page</a></li>
+            <li><a href="shop-item.php">Discount</a></li>
                 <li><a href="shop-shopping-cart-null.php">Shopping</a></li>
                 <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
+                <li><a href="Add_products.php">Add products</a></li>
+                <li><a href="add_feedback.php">Add feedback</a></li>
 </ul>
 </ul>
             <li class="dropdown active">
@@ -512,7 +514,7 @@ echo '</a>';
     ?>
 
     <h2>Add new product</h2>
-    <form action="shto_produkte.php" method="POST">
+    <form action="Add_products.php" method="POST">
         <label for="emri">Product name</label>
         <input type="text" id="emri" name="emri" required><br>
 
