@@ -1,10 +1,5 @@
 <!DOCTYPE html>
-<!--
-Template: Metronic Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4
-Version: 1.0.0
-Author: KeenThemes
-Website: http://www.keenthemes.com/
--->
+
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -218,7 +213,7 @@ echo '</a>';
                 </ul>
             </li>
             <li class="active"><a href="shop-product-list.php">Product List</a></li>
-            <li><a href="shop-item.php">Product Page</a></li>
+            <li><a href="shop-item.php">Discount</a></li>
                 <li><a href="shop-shopping-cart-null.php">Shopping</a></li>
                 <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
                 <li><a href="Add_products.php">Add products</a></li>
