@@ -9,7 +9,7 @@ include '../php/config.php';
 <!-- Head BEGIN -->
 <head>
   <meta charset="utf-8">
-  <title>About us | Metronic Shop UI</title>
+  <title>Organic Shop</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -212,7 +212,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a><img src="assets/pages/img/products/Fruits/Apple.png" class="img-responsive" alt="Apples"></a>
+                            <a><img src="../html/assets/pages/img/products/Fruits/Apple.png" class="img-responsive" alt="Apples"></a>
                           </div>
                           <h3><a>Apples</a></h3>
                           <div class="pi-price">$9.00</div>
@@ -222,7 +222,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Avocados.png" class="img-responsive" alt="Avocados"></a>
+                            <a href="shop-item.php"><img src="../html/assets/pages/img/products/Fruits/Avocados.png" class="img-responsive" alt="Avocados"></a>
                           </div>
                           <h3><a href="shop-item.php">Avocados</a></h3>
                           <div class="pi-price">$8.00</div>
@@ -232,7 +232,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/bananas.png" class="img-responsive" alt="bananas"></a>
+                            <a href="shop-item.php"><img src="../html/assets/pages/img/products/Fruits/bananas.png" class="img-responsive" alt="bananas"></a>
                           </div>
                           <h3><a href="shop-item.php">Bananas</a></h3>
                           <div class="pi-price">$11.00</div>
@@ -242,7 +242,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/bartlettpears.png" class="img-responsive" alt="bartlettpears"></a>
+                            <a href="shop-item.php"><img src="../html/assets/pages/img/products/Fruits/bartlettpears.png" class="img-responsive" alt="bartlettpears"></a>
                           </div>
                           <h3><a href="shop-item.php">Bartlett Pears</a></h3>
                           <div class="pi-price">$29.00</div>
@@ -252,7 +252,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/bloodorganes.png" class="img-responsive" alt="bloodorganes"></a>
+                            <a href="shop-item.php"><img src="../html/assets/pages/img/products/Fruits/bloodorganes.png" class="img-responsive" alt="bloodorganes"></a>
                           </div>
                           <h3><a href="shop-item.php">Blood Organes</a></h3>
                           <div class="pi-price">$2.00</div>
@@ -262,7 +262,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/caraorganes.png" class="img-responsive" alt="caraorganes"></a>
+                            <a href="shop-item.php"><img src="../html/assets/pages/img/products/Fruits/caraorganes.png" class="img-responsive" alt="caraorganes"></a>
                           </div>
                           <h3><a href="shop-item.php">Cara Organes</a></h3>
                           <div class="pi-price">$21.00</div>
@@ -272,7 +272,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/dragonfruit.png" class="img-responsive" alt="dragonfruit"></a>
+                            <a href="shop-item.php"><img src="../html/assets/pages/img/products/Fruits/dragonfruit.png" class="img-responsive" alt="dragonfruit"></a>
                           </div>
                           <h3><a href="shop-item.php">Dragon furits</a></h3>
                           <div class="pi-price">$31.00</div>
@@ -282,7 +282,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/freshkiwi.png" class="img-responsive" alt="freshkiwi"></a>
+                            <a href="shop-item.php"><img src="../html/assets/pages/img/products/Fruits/freshkiwi.png" class="img-responsive" alt="freshkiwi"></a>
                           </div>
                           <h3><a href="shop-item.php">Fresh Kiwi</a></h3>
                           <div class="pi-price">$25.00</div>
@@ -292,7 +292,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Freshness.png" class="img-responsive" alt="Freshness"></a>
+                            <a href="shop-item.php"><img src="../html/assets/pages/img/products/Fruits/Freshness.png" class="img-responsive" alt="Freshness"></a>
                           </div>
                           <h3><a href="shop-item.php">Freshness</a></h3>
                           <div class="pi-price">$17.00</div>
@@ -302,7 +302,7 @@ echo '</a>';
                       <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="product-item">
                           <div class="pi-img-wrapper">
-                            <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Grannysmithapples.png" class="img-responsive" alt="Grannysmithapples"></a>
+                            <a href="shop-item.php"><img src="../html/assets/pages/img/products/Fruits/Grannysmithapples.png" class="img-responsive" alt="Grannysmithapples"></a>
                           </div>
                           <h3><a href="shop-item.php">Granny Smith Apples </a></h3>
                           <div class="pi-price">$14.00</div>
@@ -457,13 +457,13 @@ echo '</a>';
         <h5>Your feedback:<br></h5>
         <textarea name="feedback" rows="15" cols="50"></textarea><br><br>
 
-        <button type="submit" value="Submit"  >Submit</button>
+        <button type="submit" value="Submit">Submit</button>
         <button type="button" value="Cancel" >Cancel</button>
 
 
     </form>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../html/assets/pages/scripts/script.js"></script>
+  </br>
      
   <!-- BEGIN STEPS -->
   <div class="steps-block steps-block-red">
@@ -596,11 +596,11 @@ echo '</a>';
           <!-- BEGIN PAYMENTS -->
           <div class="col-md-4 col-sm-4">
             <ul class="list-unstyled list-inline pull-right">
-              <li><img src="assets/corporate/img/payments/western-union.jpg" alt="We accept Western Union" title="We accept Western Union"></li>
-              <li><img src="assets/corporate/img/payments/american-express.jpg" alt="We accept American Express" title="We accept American Express"></li>
-              <li><img src="assets/corporate/img/payments/MasterCard.jpg" alt="We accept MasterCard" title="We accept MasterCard"></li>
-              <li><img src="assets/corporate/img/payments/PayPal.jpg" alt="We accept PayPal" title="We accept PayPal"></li>
-              <li><img src="assets/corporate/img/payments/visa.jpg" alt="We accept Visa" title="We accept Visa"></li>
+              <li><img src="../html/assets/corporate/img/payments/western-union.jpg" alt="We accept Western Union" title="We accept Western Union"></li>
+              <li><img src="../html/assets/corporate/img/payments/american-express.jpg" alt="We accept American Express" title="We accept American Express"></li>
+              <li><img src="../html/assets/corporate/img/payments/MasterCard.jpg" alt="We accept MasterCard" title="We accept MasterCard"></li>
+              <li><img src="../html/assets/corporate/img/payments/PayPal.jpg" alt="We accept PayPal" title="We accept PayPal"></li>
+              <li><img src="../html/assets/corporate/img/payments/visa.jpg" alt="We accept Visa" title="We accept Visa"></li>
             </ul>
           </div>
           <!-- END PAYMENTS -->
@@ -620,12 +620,12 @@ echo '</a>';
               <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-3">
                   <div class="product-main-image">
-                    <img src="assets/pages/img/products/Fruits/Apple.png" alt="" class="img-responsive">
+                    <img src="../html/assets/pages/img/products/Fruits/Apple.png" alt="" class="img-responsive">
                   </div>
                   <div class="product-other-images">
-                    <a href="javascript:;" class="active"><img alt="Berry Lace Dress" src="assets/pages/img/products/Fruits/Avocados.png"></a>
-                    <a href="javascript:;"><img alt="Berry Lace Dress" src="assets/pages/img/products/Fruits/bartlettpears.png"></a>
-                    <a href="javascript:;"><img alt="Berry Lace Dress" src="assets/pages/img/products/Fruits/caraorganes.png"></a>
+                    <a href="javascript:;" class="active"><img alt="Avocados" src="../html/assets/pages/img/products/Fruits/Avocados.png"></a>
+                    <a href="javascript:;"><img alt="bartlettpears" src="../html/assets/pages/img/products/Fruits/bartlettpears.png"></a>
+                    <a href="javascript:;"><img alt="caraorganes" src="../html/assets/pages/img/products/Fruits/caraorganes.png"></a>
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-9">
@@ -668,23 +668,24 @@ echo '</a>';
             </div>
     </div>
 
+
     <!-- CORE PLUGINS(REQUIRED FOR ALL PAGES) --> 
-    <script src="assets/plugins/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
-    <script src="assets/corporate/scripts/back-to-top.js" type="text/javascript"></script>
-    <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="../html/assets/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="../html/assets/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="../html/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
+    <script src="../html/assets/corporate/scripts/back-to-top.js" type="text/javascript"></script>
+    <script src="../html/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
 
     <!-- PAGE LEVEL JAVASCRIPTS (REQUIRED ONLY FOR CURRENT PAGE) -->
-    <script src="assets/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
-    <script src="assets/plugins/owl.carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
-    <script src='assets/plugins/zoom/jquery.zoom.min.js' type="text/javascript"></script><!-- product zoom -->
-    <script src="assets/plugins/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script><!-- Quantity -->
-    <script src="assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
-    <script src="assets/plugins/rateit/src/jquery.rateit.js" type="text/javascript"></script>
+    <script src="../html/assets/plugins/fancybox/source/jquery.fancybox.pack.js" type="text/javascript"></script><!-- pop up -->
+    <script src="../html/assets/plugins/owl.carousel/owl.carousel.min.js" type="text/javascript"></script><!-- slider for products -->
+    <script src='../html/assets/plugins/zoom/jquery.zoom.min.js' type="text/javascript"></script><!-- product zoom -->
+    <script src="../html/assets/plugins/bootstrap-touchspin/bootstrap.touchspin.js" type="text/javascript"></script><!-- Quantity -->
+    <script src="../html/assets/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+    <script src="../html/assets/plugins/rateit/src/jquery.rateit.js" type="text/javascript"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script><!-- for slider-range -->
 
-    <script src="assets/corporate/scripts/layout.js" type="text/javascript"></script>
+    <script src="../html/assets/corporate/scripts/layout.js" type="text/javascript"></script>
     <script type="text/javascript">
         jQuery(document).ready(function() {
             Layout.init();    
@@ -700,14 +701,11 @@ echo '</a>';
 </html>
 
 
-
-
-
 <?php
 
 if(!$conn){
     die('Could not connect: '. mysqli_error($conn));
-}else{
+  }else{
     $uname = $surname = $email = $feedback = "";
 
     if(isset($_POST['submit'])){
@@ -719,9 +717,15 @@ if(!$conn){
     $sql = "INSERT INTO feedback (uname, surname, email, feedback)
     VALUES ('$uname', '$surname', '$email', '$feedback')";
     
-}
+    if(mysqli_query($conn, $sql)){
+        header('Location: message.php');
+        echo 'You entered your data successfully';
+        exit();
+      }else{
+        echo 'Error: ' . mysqli_error($conn);
+      }
+    }
+  }
  
-}
-
 ?>
 
