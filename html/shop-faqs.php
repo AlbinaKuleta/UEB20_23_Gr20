@@ -589,9 +589,9 @@ echo '</a>';
     <?php
 // Establish a database connection
 $host = 'localhost';
-$username = 'your_username';
-$password = 'your_password';
-$database = 'your_database';
+$username = 'root';
+$password = '';
+$database = 'uebi2db';
 
 $conn = mysqli_connect($host, $username, $password, $database);
 
