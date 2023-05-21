@@ -529,18 +529,9 @@ echo '</a>';
                                     like cucumbers and avocados, to ensure that bacteria won’t transfer to the food by a knife. Scrubbing vegetables and fruits with a brush is also recommended.
                                   </div>
                                </div>
-                            </div> <h2>FAQ Registration</h2>
-    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-        <label for="question">If you are interesed for more, here you can write your question:</label><br>
-        
-        <input type="text" name="question" id="question" required><br><br>
-        <label for="email">Your Email:</label><br>
-        <input type="email" name="email" id="email" required><br><br> <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
+                            </div>
+                            <style>
+       
 
         h2 {
             margin-bottom: 20px;
@@ -557,15 +548,10 @@ echo '</a>';
             font-weight: bold;
         }
 
-        input[type="text"],
-        textarea {
-            width: 200%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            resize: vertical;
+        /* Style for the email label */
+        label[for="email"] {
+            color: #337ab7;
         }
-        label[for="email"]
 
         input[type="text"],
         textarea,
@@ -590,9 +576,16 @@ echo '</a>';
             background-color: #45a049;
         }
     </style>
+    <h2>FAQ Registration</h2>
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <label for="question">Question:</label><br>
+        <input type="text" name="question" id="question" required><br><br>
+        <label for="email" style="color: #337ab7;">Your Email:</label><br>
+        <input type="email" name="email" id="email" required><br><br>
         <input type="submit" value="Register">
     </form>
-    <h3>REMINDER: if you are logged in, your answer will come in your email that you entered!</h3>
+    <h4>REMINDER: Your answer will come in your email that entered in your login!</h4>
+
     <?php
 // Establish a database connection
 $host = 'localhost';
@@ -618,12 +611,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = mysqli_prepare($conn, $sql);
 
     // Bind parameters and execute the statement
-    mysqli_stmt_bind_param($stmt, 'ss', $question, $email);
+    mysqli_stmt_bind_param($stmt, 'sss', $question, $email);
     mysqli_stmt_execute($stmt);
 
     // Check if the statement was executed successfully
     if (mysqli_stmt_affected_rows($stmt) > 0) {
         echo "Question registered successfully!";
+
+        // Send the answer to the user's email
+        $subject = "FAQ Answer";
+        $headers = "From: your_email@example.com";
+
+        // Use the user's email address as the recipient
+        if (mail($email, $subject, $message, $headers)) {
+            echo "The answer has been sent to your email.";
+        } else {
+            echo "Error sending the answer to your email.";
+        }
     } else {
         echo "Error registering the question.";
     }
@@ -638,6 +642,7 @@ mysqli_close($conn);
 
 
 
+
    
                                                            
             </div>
@@ -648,6 +653,7 @@ mysqli_close($conn);
         <!-- END SIDEBAR & CONTENT -->
       </div>
     </div>
+    
 
    
 
@@ -880,7 +886,7 @@ mysqli_close($conn);
   <script type="text/javascript">
       jQuery(document).ready(function() {
           Layout.init();    
-          Layout.initOWL();
+          Layout.initOWL();s
           Layout.initTwitter();
           Layout.initImageZoom();
           Layout.initTouchspin();
