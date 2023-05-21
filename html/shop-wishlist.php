@@ -92,14 +92,6 @@ echo '<i class="fab fa-linkedin"></i>';
 echo '</a>';
 
     ?>
-   
-   
-                        <!-- CURRENCIES -->
-                        <li class="shop-currencies">
-                            <a href="javascript:void(0);">€</a>
-                            <a href="javascript:void(0);">£</a>
-                            <a href="javascript:void(0);" class="current">$</a>
-                        </li>
                        
                     </ul>
                 </div>
@@ -125,39 +117,7 @@ echo '</a>';
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
          <!-- BEGIN CART -->
-       <div class="top-cart-block">
-        <div class="top-cart-info">
-          <a href="javascript:void(0);" class="top-cart-info-count">3 items</a>
-          <a href="javascript:void(0);" class="top-cart-info-value">$1260</a>
-        </div>
-        <i class="fa fa-shopping-cart"></i>
-                      
-        
-            <div class="top-cart-content-wrapper">
-                <div class="top-cart-content">
-                  <ul class="scroller" style="height: 250px;">
-                    <li>
-                      <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Apple.png " alt="Healthy Fruits" width="37" height="34"></a>
-                      <span class="cart-content-count">x 1</span>
-                      <strong><a href="shop-item.php">Healthy Fruits</a></strong>
-                      <em>$1230</em>
-                      <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
-                    </li>
-                    <li>
-                      <a href="shop-item.php"><img src="assets/pages/img/products/Vegetables/cauliflower.png" alt="Fresh Vegetables" width="37" height="34"></a>
-                      <span class="cart-content-count">x 1</span>
-                      <strong><a href="shop-item.php">Fresh Vegetables</a></strong>
-                      <em>$1230</em>
-                   
-                  </ul>
-            <div class="text-right">
-              <a href="shop-shopping-cart.php" class="btn btn-default">View Cart</a>
-              <a href="shop-checkout.php" class="btn btn-primary">Checkout</a>
-            </div>
-          </div>
-        </div>            
-      </div>
-      <!--END CART -->
+       
 
         <!-- NAVIGATION -->
         <div class="header-navigation">
@@ -407,14 +367,15 @@ echo '</a>';
         </ul>
         <!-- BEGIN SIDEBAR & CONTENT -->
         <div class="row margin-bottom-40">
-          <!-- BEGIN SIDEBAR -->
-          <div class="sidebar col-md-3 col-sm-5">
-            <ul class="list-group margin-bottom-25 sidebar-menu">
-              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i> pemet</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i> perimet </a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i> Drithera </a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i> Fruta Deti </a></li>
-              
+            <!--  SIDEBAR -->
+            <div class="sidebar col-md-3 col-sm-5">
+              <ul class="list-group margin-bottom-25 sidebar-menu">
+                <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Fruits</a></li>
+                <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Vegetables</a></li>
+                <li class="list-group-item clearfix"><a href="../html/shop-index-light-footer.php"><i class="fa fa-angle-right"></i>Cereals</a></li>
+                <li class="list-group-item clearfix"><a href="shop-index.php"><i class="fa fa-angle-right"></i>Sea fruits</a></li>
+              </ul>
+            </div>
             </ul>
           </div>
           <!-- END SIDEBAR -->

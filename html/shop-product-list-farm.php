@@ -93,16 +93,6 @@ echo '<i class="fab fa-linkedin"></i>';
 echo '</a>';
 
     ?>
-   
-
-
-   
-                        <!-- CURRENCIES -->
-                        <li class="shop-currencies">
-                            <a href="javascript:void(0);">€</a>
-                            <a href="javascript:void(0);">£</a>
-                            <a href="javascript:void(0);" class="current">$</a>
-                        </li>
                        
                         
                     </ul>
@@ -422,31 +412,11 @@ echo '</a>';
           <!-- BEGIN SIDEBAR -->
           <div class="sidebar col-md-3 col-sm-5">
             <ul class="list-group margin-bottom-25 sidebar-menu">
-              <li class="list-group-item clearfix"><a href="shop-product-list-vegetables.php"><i class="fa fa-angle-right"></i> Fresh Vegetables</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i> Healthy Frutis</a></li>
-
-              <li class="list-group-item clearfix"><a href="shop-product-list-farm.php"><i class="fa fa-angle-right"></i> From Our Farm</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i> Fish & Meat</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i> Healthy Drinks</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i> Dairy Products</a></li>
-           
+                <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Fruits</a></li>
+                <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Vegetables</a></li>
+                <li class="list-group-item clearfix"><a href="../html/shop-index-light-footer.php"><i class="fa fa-angle-right"></i>Cereals</a></li>
+                <li class="list-group-item clearfix"><a href="shop-index.php"><i class="fa fa-angle-right"></i>Sea fruits</a></li>
             </ul>
-
-            <div class="sidebar-filter margin-bottom-25">
-              <h2>Filter</h2>
-              <h3>Availability</h3>
-              <div class="checkbox-list">
-                <label><input type="checkbox"> Not Available (3)</label>
-                <label><input type="checkbox"> In Stock (26)</label>
-              </div>
-
-              <h3>Price</h3>
-              <p>
-                <label for="amount">Range:</label>
-                <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
-              </p>
-              <div id="slider-range"></div>
-            </div>
 
             <div class="sidebar-products clearfix">
               <h2>Bestsellers</h2>

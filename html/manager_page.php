@@ -276,10 +276,10 @@ echo '</a>';
             </li>
             <li class="active"><a href="shop-product-list.php">Product List</a></li>
             <li><a href="shop-item.php">Discount</a></li>
-                <li><a href="shop-shopping-cart-null.php">Shopping</a></li>
-                <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
-                <li><a href="Add_products.php">Add products</a></li>
-                <li><a href="add_feedback.php">Add feedback</a></li>
+                <li><a href="../html/shop-shopping-cart-null.php">Shopping</a></li>
+                <li><a href="../html/shop-shopping-cart.php">Shopping Cart</a></li>
+                <li><a href="../html/Add_products.php">Add products</a></li>
+                <li><a href="../php/add_feedback.php">Add feedback</a></li>
 </ul>
 </ul>
             
