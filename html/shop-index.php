@@ -1,14 +1,13 @@
 <?php
-// connect with database
-include_once '../php/config.php';
-
+  // connect with database
+  include_once '../php/config.php';
+         
 ?>
 <!DOCTYPE html>
 
 <html lang="en">
 
 <!-- Head -->
-
 <head>
   <meta charset="utf-8">
   <title>Organic Shop</title>
@@ -24,19 +23,19 @@ include_once '../php/config.php';
   <meta property="og:title" content="-CUSTOMER VALUE-">
   <meta property="og:description" content="-CUSTOMER VALUE-">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="-CUSTOMER VALUE-">
+  <meta property="og:image" content="-CUSTOMER VALUE-"><!-- link to image for socio -->
   <meta property="og:url" content="-CUSTOMER VALUE-">
 
   <link rel="shortcut icon" href="https://p7.hiclipart.com/preview/907/455/804/organic-food-publix-computer-icons-organic.jpg">
 
   <!-- Fonts -->
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css"><!--- fonts for slider on the index page -->
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css"><!--- fonts for slider on the index page -->  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <!-- Global styles -->
+  <!-- Global styles -->          
   <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+   
   <!-- Page level plugin styles -->
   <link href="assets/pages/css/animate.css" rel="stylesheet">
   <link href="assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
@@ -52,161 +51,249 @@ include_once '../php/config.php';
   <link href="assets/corporate/css/custom.css" rel="stylesheet">
 </head>
 
+   
 
-
-<!-- Body -->
-
-<body class="ecommerce">
-  <!-- STYLE CUSTOMIZER -->
-  <div class="color-panel hidden-sm">
-    <div class="color-mode-icons icon-color"></div>
-    <div class="color-mode-icons icon-color-close"></div>
-    <div class="color-mode">
-      <p>THEME COLOR</p>
-      <ul class="inline">
-        <li class="color-red current color-default" data-style="red"></li>
-        <li class="color-blue" data-style="blue"></li>
-        <li class="color-green" data-style="green"></li>
-        <li class="color-orange" data-style="orange"></li>
-        <li class="color-gray" data-style="gray"></li>
-        <li class="color-turquoise" data-style="turquoise"></li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- TOP BAR -->
-  <div class="pre-header">
-    <div class="container">
-      <div class="row">
-        <!-- TOP BAR LEFT PART -->
-        <div class="col-md-4 additional-shop-info">
-          <ul class="list-unstyled list-inline">
-            <li><i class="fa fa-phone"></i><span>+383 44 222 333</span></li>
-            <?php
-            echo '<a href="https://www.facebook.com">';
-            echo '<i class="fab fa-facebook"></i>';
-            echo '</a>';
-            ?>
-
-            <?php
-            echo '<a href="https://www.linkedin.com/">';
-            echo '<i class="fab fa-linkedin"></i>';
-            echo '</a>';
-
-            ?>
-
-
-            <!-- TOP BAR MENU -->
-          </ul>
-        </div>
-        <div class="col-md-8 additional-nav">
-          <ul class="list-unstyled list-inline pull-right">
-            <li><a href="shop-account.php">My Account</a></li>
-            <li><a href="shop-wishlist.php">My Wishlist</a></li>
-            <li><a href="shop-checkout.php">Checkout</a></li>
-            <li><a href="../php/login_form.php" class="btn">Log In</a></li>
-            <li><a href="../php/register_form.php" class="btn">Register</a></li>
-            <li><a href="index_Look.php" class=btn>Look</a></li>
-
-          </ul>
-        </div>
-
+    <!-- Body -->
+ <body class="ecommerce">
+    <!-- STYLE CUSTOMIZER -->
+    <div class="color-panel hidden-sm">
+      <div class="color-mode-icons icon-color"></div>
+      <div class="color-mode-icons icon-color-close"></div>
+      <div class="color-mode">
+        <p>THEME COLOR</p>
+        <ul class="inline">
+          <li class="color-red current color-default" data-style="red"></li>
+          <li class="color-blue" data-style="blue"></li>
+          <li class="color-green" data-style="green"></li>
+          <li class="color-orange" data-style="orange"></li>
+          <li class="color-gray" data-style="gray"></li>
+          <li class="color-turquoise" data-style="turquoise"></li>
+        </ul>
       </div>
+    </div>
+
+    <!-- TOP BAR -->
+    <div class="pre-header">
+        <div class="container">
+            <div class="row">
+                <!-- TOP BAR LEFT PART -->
+                <div class="col-md-6 col-sm-6 additional-shop-info">
+                    <ul class="list-unstyled list-inline">
+                        <li><i class="fa fa-phone"></i><span>+383 44 222 333</span></li>
+                        <?php
+    echo '<a href="https://www.facebook.com">';
+    echo '<i class="fab fa-facebook"></i>';
+    echo '</a>';
+?>
+
+<?php
+echo '<a href="https://www.linkedin.com/">';
+echo '<i class="fab fa-linkedin"></i>';
+echo '</a>';
+
+    ?>
+   
+
+    <!-- TOP BAR MENU -->
+                <div class="col-md-8 col-sm-4 additional-nav">
+                    <ul class="list-unstyled list-inline pull-right">
+                        <li><a href="shop-account.php">My Account</a></li>
+                        <li><a href="shop-wishlist.php">My Wishlist</a></li>
+                        <li><a href="shop-checkout.php">Checkout</a></li>
+                        <li><a href="../php/login_form.php" class="btn">Log In</a></li>
+                        <li><a href="../php/register_form.php" class="btn">Register</a></li>
+                        <li><a href="index_Look.php" class=btn>Look</a></li>
+                      
+                   
+                    </ul>
+                </div>
+            </div>
+        </div>        
     </div>
 
     <!-- HEADER -->
     <div class="header">
       <div class="container">
         <a class="site-logo" href="shop-index.php"><img src="assets/pages/img/products/Fruits/organiclogo.ong.jpg" width="70px" height="70px" alt="Organic Shop "></a>
+
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
-       
+         <!-- BEGIN CART -->
+<div class="container" style="margin-top: 50px;">
+    <!-- link to open cart page -->
+    <div class="row">
+        <div class="col-md-6">
+            <a href="../php/cart.php" class="btn btn-link">
+                Cart
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <?php
+        // get all products
+        $result = mysqli_query($conn, "SELECT * FROM products;");
+ 
+        // get cookie cart
+        $cart = isset($_COOKIE["cart"]) ? $_COOKIE["cart"] : "[]";
+        $cart = json_decode($cart);
+ 
+        // loop through all cart items
+        while ($row = mysqli_fetch_object($result))
+        {
+            // check if product already exists in cart
+            $flag = false;
+            foreach ($cart as $c)
+            {
+                if ($c->pid == $row->pid)
+                {
+                    $flag = true;
+                    break;
+                }
+            }
+            ?>
+            <div class="col-md-3" style="margin-bottom: 20px;">
+                <div class="card" style="height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <?php echo $row->pname; ?>
+                        </h5>
+                        <p class="card-text">
+                            <?php echo $row->price; ?>
+                        </p>
+                        <?php if ($flag) { ?>
+                            <!-- show delete button if already exists -->
+                            <form method="POST" action="delete-cart.php">
+                                <input type="hidden" name="productid" value="<?php echo $row->pid; ?>">
+                                <input type="submit" class="btn btn-danger" value="Delete from cart">
+                            </form>
+                        <?php } else { ?>
+                            <!-- add to cart -->
+                            <form method="POST" action="add-cart.php">
+                                <input type="hidden" name="quantity" value="1">
+                                <input type="hidden" name="productid" value="<?php echo $row->pid; ?>">
+                                <input type="submit" class="btn btn-primary" value="Add to cart">
+                            </form>
+                        <?php } ?>
+                    </div>
+                </div>
+            </div>
+            <?php
+        }
+        ?>
+    </div>
+</div>
+            <div class="text-right">
+              <a href="shop-shopping-cart.php" class="btn btn-default">View Cart</a>
+              <a href="shop-checkout.php" class="btn btn-primary">Checkout</a>
+            </div>
+          </div>
+        </div>            
+      </div>
+
+      <?php
+      $sql="SELECT email_id FROM user;";
+      $result1=mysqli_query($conn, $sql);
+      $resultCheck=mysqli_num_rows($result1);
+      if(!$resultCheck) ?>
+      <ul>
+        <li>
+          <a href="?action=cookie" href="">
+          <i class="fa fa-shopping-cart" aria-hidden="true">
+            <span><?php if(!empty($cart_item)){
+              echo $cart_item;}
+              else{echo "0"; };
+              ?>
+            </span>
+          </i>
+          </a>
+        </li>
+      </ul>
+         <!--END CART -->
 
         <!-- NAVIGATION -->
         <div class="header-navigation">
           <ul>
+         
             <li class="dropdown"><a href="shop-index.php">Home</a></li>
 
             <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
                 Products
-
+                
               </a>
-
+                
 
 
               <ul class="dropdown-menu">
-                <!-- NAVIGATION -->
-                <div class="header-navigation">
-                  <ul>
-                    <li class="dropdown">
+ <!-- NAVIGATION -->
+ <div class="header-navigation">
+          <ul>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                Healthy Fruits
+                
+              </a>
+                
+              <!-- DROPDOWN MENU -->
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                  <a href="shop-product-list-berries.php">Berries <i class="fa fa-angle-right"></i></a>
+                  <a href="shop-product-list-melons.php">Melons & Grapes<i class="fa fa-angle-right"></i></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="shop-product-list.php">Second Level Link</a></li>
+                    <li><a href="shop-product-list.php">Second Level Link</a></li>
+                    <li class="dropdown-submenu">
                       <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                        Healthy Fruits
-
+                        Second Level Link 
+                        <i class="fa fa-angle-right"></i>
                       </a>
-
-                      <!-- DROPDOWN MENU -->
                       <ul class="dropdown-menu">
-                        <li class="dropdown-submenu">
-                          <a href="shop-product-list-berries.php">Berries <i class="fa fa-angle-right"></i></a>
-                          <a href="shop-product-list-melons.php">Melons & Grapes<i class="fa fa-angle-right"></i></a>
-                          <ul class="dropdown-menu" role="menu">
-                            <li><a href="shop-product-list.php">Second Level Link</a></li>
-                            <li><a href="shop-product-list.php">Second Level Link</a></li>
-                            <li class="dropdown-submenu">
-                              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                                Second Level Link
-                                <i class="fa fa-angle-right"></i>
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li><a href="shop-product-list.php">Third Level Link</a></li>
-                                <li><a href="shop-product-list.php">Third Level Link</a></li>
-                                <li><a href="shop-product-list.php">Third Level Link</a></li>
-                              </ul>
-                            </li>
-                          </ul>
-                        </li>
+                        <li><a href="shop-product-list.php">Third Level Link</a></li>
+                        <li><a href="shop-product-list.php">Third Level Link</a></li>
+                        <li><a href="shop-product-list.php">Third Level Link</a></li>
                       </ul>
                     </li>
-
-                    <!--Vegetables-->
-                    <li class="dropdown dropdown-megamenu">
-                      <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                        Fresh Vegetables
-                        <ul class="dropdown-menu">
-                          <li class="dropdown-submenu">
-                            <a href="shop-product-list-vegetables.php">Vegetables <i class="fa fa-angle-right"></i></a>
-                          </li>
-                        </ul>
-                    </li>
-
-                    <!--From our farm-->
-                    <li class="dropdown dropdown-megamenu">
-                      <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                        From Our Farm
-                        <ul class="dropdown-menu">
-                          <li class="dropdown-submenu">
-                            <a href="shop-product-list-farm.php">From Our Farm <i class="fa fa-angle-right"></i></a>
-                          </li>
-                        </ul>
-                    </li>
-                    <li class="active"><a href="shop-product-list.php">Product List</a></li>
-                    <li><a href="shop-item.php">Product Page</a></li>
-                    <li><a href="shop-shopping-cart-null.php">Shopping</a></li>
-                    <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
-                    <li><a href="Add_products.php">Add products</a></li>
-                    <li><a href="add_feedback.php">Add feedback</a></li>
-
                   </ul>
+                </li>
               </ul>
             </li>
+
+            <!--Vegetables-->
+            <li class="dropdown dropdown-megamenu">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                Fresh Vegetables
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu">
+                    <a href="shop-product-list-vegetables.php">Vegetables <i class="fa fa-angle-right"></i></a>
+                  </li>
+              </ul>
+            </li>
+
+ <!--From our farm-->
+ <li class="dropdown dropdown-megamenu">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+                From Our Farm 
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu">
+                    <a href="shop-product-list-farm.php">From Our Farm <i class="fa fa-angle-right"></i></a>
+                  </li>
+                </ul>
+            </li>
+            <li class="active"><a href="shop-product-list.php">Product List</a></li>
+            <li><a href="shop-item.php">Discount</a></li>
+                <li><a href="shop-shopping-cart-null.php">Shopping</a></li>
+                <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
+                <li><a href="Add_products.php">Add products</a></li>
+                <li><a href="add_feedback.php">Add feedback</a></li>
+</ul>
+</ul>
             <li class="dropdown active">
               <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                New
-
+               New
+                
               </a>
-
-
+                
+                
               </a>
               <ul class="dropdown-menu">
                 <li>
@@ -317,218 +404,194 @@ include_once '../php/config.php';
                 </li>
               </ul>
             </li>
-
+            
             </li>
             <div class="header-navigation">
-              <ul>
+          <ul>
+         
+            
+            
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+               About
+                
+              </a>
+                
 
 
-
-                <li class="dropdown active">
-                  <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                    About
-
-                  </a>
-
-
-
-                  <ul class="dropdown-menu">
-                    <li class="dropdown"><a href="shop-about.php">About</a></li>
-                    <li><a href="shop-contacts.php">Contacts</a></li>
-                    <li><a href="shop-checkout.php">Checkout</a></li>
-                    <li><a href="shop-account.php">My account</a></li>
-                    <li><a href="shop-wishlist.php">My Wish List</a></li>
-                  </ul>
-                </li>
-                <div class="header-navigation">
-                  <ul>
-
-
-
-                    <li class="dropdown active">
-                      <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
-                        FAQ
-
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li class="dropdown"><a href="shop-faqs.php">FAQ</a></li>
-                        <li><a href="shop-goods-compare.php">Product Comparison</a></li>
-                        <li><a href="shop-standart-forms.php">Standart Forms</a></li>
-                      </ul>
-                    </ul>
-                   </li>
-                  </ul>
-               </div>
-            <li class="dropdown"> 
-            <?php
-            $sql = "SELECT email FROM user;";
-            $result1 = mysqli_query($conn, $sql);
-            $resultCheck = mysqli_num_rows($result1);
-            if (!$resultCheck) ?>
-            <ul>
-              <li>
-                  <a href="?action=cookie">
-                    <a href="../php/cart.php">
-                      <i class="fa fa-shopping-cart" aria-hidden="true">
-                        <span><?php if (!empty($cart_item)) {
-                                echo $cart_item;
-                              } else {
-                                echo "0";
-                              };
-                              ?>
-                        </span>
-                      </i>
-                    </a>
-                  </a>
-              </li>
-            </ul>
-            </li>
+              <ul class="dropdown-menu">
+            <li class="dropdown"><a href="shop-about.php">About</a></li>
+           <li><a href="shop-contacts.php">Contacts</a></li>
+          <li><a href="shop-checkout.php">Checkout</a></li>
+          <li><a href="shop-account.php">My account</a></li>
+              <li><a href="shop-wishlist.php">My Wish List</a></li>   
+</ul>
+</li>
+<div class="header-navigation">
+          <ul>
+         
+            
+            
+            <li class="dropdown active">
+              <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
+             FAQ
+                
+              </a>
+              <ul class="dropdown-menu">
+              <li class="dropdown"><a href="shop-faqs.php">FAQ</a></li>
+<li><a href="shop-goods-compare.php">Product Comparison</a></li>
+  <li><a href="shop-standart-forms.php">Standart Forms</a></li>           
+              </ul>
+              </ul>
+            </li>    
+          </ul>
         </div>
       </div>
-      <!-- BEGIN SLIDER -->
-      <div class="page-slider margin-bottom-35">
+    </div>
+    <!-- BEGIN SLIDER -->
+    <div class="page-slider margin-bottom-35">
         <div id="carousel-example-generic" class="carousel slide carousel-slider">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-          </ol>
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            </ol>
 
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner" role="listbox">
-            <!-- First slide -->
-            <div class="item carousel-item-four active" style="background: url('../images/background1.png'); background-position: center center; background-size: cover;">
-              <div class="container">
-                <div class="text-center">
-                  <h2 class="margin-bottom-20 animate-delay carousel-title-v3 border-bottom-title text-uppercase" data-animation="animated fadeInDown">
-                    A lot of<br /><span class="color-red-v2">healthy</span><br />foods are here
-                  </h2>
-                  <p class="carousel-subtitle-v2" data-animation="animated fadeInUp">Here you are healthier than before.</p>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                 <!-- First slide -->
+              <div class="item carousel-item-four active" style="background: url('../images/background1.png'); background-position: center center; background-size: cover;">
+                <div class="container">
+                        <div class="text-center">
+                            <h2 class="margin-bottom-20 animate-delay carousel-title-v3 border-bottom-title text-uppercase" data-animation="animated fadeInDown">
+                               A lot of<br/><span class="color-red-v2">healthy</span><br/>foods are here
+                            </h2>
+                            <p class="carousel-subtitle-v2" data-animation="animated fadeInUp">Here you are healthier than before.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                
+                <!-- Second slide -->
+                <div class="item carousel-item-five" style="background: url('../images/background.png'); background-position: center center; background-size: cover;">
+                    <div class="container">
+                        <div class="carousel-position-four text-center">
+                            <h2 class="animate-delay carousel-title-v4" data-animation="animated fadeInDown">
+                                Unlimted
+                            </h2>
+                            <p class="carousel-subtitle-v2" data-animation="animated fadeInDown">
+                                healthy recipes
+                            </p>
+                            <p class="carousel-subtitle-v3 margin-bottom-30" data-animation="animated fadeInUp">
+                                with healthy products
+                            </p>
+                            <a class="carousel-btn" href="#" data-animation="animated fadeInUp">See More Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third slide -->
+                <div class="item carousel-item-six" style="background: url('../images/background2.png'); background-position: center center; background-size: cover;">
+                    <div class="container">
+                        <div class="carousel-position-four text-center">
+                            <span class="carousel-subtitle-v3 margin-bottom-15" data-animation="animated fadeInDown">
+                               Be healthy
+                            </span>
+                            <p class="carousel-subtitle-v4" data-animation="animated fadeInDown">
+                                for your better
+                            </p>
+                            <p class="carousel-subtitle-v3" data-animation="animated fadeInDown">
+                                future.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fourth slide -->
+                <div class="item carousel-item-seven" style="background: url('../images/background3.png'); background-position: center center; background-size: cover;">
+                   <div class="center-block">
+                        <div class="center-block-wrap">
+                            <div class="center-block-body">
+                                <h2 class="carousel-title-v1 margin-bottom-20" data-animation="animated fadeInDown">
+                                    100% natural <br/>
+                                    products
+                                </h2>
+                                <a class="carousel-btn" href="#" data-animation="animated fadeInUp">Buy them Now!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Second slide -->
-            <div class="item carousel-item-five" style="background: url('../images/background.png'); background-position: center center; background-size: cover;">
-              <div class="container">
-                <div class="carousel-position-four text-center">
-                  <h2 class="animate-delay carousel-title-v4" data-animation="animated fadeInDown">
-                    Unlimted
-                  </h2>
-                  <p class="carousel-subtitle-v2" data-animation="animated fadeInDown">
-                    healthy recipes
-                  </p>
-                  <p class="carousel-subtitle-v3 margin-bottom-30" data-animation="animated fadeInUp">
-                    with healthy products
-                  </p>
-                  <a class="carousel-btn" href="#" data-animation="animated fadeInUp">See More Details</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Third slide -->
-            <div class="item carousel-item-six" style="background: url('../images/background2.png'); background-position: center center; background-size: cover;">
-              <div class="container">
-                <div class="carousel-position-four text-center">
-                  <span class="carousel-subtitle-v3 margin-bottom-15" data-animation="animated fadeInDown">
-                    Be healthy
-                  </span>
-                  <p class="carousel-subtitle-v4" data-animation="animated fadeInDown">
-                    for your better
-                  </p>
-                  <p class="carousel-subtitle-v3" data-animation="animated fadeInDown">
-                    future.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Fourth slide -->
-            <div class="item carousel-item-seven" style="background: url('../images/background3.png'); background-position: center center; background-size: cover;">
-              <div class="center-block">
-                <div class="center-block-wrap">
-                  <div class="center-block-body">
-                    <h2 class="carousel-title-v1 margin-bottom-20" data-animation="animated fadeInDown">
-                      100% natural <br />
-                      products
-                    </h2>
-                    <a class="carousel-btn" href="#" data-animation="animated fadeInUp">Buy them Now!</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Controls -->
-          <a class="left carousel-control carousel-control-shop" href="#carousel-example-generic" role="button" data-slide="prev">
-            <i class="fa fa-angle-left" aria-hidden="true"></i>
-          </a>
-          <a class="right carousel-control carousel-control-shop" href="#carousel-example-generic" role="button" data-slide="next">
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-          </a>
+            <!-- Controls -->
+            <a class="left carousel-control carousel-control-shop" href="#carousel-example-generic" role="button" data-slide="prev">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </a>
+            <a class="right carousel-control carousel-control-shop" href="#carousel-example-generic" role="button" data-slide="next">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
         </div>
-      </div>
+    </div>
 
-      <div class="main">
-        <div class="container">
-          <!-- PRODUCTS & NEW ARRIVALS -->
-          <div class="row margin-bottom-40">
-            <!-- PRODUCTS -->
-            <div class="col-md-12 sale-product">
-              <h2>New Arrivals</h2>
-              <div class="owl-carousel owl-carousel5">
-                <div>
-                  <div class="product-item">
-                    <div class="pi-img-wrapper">
-                      <img src="../images/fisheggs.png" class="img-responsive" alt="fisheggs">
-                      <div>
-                        <a href="../images/fisheggs.png" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
-                      </div>
+    <div class="main">
+      <div class="container">
+        <!-- PRODUCTS & NEW ARRIVALS -->
+        <div class="row margin-bottom-40">
+          <!-- PRODUCTS -->
+          <div class="col-md-12 sale-product">
+            <h2>New Arrivals</h2>
+            <div class="owl-carousel owl-carousel5">
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/fisheggs.png" class="img-responsive" alt="fisheggs">
+                    <div>
+                      <a href="../images/fisheggs.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
                     </div>
-                    <h3><a href="shop-item.php">Fish eggs</a></h3>
-                    <div class="pi-price">$50.00</div>
-                    <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                    <div class="sticker sticker-sale"></div>
                   </div>
+                  <h3><a href="shop-item.php">Fish eggs</a></h3>
+                  <div class="pi-price">$50.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                  <div class="sticker sticker-sale"></div>
                 </div>
-                <div>
-                  <div class="product-item">
-                    <div class="pi-img-wrapper">
-                      <img src="../images/goat chesse.png" class="img-responsive" alt="goat chesse">
-                      <div>
-                        <a href="../images/goat chesse.png" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
-                      </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/goat chesse.png" class="img-responsive" alt="goat chesse">
+                    <div>
+                      <a href="../images/goat chesse.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
-                    <h3><a href="shop-item.php">Goat chesse</a></h3>
-                    <div class="pi-price">$35.00</div>
-                    <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                   </div>
+                  <h3><a href="shop-item.php">Goat chesse</a></h3>
+                  <div class="pi-price">$35.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
-                <div>
-                  <div class="product-item">
-                    <div class="pi-img-wrapper">
-                      <img src="../images/milk.png" class="img-responsive" alt="milk">
-                      <div>
-                        <a href="../images/milk.png" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
-                      </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/milk.png" class="img-responsive" alt="milk">
+                    <div>
+                      <a href="../images/milk.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
-                    <h3><a href="shop-item.php">Milk</a></h3>
-                    <div class="pi-price">$5.00</div>
-                    <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                   </div>
+                  <h3><a href="shop-item.php">Milk</a></h3>
+                  <div class="pi-price">$5.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
-                <div>
+              </div>
+              <div>
                   <div class="product-item">
                     <div class="pi-img-wrapper">
                       <img src="../images/oysters.png" class="img-responsive" alt="Oysters">
                       <div>
                         <a href="../images/oysters.png" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
+                        <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                       </div>
                     </div>
                     <h3><a href="javascript:;">Oysters</a></h3>
@@ -536,249 +599,249 @@ include_once '../php/config.php';
                     <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                     <div class="sticker sticker-new"></div>
                   </div>
-                </div>
-                <div>
-                  <div class="product-item">
-                    <div class="pi-img-wrapper">
-                      <img src="../images/salmon.png" class="img-responsive" alt="salmon">
-                      <div>
-                        <a href="../images/salmon.png" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
-                      </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/salmon.png" class="img-responsive" alt="salmon">
+                    <div>
+                      <a href="../images/salmon.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
-                    <h3><a href="shop-item.html">Salmon</a></h3>
-                    <div class="pi-price">$60.00</div>
-                    <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                   </div>
-                </div>
-                <div>
-                  <div class="product-item">
-                    <div class="pi-img-wrapper">
-                      <img src="../images/sardines.png" class="img-responsive" alt="sardines">
-                      <div>
-                        <a href="../images/sardines.png" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
-                      </div>
-                    </div>
-                    <h3><a href="shop-item.php">Sardines</a></h3>
-                    <div class="pi-price">$40.00</div>
-                    <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                  </div>
-                </div>
-                <div>
-                  <div class="product-item">
-                    <div class="pi-img-wrapper">
-                      <img src="../images/shrimps.png" class="img-responsive" alt="shrimps">
-                      <div>
-                        <a href="../images/shrimps.png" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
-                      </div>
-                    </div>
-                    <h3><a href="shop-item.php">Shrimps</a></h3>
-                    <div class="pi-price">$45.00</div>
-                    <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                  </div>
+                  <h3><a href="shop-item.html">Salmon</a></h3>
+                  <div class="pi-price">$60.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <!--  SIDEBAR & CONTENT -->
-          <div class="row margin-bottom-40">
-            <!--  SIDEBAR -->
-            <div class="sidebar col-md-3 col-sm-5">
-              <ul class="list-group margin-bottom-25 sidebar-menu">
-                <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Fruits</a></li>
-                <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Vegetables</a></li>
-                <li class="list-group-item clearfix"><a href="../html/shop-index-light-footer.php"><i class="fa fa-angle-right"></i>Cereals</a></li>
-                <li class="list-group-item clearfix"><a href="shop-index.php"><i class="fa fa-angle-right"></i>Sea fruits</a></li>
-              </ul>
-            </div>
-
-            <!-- CONTENT -->
-            <div class="col-md-9 col-sm-8">
-              <div class="owl-carousel owl-carousel3">
-                <div>
-                  <div class="product-item">
-                    <div class="pi-img-wrapper">
-                      <img src="../images/tuna.png" class="img-responsive" alt="tuna">
-                      <div>
-                        <a href="../images/tuna.png" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
-                      </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/sardines.png" class="img-responsive" alt="sardines">
+                    <div>
+                      <a href="../images/sardines.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
-                    <h3><a href="shop-item.php">Tuna</a></h3>
-                    <div class="pi-price">$35.00</div>
-                    <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                    <div class="sticker sticker-new"></div>
                   </div>
-                </div>
-                <div>
-                  <div class="product-item">
-                    <div class="pi-img-wrapper">
-                      <img src="../images/shrimps.png" class="img-responsive" alt="shrimps">
-                      <div>
-                        <a href="../images/shrimps.png" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
-                      </div>
-                    </div>
-                    <h3><a href="shop-item.php">Shrimps</a></h3>
-                    <div class="pi-price">$45.00</div>
-                    <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                  </div>
-                </div>
-                <div>
-                  <div class="product-item">
-                    <div class="pi-img-wrapper">
-                      <img src="../images/goat chesse.png" class="img-responsive" alt="goat chesse">
-                      <div>
-                        <a href="../images/goat chesse.png" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
-                      </div>
-                    </div>
-                    <h3><a href="shop-item.php">Goat chesse</a></h3>
-                    <div class="pi-price">$35.00</div>
-                    <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                  </div>
-                </div>
-                <div>
-                  <div class="product-item">
-                    <div class="pi-img-wrapper">
-                      <img src="../images/oysters.png" class="img-responsive" alt="oysters">
-                      <div>
-                        <a href="../images/oysters.png" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
-                      </div>
-                    </div>
-                    <h3><a href="shop-item.php">Oysters</a></h3>
-                    <div class="pi-price">$55.00</div>
-                    <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                    <div class="sticker sticker-sale"></div>
-                  </div>
-                </div>
-                <div>
-                  <div class="product-item">
-                    <div class="pi-img-wrapper">
-                      <img src="../images/milk.png" class="img-responsive" alt="milk">
-                      <div>
-                        <a href="../images/milk.png" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
-                      </div>
-                    </div>
-                    <h3><a href="shop-item.php">Milk</a></h3>
-                    <div class="pi-price">$5.00</div>
-                    <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                  </div>
-                </div>
-                <div>
-                  <div class="product-item">
-                    <div class="pi-img-wrapper">
-                      <img src="../images/fisheggs.png" class="img-responsive" alt="fisheggs">
-                      <div>
-                        <a href="../images/fisheggs.png" class="btn btn-default fancybox-button">Zoom</a>
-                        <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
-                      </div>
-                    </div>
-                    <h3><a href="shop-item.php">Fish eggs</a></h3>
-                    <div class="pi-price">$50.00</div>
-                    <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                  </div>
+                  <h3><a href="shop-item.php">Sardines</a></h3>
+                  <div class="pi-price">$40.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
               </div>
-            </div>
-
-            <!-- TWO PRODUCTS & PROMO -->
-            <div class="row margin-bottom-35 ">
-              <!-- TWO PRODUCTS -->
-              <div class="col-md-6 two-items-bottom-items">
-                <div class="owl-carousel owl-carousel2">
-                  <div>
-                    <div class="product-item">
-                      <div class="pi-img-wrapper">
-                        <img src="../images/sardines.png" class="img-responsive" alt="sardines">
-                        <div>
-                          <a href="../images/sardines.png" class="btn btn-default fancybox-button">Zoom</a>
-                          <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
-                        </div>
-                      </div>
-                      <h3><a href="shop-item.php">Sardines</a></h3>
-                      <div class="pi-price">$30.00</div>
-                      <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/shrimps.png" class="img-responsive" alt="shrimps">
+                    <div>
+                      <a href="../images/shrimps.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
                     </div>
                   </div>
-                  <div>
-                    <div class="product-item">
-                      <div class="pi-img-wrapper">
-                        <img src="../images/salmon.png" class="img-responsive" alt="salmon">
-                        <div>
-                          <a href="../images/salmon.png" class="btn btn-default fancybox-button">Zoom</a>
-                          <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
-                        </div>
-                      </div>
-                      <h3><a href="shop-item.php">Salmon</a></h3>
-                      <div class="pi-price">$55.00</div>
-                      <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="product-item">
-                      <div class="pi-img-wrapper">
-                        <img src="../images/oysters.png" class="img-responsive" alt="oysters">
-                        <div>
-                          <a href="../images/oysters.png" class="btn btn-default fancybox-button">Zoom</a>
-                          <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
-                        </div>
-                      </div>
-                      <h3><a href="shop-item.php">Oysters</a></h3>
-                      <div class="pi-price">$60.00</div>
-                      <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="product-item">
-                      <div class="pi-img-wrapper">
-                        <img src="../images/sardines.png" class="img-responsive" alt="sardines">
-                        <div>
-                          <a href="../images/sardines.png" class="btn btn-default fancybox-button">Zoom</a>
-                          <a href="../php/modify.php" class="btn btn-default fancybox-fast-view">Modify</a>
-                        </div>
-                      </div>
-                      <h3><a href="shop-item.php">Sardines</a></h3>
-                      <div class="pi-price">$30.00</div>
-                      <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- PROMO -->
-              <div class="col-md-6 shop-index-carousel">
-                <div class="content-slider">
-                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#myCarousel" data-slide-to="1"></li>
-                      <li data-target="#myCarousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <img src="../images/indicators7.png" class="img-responsive" alt="indicators7">
-                      </div>
-                      <div class="item">
-                        <img src="../images/indicators8.png" class="img-responsive" alt="indicators8">
-                      </div>
-                      <div class="item">
-                        <img src="../images/indicators9.png" class="img-responsive" alt="indicators9">
-                      </div>
-                    </div>
-                  </div>
+                  <h3><a href="shop-item.php">Shrimps</a></h3>
+                  <div class="pi-price">$45.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-         <!-- BEGIN STEPS -->
+       <!--  SIDEBAR & CONTENT -->
+       <div class="row margin-bottom-40">
+        <!--  SIDEBAR -->
+        <div class="sidebar col-md-3 col-sm-5">
+          <ul class="list-group margin-bottom-25 sidebar-menu">
+            <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Fruits</a></li>
+            <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Vegetables</a></li>
+            <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Cereals</a></li>
+            <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Sea fruits</a></li>
+          </ul>
+        </div>
+
+          <!-- CONTENT -->
+          <div class="col-md-9 col-sm-8">
+            <div class="owl-carousel owl-carousel3">
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/tuna.png" class="img-responsive" alt="tuna">
+                    <div>
+                      <a href="../images/tuna.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.php">Tuna</a></h3>
+                  <div class="pi-price">$35.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                  <div class="sticker sticker-new"></div>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/shrimps.png" class="img-responsive" alt="shrimps">
+                    <div>
+                      <a href="../images/shrimps.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.php">Shrimps</a></h3>
+                  <div class="pi-price">$45.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/goat chesse.png" class="img-responsive" alt="goat chesse">
+                    <div>
+                      <a href="../images/goat chesse.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.php">Goat chesse</a></h3>
+                  <div class="pi-price">$35.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/oysters.png" class="img-responsive" alt="oysters">
+                    <div>
+                      <a href="../images/oysters.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.php">Oysters</a></h3>
+                  <div class="pi-price">$55.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                  <div class="sticker sticker-sale"></div>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/milk.png" class="img-responsive" alt="milk">
+                    <div>
+                      <a href="../images/milk.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.php">Milk</a></h3>
+                  <div class="pi-price">$5.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/fisheggs.png" class="img-responsive" alt="fisheggs">
+                    <div>
+                      <a href="../images/fisheggs.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.php">Fish eggs</a></h3>
+                  <div class="pi-price">$50.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- TWO PRODUCTS & PROMO -->
+        <div class="row margin-bottom-35 ">
+          <!-- TWO PRODUCTS -->
+          <div class="col-md-6 two-items-bottom-items">
+            <div class="owl-carousel owl-carousel2">
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/sardines.png" class="img-responsive" alt="sardines">
+                    <div>
+                      <a href="../images/sardines.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.php">Sardines</a></h3>
+                  <div class="pi-price">$30.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/salmon.png" class="img-responsive" alt="salmon">
+                    <div>
+                      <a href="../images/salmon.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.php">Salmon</a></h3>
+                  <div class="pi-price">$55.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/oysters.png" class="img-responsive" alt="oysters">
+                    <div>
+                      <a href="../images/oysters.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.php">Oysters</a></h3>
+                  <div class="pi-price">$60.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+              <div>
+                <div class="product-item">
+                  <div class="pi-img-wrapper">
+                    <img src="../images/sardines.png" class="img-responsive" alt="sardines">
+                    <div>
+                      <a href="../images/sardines.png" class="btn btn-default fancybox-button">Zoom</a>
+                      <a href="#product-pop-up" class="btn btn-default fancybox-fast-view">View</a>
+                    </div>
+                  </div>
+                  <h3><a href="shop-item.php">Sardines</a></h3>
+                  <div class="pi-price">$30.00</div>
+                  <a href="javascript:;" class="btn btn-default add2cart">Add to cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- PROMO -->
+          <div class="col-md-6 shop-index-carousel">
+            <div class="content-slider">
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="../images/indicators7.png" class="img-responsive" alt="indicators7">
+                  </div>
+                  <div class="item">
+                    <img src="../images/indicators8.png" class="img-responsive" alt="indicators8">
+                  </div>
+                  <div class="item">
+                    <img src="../images/indicators9.png" class="img-responsive" alt="indicators9">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+
+     <!-- BEGIN STEPS -->
     <div class="steps-block steps-block-red">
       <div class="container">
         <div class="row">
@@ -1015,5 +1078,7 @@ include_once '../php/config.php';
             Layout.initSliderRange();
         });
     </script>
+    <!-- END PAGE LEVEL JAVASCRIPTS -->
 </body>
+<!-- END BODY -->
 </html>
