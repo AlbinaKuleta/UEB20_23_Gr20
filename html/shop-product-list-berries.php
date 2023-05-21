@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<!--<![endif]-->
+
 
 <!-- Head BEGIN -->
 <head>
@@ -231,7 +231,7 @@ echo '</a>';
                 </ul>
             </li>
             <li class="active"><a href="shop-product-list.php">Product List</a></li>
-            <li><a href="shop-item.php">Product Page</a></li>
+            <li><a href="shop-item.php">Discount</a></li>
                 <li><a href="shop-shopping-cart-null.php">Shopping</a></li>
                 <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
                 <li><a href="Add_products.php">Add products</a></li>
