@@ -7,7 +7,7 @@ create table userRole (urid integer, uid integer, rid integer);
 create table products (pid integer, pname nvarchar(50), price decimal(5,2), image blob, cid integer);
 create table category (cid integer, cname nvarchar(50));
 create table userProduct (upid integer, uid integer, pid integer, quantity integer, unit nvarchar(20));
-create table feedback(uname nvarchar(50), surname nvarchar(50), email nvarchar(50), feedback nvarchar(5000))
+create table feedback(uname nvarchar(50), surname nvarchar(50), email nvarchar(50), feedback nvarchar(5000));
 
 insert into products
 values 

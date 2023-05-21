@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Frequently Asked Questions | Metronic Shop UI</title>
+  <title>Organic Shop</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -84,13 +84,6 @@ echo '<i class="fab fa-linkedin"></i>';
 echo '</a>';
 
     ?>
-   
-                        <!-- CURRENCIES -->
-                        <li class="shop-currencies">
-                            <a href="javascript:void(0);">€</a>
-                            <a href="javascript:void(0);">£</a>
-                            <a href="javascript:void(0);" class="current">$</a>
-                        </li>
                        
                     </ul>
                 </div>
@@ -116,39 +109,7 @@ echo '</a>';
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
 
          <!-- BEGIN CART -->
-       <div class="top-cart-block">
-        <div class="top-cart-info">
-          <a href="javascript:void(0);" class="top-cart-info-count">3 items</a>
-          <a href="javascript:void(0);" class="top-cart-info-value">$1260</a>
-        </div>
-        <i class="fa fa-shopping-cart"></i>
-                      
-        
-            <div class="top-cart-content-wrapper">
-                <div class="top-cart-content">
-                  <ul class="scroller" style="height: 250px;">
-                    <li>
-                      <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Apple.png " alt="Healthy Fruits" width="37" height="34"></a>
-                      <span class="cart-content-count">x 1</span>
-                      <strong><a href="shop-item.php">Healthy Fruits</a></strong>
-                      <em>$1230</em>
-                      <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
-                    </li>
-                    <li>
-                      <a href="shop-item.php"><img src="assets/pages/img/products/Vegetables/cauliflower.png" alt="Fresh Vegetables" width="37" height="34"></a>
-                      <span class="cart-content-count">x 1</span>
-                      <strong><a href="shop-item.php">Fresh Vegetables</a></strong>
-                      <em>$1230</em>
-                   
-                  </ul>
-            <div class="text-right">
-              <a href="shop-shopping-cart.php" class="btn btn-default">View Cart</a>
-              <a href="shop-checkout.php" class="btn btn-primary">Checkout</a>
-            </div>
-          </div>
-        </div>            
-      </div>
-      <!--END CART -->
+       
 
         <!-- NAVIGATION -->
         <div class="header-navigation">

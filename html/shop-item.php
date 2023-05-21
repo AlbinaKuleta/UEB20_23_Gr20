@@ -107,41 +107,7 @@ echo '</a>';
         <a class="site-logo" href="shop-index.php"><img src="assets/pages/img/products/Fruits/organiclogo.ong.jpg" width="70px" height="70px" alt="Organic Shop "></a>
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
-
-         <!-- BEGIN CART -->
-       <div class="top-cart-block">
-        <div class="top-cart-info">
-          <a href="javascript:void(0);" class="top-cart-info-count">3 items</a>
-          <a href="javascript:void(0);" class="top-cart-info-value">$1260</a>
-        </div>
-        <i class="fa fa-shopping-cart"></i>
-                      
-        
-            <div class="top-cart-content-wrapper">
-                <div class="top-cart-content">
-                  <ul class="scroller" style="height: 250px;">
-                    <li>
-                      <a href="shop-item.php"><img src="assets/pages/img/products/Fruits/Apple.png " alt="Healthy Fruits" width="37" height="34"></a>
-                      <span class="cart-content-count">x 1</span>
-                      <strong><a href="shop-item.php">Healthy Fruits</a></strong>
-                      <em>$1230</em>
-                      <a href="javascript:void(0);" class="del-goods">&nbsp;</a>
-                    </li>
-                    <li>
-                      <a href="shop-item.php"><img src="assets/pages/img/products/Vegetables/cauliflower.png" alt="Fresh Vegetables" width="37" height="34"></a>
-                      <span class="cart-content-count">x 1</span>
-                      <strong><a href="shop-item.php">Fresh Vegetables</a></strong>
-                      <em>$1230</em>
-                   
-                  </ul>
-            <div class="text-right">
-              <a href="shop-shopping-cart.php" class="btn btn-default">View Cart</a>
-              <a href="shop-checkout.php" class="btn btn-primary">Checkout</a>
-            </div>
-          </div>
-        </div>            
-      </div>
-      <!--END CART -->
+        <!-- Cart -->
 
         <!-- NAVIGATION -->
         <div class="header-navigation">
@@ -197,7 +163,7 @@ echo '</a>';
                 Fresh Vegetables
                 <ul class="dropdown-menu">
                   <li class="dropdown-submenu">
-                    <a href="shop-product-list-vegetables.php">Vegetables <i class="fa fa-angle-right"></i></a>
+                    <a href="../html/shop-product-list-vegetables.php">Vegetables <i class="fa fa-angle-right"></i></a>
                   </li>
               </ul>
             </li>
@@ -208,16 +174,16 @@ echo '</a>';
                 From Our Farm 
                 <ul class="dropdown-menu">
                   <li class="dropdown-submenu">
-                    <a href="shop-product-list-farm.php">From Our Farm <i class="fa fa-angle-right"></i></a>
+                    <a href="../html/shop-product-list-farm.php">From Our Farm <i class="fa fa-angle-right"></i></a>
                   </li>
                 </ul>
             </li>
             <li class="active"><a href="shop-product-list.php">Product List</a></li>
             <li><a href="shop-item.php">Discount</a></li>
-                <li><a href="shop-shopping-cart-null.php">Shopping</a></li>
-                <li><a href="shop-shopping-cart.php">Shopping Cart</a></li>
-                <li><a href="Add_products.php">Add products</a></li>
-                <li><a href="add_feedback.php">Add feedback</a></li>
+                <li><a href="../html/shop-shopping-cart-null.php">Shopping</a></li>
+                <li><a href="../html/shop-shopping-cart.php">Shopping Cart</a></li>
+                <li><a href="../html/Add_products.php">Add products</a></li>
+                <li><a href="../php/add_feedback.php">Add feedback</a></li>
 </ul>
 </ul>
             <li class="dropdown active">
@@ -395,10 +361,10 @@ echo '</a>';
           <!--  SIDEBAR -->
           <div class="sidebar col-md-3 col-sm-5">
             <ul class="list-group margin-bottom-25 sidebar-menu">
-              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Fruits</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Vegetables</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Cereals</a></li>
-              <li class="list-group-item clearfix"><a href="shop-product-list.php"><i class="fa fa-angle-right"></i>Sea fruits</a></li>
+              <li class="list-group-item clearfix"><a href=" "><i class="fa fa-angle-right"></i>Fruits</a></li>
+              <li class="list-group-item clearfix"><a href=" "><i class="fa fa-angle-right"></i>Vegetables</a></li>
+              <li class="list-group-item clearfix"><a href="../html/shop-index-light-footer.php"><i class="fa fa-angle-right"></i>Cereals</a></li>
+              <li class="list-group-item clearfix"><a href="../html/shop-index.php"><i class="fa fa-angle-right"></i>Sea fruits</a></li>
             </ul>
           </div>
 
