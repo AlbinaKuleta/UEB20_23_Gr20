@@ -530,47 +530,116 @@ echo '</a>';
                                     like cucumbers and avocados, to ensure that bacteria won’t transfer to the food by a knife. Scrubbing vegetables and fruits with a brush is also recommended.
                                   </div>
                                </div>
-                            </div>
-                    
-                            <h4>If you have any other question, please feel free to write it here:</h4>
-	                                    <form method="post" action="submit.php">
-                                        <label for="mesazhi">Your question:</label><br>
-                                        <textarea id="mesazhi" name="mesazhi" rows="4" cols="50" required></textarea>
-                                        <br>
-		                                  
-                                      <input type="submit" value="SEND" style="padding: 10px 20px; font-size: 16px; background-color: #d67718; color: white; border: none; border-radius: 4px;">
-		                                          
-	                                                         </form>
-                                                           <?php
+                            </div> <h2>FAQ Registration</h2>
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+        <label for="question">If you are interesed for more, here you can write your question:</label><br>
+        
+        <input type="text" name="question" id="question" required><br><br>
+        <label for="email">Your Email:</label><br>
+        <input type="email" name="email" id="email" required><br><br> <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
 
-$db_host = '127.0.0.1';
-$db_user = 'root';
-$db_pass = 'diona2003';
-$db_name = 'databaza';
+        h2 {
+            margin-bottom: 20px;
+        }
 
-$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+        form {
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
 
-// Check for errors
-if (mysqli_connect_errno()) {
-  die('Could not connect to the database: ' . mysqli_connect_error());
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 200%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        label[for="email"]
+
+        input[type="text"],
+        textarea,
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+        <input type="submit" value="Register">
+    </form>
+    <h3>REMINDER: if you are logged in, your answer will come in your email that you entered!</h3>
+    <?php
+// Establish a database connection
+$host = 'localhost';
+$username = 'your_username';
+$password = 'your_password';
+$database = 'your_database';
+
+$conn = mysqli_connect($host, $username, $password, $database);
+
+// Check the connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
 }
 
-// Get the question and answer from the form data
-$question = mysqli_real_escape_string($conn, $_POST['question']);
-$answer = mysqli_real_escape_string($conn, $_POST['answer']);
+// Process the form submission
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Retrieve form data
+    $question = $_POST['question'];
+    $email = $_POST['email'];
 
-// Insert the new question and answer into the database
-$sql = "INSERT INTO FAQQ (question, answer) VALUES ('$question', '$answer')";
+    // Prepare the SQL statement
+    $sql = "INSERT INTO faq (question, email) VALUES (?, ?)";
+    $stmt = mysqli_prepare($conn, $sql);
 
-if (mysqli_query($conn, $sql)) {
-  echo 'Question added successfully.';
-} else {
-  echo 'Error: ' . mysqli_error($conn);
+    // Bind parameters and execute the statement
+    mysqli_stmt_bind_param($stmt, 'ss', $question, $email);
+    mysqli_stmt_execute($stmt);
+
+    // Check if the statement was executed successfully
+    if (mysqli_stmt_affected_rows($stmt) > 0) {
+        echo "Question registered successfully!";
+    } else {
+        echo "Error registering the question.";
+    }
+
+    // Close the statement
+    mysqli_stmt_close($stmt);
 }
 
 // Close the database connection
 mysqli_close($conn);
 ?>
+
+
+
+   
                                                            
             </div>
           </div>
