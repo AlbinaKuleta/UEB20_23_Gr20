@@ -1,21 +1,23 @@
 <?php
-$conn = mysqli_connect("localhost:3000", "root", "root", "UEBI2db");
- 
+include_once '../php/config.php';
+
 $quantity = $_POST["quantity"];
-$productCode = $_POST["productCode"];
+$pid = $_POST["pid"];
  
 $cart = isset($_COOKIE["cart"]) ? $_COOKIE["cart"] : "[]";
 $cart = json_decode($cart);
  
-$result = mysqli_query($conn, "SELECT * FROM products WHERE productCode = '" . $productCode . "'");
+$result = mysqli_query($conn, "SELECT * FROM products WHERE pid = '" . $pid . "';");
 $product = mysqli_fetch_object($result);
  
 array_push($cart, array(
-    "productCode" => $productCode,
+    "pid" => $pid,
+    "pname" => $pname,
+    "price" => $price,
+    "image" => $image,
+    "cid" => $cid,
     "quantity" => $quantity,
-    "product" => $product
 ));
- 
 setcookie("cart", json_encode($cart));
 header("Location: index.php");
  
