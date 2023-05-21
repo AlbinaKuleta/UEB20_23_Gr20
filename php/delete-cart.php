@@ -1,6 +1,6 @@
 <?php
- $conn = mysqli_connect("localhost:3000", "root", "root", "UEBI2db");
-$productCode = $_POST["productCode"];
+include_once '../php/config.php';
+$pid = $_POST["pid"];
  
 $cart = isset($_COOKIE["cart"]) ? $_COOKIE["cart"] : "[]";
 $cart = json_decode($cart);
@@ -8,7 +8,7 @@ $cart = json_decode($cart);
 $new_cart = array();
 foreach ($cart as $c)
 {
-    if ($c->productCode != $productCode)
+    if ($c->pid != $pid)
     {
         array_push($new_cart, $c);
     }

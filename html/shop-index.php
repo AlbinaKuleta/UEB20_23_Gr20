@@ -1,3 +1,8 @@
+<?php
+  // connect with database
+  include_once '../php/config.php';
+         
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -95,8 +100,8 @@ echo '</a>';
                         <li><a href="shop-account.php">My Account</a></li>
                         <li><a href="shop-wishlist.php">My Wishlist</a></li>
                         <li><a href="shop-checkout.php">Checkout</a></li>
-                        <li><a href="login_form.php" class="btn">Log In</a></li>
-                        <li><a href="register_form.php" class="btn">Register</a></li>
+                        <li><a href="../php/login_form.php" class="btn">Log In</a></li>
+                        <li><a href="../php/register_form.php" class="btn">Register</a></li>
                         <li><a href="index_Look.php" class=btn>Look</a></li>
                       
                    
@@ -125,11 +130,8 @@ echo '</a>';
     </div>
     <div class="row">
         <?php
-        // connect with database
-        $conn = mysqli_connect("localhost:3000", "root", "root", "UEBI2db");
-         
         // get all products
-        $result = mysqli_query($conn, "SELECT * FROM products");
+        $result = mysqli_query($conn, "SELECT * FROM products;");
  
         // get cookie cart
         $cart = isset($_COOKIE["cart"]) ? $_COOKIE["cart"] : "[]";
@@ -142,7 +144,7 @@ echo '</a>';
             $flag = false;
             foreach ($cart as $c)
             {
-                if ($c->productCode == $row->productCode)
+                if ($c->pid == $row->pid)
                 {
                     $flag = true;
                     break;
@@ -153,22 +155,22 @@ echo '</a>';
                 <div class="card" style="height: 200px;">
                     <div class="card-body">
                         <h5 class="card-title">
-                            <?php echo $row->productName; ?>
+                            <?php echo $row->pname; ?>
                         </h5>
                         <p class="card-text">
-                            <?php echo $row->buyPrice; ?>
+                            <?php echo $row->price; ?>
                         </p>
                         <?php if ($flag) { ?>
                             <!-- show delete button if already exists -->
                             <form method="POST" action="delete-cart.php">
-                                <input type="hidden" name="productCode" value="<?php echo $row->productCode; ?>">
+                                <input type="hidden" name="productid" value="<?php echo $row->pid; ?>">
                                 <input type="submit" class="btn btn-danger" value="Delete from cart">
                             </form>
                         <?php } else { ?>
                             <!-- add to cart -->
                             <form method="POST" action="add-cart.php">
                                 <input type="hidden" name="quantity" value="1">
-                                <input type="hidden" name="productCode" value="<?php echo $row->productCode; ?>">
+                                <input type="hidden" name="productid" value="<?php echo $row->pid; ?>">
                                 <input type="submit" class="btn btn-primary" value="Add to cart">
                             </form>
                         <?php } ?>
@@ -189,7 +191,10 @@ echo '</a>';
       </div>
 
       <?php
-      if(!$email_id) ?>
+      $sql="SELECT email_id FROM user;";
+      $result1=mysqli_query($conn, $sql);
+      $resultCheck=mysqli_num_rows($result1);
+      if(!$resultCheck) ?>
       <ul>
         <li>
           <a href="?action=cookie" href="">
@@ -203,7 +208,7 @@ echo '</a>';
           </a>
         </li>
       </ul>
-      <!--END CART -->
+         <!--END CART -->
 
         <!-- NAVIGATION -->
         <div class="header-navigation">

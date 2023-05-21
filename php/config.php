@@ -2,8 +2,8 @@
 // Krijoni lidhjen me bazën e të dhënave
 $host = "localhost";
 $username = "root";
-$password = "root";
-$database = "uebi2db";
+$password = "";
+$database = "UEBI2db";
 
-$conn = mysqli_connect($host, $database, $username, $password);
+$conn = new mysqli($host, $username, $password, $database);
 ?>
